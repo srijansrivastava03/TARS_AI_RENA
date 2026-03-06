@@ -8,6 +8,9 @@ import 'providers/detection_provider.dart';
 import 'providers/history_provider.dart';
 import 'services/api_service.dart';
 import 'screens/app_shell.dart';
+import 'screens/login_screen.dart';
+import 'screens/login_success_screen.dart';
+import 'screens/welcome_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -51,7 +54,12 @@ class AgriScanApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: app.darkMode ? ThemeMode.dark : ThemeMode.light,
-      home: const AppShell(),
+      home: const WelcomeScreen(),
+      routes: {
+        '/login': (_) => const LoginScreen(),
+        '/login-success': (_) => const LoginSuccessScreen(),
+        '/home': (_) => const AppShell(),
+      },
     );
   }
 }
