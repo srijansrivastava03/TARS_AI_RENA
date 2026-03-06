@@ -46,6 +46,9 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
   // Capture
   bool _isCapturing = false;
 
+  // Server status
+  String? _serverError;
+
   final ImagePicker _picker = ImagePicker();
 
   @override
@@ -53,6 +56,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
     super.initState();
     WidgetsBinding.instance.addObserver(this);
     _initCamera();
+    _checkServerHealth();
   }
 
   @override
@@ -121,6 +125,23 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
     } catch (_) {}
   }
 
+  // ─── Server Health Check ─────────────────────────────────────────
+
+  Future<void> _checkServerHealth() async {
+    try {
+      final detection = context.read<DetectionProvider>();
+      await detection.checkServer();
+      if (!mounted) return;
+      if (!detection.isServerOnline) {
+        setState(() => _serverError = 'Cannot reach backend server');
+      } else {
+        setState(() => _serverError = null);
+      }
+    } catch (_) {
+      if (mounted) setState(() => _serverError = 'Server health check failed');
+    }
+  }
+
   // ─── Real-time Detection Loop ──────────────────────────────────────
 
   void _startDetection() {
@@ -175,7 +196,10 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
       if (!mounted) return;
 
       if (result != null && result.hasDetections) {
-        setState(() => _latestDetection = result);
+        setState(() {
+          _latestDetection = result;
+          _serverError = null;
+        });
 
         // Auto-trigger diagnosis when primary is stable
         final primary = result.primaryDetection ?? result.detections.first;
@@ -188,7 +212,10 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
       } else {
         setState(() => _latestDetection = null);
       }
-    } catch (_) {
+    } catch (e) {
+      if (mounted) {
+        setState(() => _serverError = 'Detection failed: $e');
+      }
     } finally {
       _frameInFlight = false;
     }
@@ -315,6 +342,9 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
 
           // Top bar
           _buildTopBar(),
+
+          // Server error banner
+          if (_serverError != null) _buildServerErrorBanner(),
 
           // Bottom controls
           _buildBottomControls(),
@@ -447,6 +477,41 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
   }
 
   // ─── Top Bar ──────────────────────────────────────────────────────
+
+  // ─── Server Error Banner ────────────────────────────────────────
+
+  Widget _buildServerErrorBanner() {
+    return Positioned(
+      top: MediaQuery.of(context).padding.top + 56,
+      left: 16,
+      right: 16,
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        decoration: BoxDecoration(
+          color: Colors.red.shade900.withValues(alpha: 0.9),
+          borderRadius: BorderRadius.circular(12),
+        ),
+        child: Row(
+          children: [
+            const Icon(Icons.cloud_off_rounded, color: Colors.white, size: 20),
+            const SizedBox(width: 10),
+            Expanded(
+              child: Text(
+                _serverError!,
+                style: const TextStyle(color: Colors.white, fontSize: 13),
+              ),
+            ),
+            GestureDetector(
+              onTap: () {
+                _checkServerHealth();
+              },
+              child: const Icon(Icons.refresh, color: Colors.white, size: 20),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
 
   Widget _buildTopBar() {
     return Positioned(

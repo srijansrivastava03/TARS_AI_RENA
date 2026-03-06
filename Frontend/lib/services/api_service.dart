@@ -34,7 +34,7 @@ class ApiService {
     try {
       final response = await http
           .get(_uri(ApiEndpoints.health))
-          .timeout(const Duration(seconds: 5));
+          .timeout(const Duration(seconds: 30));
       if (response.statusCode == 200) {
         final data = jsonDecode(response.body);
         return data['status'] == 'healthy';

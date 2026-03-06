@@ -32,7 +32,9 @@ class AppProvider extends ChangeNotifier {
 
     _userId = prefs.getString('user_id') ?? const Uuid().v4();
     _language = prefs.getString('language') ?? AppConfig.defaultLanguage;
-    _apiBaseUrl = prefs.getString('api_base_url') ?? AppConfig.apiBaseUrl;
+    // Always use the compiled-in URL; ignore any stale cached value
+    _apiBaseUrl = AppConfig.apiBaseUrl;
+    await prefs.setString('api_base_url', _apiBaseUrl);
     _darkMode = prefs.getBool('dark_mode') ?? false;
     _confidenceThreshold =
         prefs.getDouble('confidence_threshold') ?? AppConfig.defaultConfidence;

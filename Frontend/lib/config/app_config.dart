@@ -1,9 +1,9 @@
 /// AgriScan app configuration
 class AppConfig {
   // API
-  static const String apiBaseUrl = 'http://localhost:5001/api';
-  static const Duration apiTimeout = Duration(seconds: 30);
-  static const Duration detectionTimeout = Duration(seconds: 60);
+  static const String apiBaseUrl = 'https://vesire-35.onrender.com/api';
+  static const Duration apiTimeout = Duration(seconds: 60);
+  static const Duration detectionTimeout = Duration(seconds: 120);
 
   // App Info
   static const String appName = 'AgriScan';
