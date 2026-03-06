@@ -1,0 +1,27 @@
+# AgriScan Backend Requirements
+# Optimized for Render Cloud Deployment (Python 3.11+)
+
+# Core Flask
+Flask==3.0.0
+flask-cors==4.0.0
+gunicorn==21.2.0
+
+# Database
+SQLAlchemy==2.0.23
+
+# Environment
+python-dotenv==1.0.0
+
+# AI/ML - Using prebuilt binary wheels for cloud compatibility
+ultralytics==8.1.0
+opencv-python-headless==4.8.1.78
+numpy>=1.24.0,<2.0.0
+Pillow>=10.0.0,<11.0.0
+onnxruntime==1.16.3
+
+# LLM APIs
+google-generativeai>=0.8.0
+openai>=1.3.7
+
+# Utilities
+requests==2.31.0

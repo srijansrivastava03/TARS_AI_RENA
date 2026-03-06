@@ -1,0 +1,1517 @@
+{
+  "Apple leaf": {
+    "name": "Healthy Apple Leaf",
+    "scientific_name": "Malus domestica",
+    "description": "This is a healthy apple leaf showing no signs of disease or pest damage.",
+    "symptoms": [
+      "Vibrant green color",
+      "No spots or lesions",
+      "Proper leaf structure"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue regular care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Maintain proper spacing",
+        "Regular pruning"
+      ]
+    },
+    "prevention": [
+      "Continue good practices",
+      "Regular inspection"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Apple"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ सेब का पत्ता",
+        "description": "यह एक स्वस्थ सेब का पत्ता है जो रोग या कीट क्षति के कोई लक्षण नहीं दिखाता है।"
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಸೇಬು ಎಲೆ",
+        "description": "ಇದು ರೋಗ ಅಥವಾ ಕೀಟ ಹಾನಿಯ ಯಾವುದೇ ಚಿಹ್ನೆಗಳನ್ನು ತೋರಿಸದ ಆರೋಗ್ಯಕರ ಸೇಬು ಎಲೆಯಾಗಿದೆ."
+      }
+    }
+  },
+  "Apple rust leaf": {
+    "name": "Apple Rust Leaf",
+    "scientific_name": "Gymnosporangium juniperi-virginianae",
+    "description": "Cedar-apple rust causes distinctive orange spots on apple leaves.",
+    "symptoms": [
+      "Bright orange spots",
+      "Tube-like projections on leaf undersides",
+      "Premature leaf drop"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove nearby cedar trees",
+        "Apply sulfur fungicides",
+        "Use neem oil"
+      ],
+      "chemical": [
+        "Apply myclobutanil",
+        "Use propiconazole"
+      ],
+      "cultural": [
+        "Plant resistant varieties",
+        "Improve air circulation"
+      ]
+    },
+    "prevention": [
+      "Choose resistant cultivars",
+      "Avoid planting near cedar"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Apple",
+      "Cedar"
+    ],
+    "translations": {
+      "hi": {
+        "name": "सेब जंग पत्ता",
+        "description": "देवदार-सेब जंग सेब के पत्तों पर विशिष्ट नारंगी धब्बे पैदा करता है।"
+      },
+      "kn": {
+        "name": "ಸೇಬು ತುಕ್ಕು ಎಲೆ",
+        "description": "ದೇವದಾರು-ಸೇಬು ತುಕ್ಕು ಸೇಬು ಎಲೆಗಳ ಮೇಲೆ ವಿಶಿಷ್ಟವಾದ ಕಿತ್ತಳೆ ಚುಕ್ಕೆಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ."
+      }
+    }
+  },
+  "Apple Scab Leaf": {
+    "name": "Apple Scab Leaf",
+    "scientific_name": "Venturia inaequalis",
+    "description": "Apple scab is one of the most serious diseases of apple trees.",
+    "symptoms": [
+      "Olive-green to brown velvety spots",
+      "Leaves curl and fall prematurely",
+      "Scabby lesions on fruit"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur sprays",
+        "Use copper fungicides",
+        "Remove fallen leaves"
+      ],
+      "chemical": [
+        "Apply captan or mancozeb",
+        "Use myclobutanil"
+      ],
+      "cultural": [
+        "Prune for air circulation",
+        "Rake fallen leaves"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Begin preventive sprays at bud break"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Apple",
+      "Pear"
+    ],
+    "translations": {
+      "hi": {
+        "name": "सेब पपड़ी पत्ता",
+        "description": "सेब पपड़ी सेब के पेड़ों की सबसे गंभीर बीमारियों में से एक है।"
+      },
+      "kn": {
+        "name": "ಸೇಬು ಹೊರೆಪದರ ಎಲೆ",
+        "description": "ಸೇಬು ಹೊರೆಪದರವು ಸೇಬು ಮರಗಳ ಅತ್ಯಂತ ಗಂಭೀರ ರೋಗಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ."
+      }
+    }
+  },
+  "Bell_pepper leaf": {
+    "name": "Healthy Bell Pepper Leaf",
+    "scientific_name": "Capsicum annuum",
+    "description": "A healthy bell pepper leaf with vibrant green coloration.",
+    "symptoms": [
+      "Deep green color",
+      "Smooth surface",
+      "No spots or discoloration"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue balanced fertilization"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper spacing",
+        "Water at base"
+      ]
+    },
+    "prevention": [
+      "Maintain healthy conditions",
+      "Regular inspection"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Bell Pepper"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ शिमला मिर्च का पत्ता",
+        "description": "यह एक स्वस्थ शिमला मिर्च का पत्ता है जो कोई रोग लक्षण नहीं दिखाता है।"
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಬೆಲ್ ಪೆಪ್ಪರ್ ಎಲೆ",
+        "description": "ಇದು ಯಾವುದೇ ರೋಗದ ಲಕ್ಷಣಗಳನ್ನು ತೋರಿಸದ ಆರೋಗ್ಯಕರ ಬೆಲ್ ಪೆಪ್ಪರ್ ಎಲೆಯಾಗಿದೆ."
+      }
+    }
+  },
+  "Bell_pepper leaf spot": {
+    "name": "Bell Pepper Leaf Spot",
+    "scientific_name": "Xanthomonas campestris pv. vesicatoria",
+    "description": "Bacterial leaf spot causes leaf drop and reduced fruit quality.",
+    "symptoms": [
+      "Small dark brown spots with yellow halos",
+      "Leaves yellow and drop",
+      "Raised spots on fruits"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper bactericides",
+        "Remove infected plants",
+        "Use hydrogen peroxide spray"
+      ],
+      "chemical": [
+        "Apply copper hydroxide",
+        "Use copper sulfate"
+      ],
+      "cultural": [
+        "Remove infected parts",
+        "Avoid overhead watering"
+      ]
+    },
+    "prevention": [
+      "Use disease-free seeds",
+      "Rotate crops 3 years minimum"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Bell pepper",
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Bell Pepper Leaf Spot",
+        "description": "Bacterial leaf spot causes leaf drop and reduced fruit quality."
+      },
+      "kn": {
+        "name": "Bell Pepper Leaf Spot",
+        "description": "Bacterial leaf spot causes leaf drop and reduced fruit quality."
+      }
+    }
+  },
+  "Blueberry leaf": {
+    "name": "Healthy Blueberry Leaf",
+    "scientific_name": "Vaccinium spp.",
+    "description": "A healthy blueberry leaf with proper color.",
+    "symptoms": [
+      "Rich green color",
+      "Smooth surface",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Maintain acidic soil"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Maintain mulch",
+        "Ensure consistent moisture"
+      ]
+    },
+    "prevention": [
+      "Maintain soil acidity",
+      "Good drainage"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Blueberry"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Healthy Blueberry Leaf",
+        "description": "A healthy blueberry leaf with proper color."
+      },
+      "kn": {
+        "name": "Healthy Blueberry Leaf",
+        "description": "A healthy blueberry leaf with proper color."
+      }
+    }
+  },
+  "Cherry leaf": {
+    "name": "Healthy Cherry Leaf",
+    "scientific_name": "Prunus avium",
+    "description": "A healthy cherry leaf with normal coloration.",
+    "symptoms": [
+      "Bright green color",
+      "No spots",
+      "Proper structure"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper pruning",
+        "Good air circulation"
+      ]
+    },
+    "prevention": [
+      "Maintain tree health",
+      "Regular monitoring"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Cherry"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Healthy Cherry Leaf",
+        "description": "A healthy cherry leaf with normal coloration."
+      },
+      "kn": {
+        "name": "Healthy Cherry Leaf",
+        "description": "A healthy cherry leaf with normal coloration."
+      }
+    }
+  },
+  "Corn Gray leaf spot": {
+    "name": "Corn Gray Leaf Spot",
+    "scientific_name": "Cercospora zeae-maydis",
+    "description": "Gray leaf spot causes rectangular lesions on corn leaves.",
+    "symptoms": [
+      "Rectangular gray-tan lesions",
+      "Lesions parallel to veins",
+      "Premature leaf death"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove infected leaves",
+        "Apply copper fungicides"
+      ],
+      "chemical": [
+        "Apply azoxystrobin",
+        "Use triazole fungicides"
+      ],
+      "cultural": [
+        "Plant resistant hybrids",
+        "Rotate crops"
+      ]
+    },
+    "prevention": [
+      "Choose resistant hybrids",
+      "Bury crop debris"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Corn"
+    ],
+    "translations": {
+      "hi": {
+        "name": "मक्का भूरा पत्ता धब्बा",
+        "description": "ग्रे लीफ स्पॉट मक्का पत्तियों पर आयताकार घाव पैदा करता है।"
+      },
+      "kn": {
+        "name": "ಜೋಳ ಬೂದು ಎಲೆ ಚುಕ್ಕೆ",
+        "description": "ಬೂದು ಎಲೆ ಚುಕ್ಕೆ ಜೋಳ ಎಲೆಗಳ ಮೇಲೆ ಆಯತಾಕಾರದ ಗಾಯಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ."
+      }
+    }
+  },
+  "Corn leaf blight": {
+    "name": "Corn Leaf Blight",
+    "scientific_name": "Exserohilum turcicum",
+    "description": "Northern corn leaf blight reduces yield significantly.",
+    "symptoms": [
+      "Long elliptical gray-green lesions",
+      "Lesions merge on leaves",
+      "Premature leaf death"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use copper fungicides"
+      ],
+      "chemical": [
+        "Apply azoxystrobin",
+        "Use propiconazole"
+      ],
+      "cultural": [
+        "Plant resistant hybrids",
+        "Bury crop residue"
+      ]
+    },
+    "prevention": [
+      "Choose resistant varieties",
+      "Crop rotation"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Corn"
+    ],
+    "translations": {
+      "hi": {
+        "name": "मक्का पत्ती अंगमारी",
+        "description": "उत्तरी मक्का पत्ती अंगमारी उपज में काफी कमी लाती है।"
+      },
+      "kn": {
+        "name": "ಜೋಳ ಎಲೆ ರೋಗ",
+        "description": "ಉತ್ತರ ಜೋಳ ಎಲೆ ರೋಗವು ಇಳುವರಿಯಲ್ಲಿ ಗಣನೀಯ ಇಳಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ."
+      }
+    }
+  },
+  "Corn rust leaf": {
+    "name": "Corn Rust Leaf",
+    "scientific_name": "Puccinia sorghi",
+    "description": "Common rust produces pustules on corn leaves.",
+    "symptoms": [
+      "Small reddish-brown pustules",
+      "Pustules on both surfaces",
+      "Yellowing"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use neem oil"
+      ],
+      "chemical": [
+        "Apply propiconazole",
+        "Use strobilurin fungicides"
+      ],
+      "cultural": [
+        "Plant resistant hybrids",
+        "Adequate spacing"
+      ]
+    },
+    "prevention": [
+      "Choose resistant varieties",
+      "Monitor regularly"
+    ],
+    "severity": "low",
+    "affected_plants": [
+      "Corn"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Corn Rust Leaf",
+        "description": "Common rust produces pustules on corn leaves."
+      },
+      "kn": {
+        "name": "Corn Rust Leaf",
+        "description": "Common rust produces pustules on corn leaves."
+      }
+    }
+  },
+  "grape leaf": {
+    "name": "Healthy Grape Leaf",
+    "scientific_name": "Vitis vinifera",
+    "description": "A healthy grape leaf with proper color.",
+    "symptoms": [
+      "Vibrant green",
+      "No spots",
+      "Proper lobed structure"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper training",
+        "Good air circulation"
+      ]
+    },
+    "prevention": [
+      "Maintain vine health",
+      "Regular monitoring"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Grape"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ अंगूर का पत्ता",
+        "description": "यह एक स्वस्थ अंगूर का पत्ता है जो कोई बीमारी के लक्षण नहीं दिखाता है।"
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ದ್ರಾಕ್ಷಿ ಎಲೆ",
+        "description": "ಇದು ಯಾವುದೇ ರೋಗದ ಲಕ್ಷಣಗಳನ್ನು ತೋರಿಸದ ಆರೋಗ್ಯಕರ ದ್ರಾಕ್ಷಿ ಎಲೆಯಾಗಿದೆ."
+      }
+    }
+  },
+  "grape leaf black rot": {
+    "name": "Grape Leaf Black Rot",
+    "scientific_name": "Guignardia bidwellii",
+    "description": "Black rot is one of the most serious grape diseases.",
+    "symptoms": [
+      "Circular reddish-brown spots",
+      "Tan centers with dark margins",
+      "Black pycnidia in centers",
+      "Berries shrivel into mummies"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Use sulfur sprays",
+        "Remove infected parts"
+      ],
+      "chemical": [
+        "Apply mancozeb",
+        "Use myclobutanil",
+        "Apply chlorothalonil"
+      ],
+      "cultural": [
+        "Prune for air circulation",
+        "Remove infected leaves"
+      ]
+    },
+    "prevention": [
+      "Remove mummified berries",
+      "Apply dormant copper sprays",
+      "Monitor weather"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Grape"
+    ],
+    "translations": {
+      "hi": {
+        "name": "अंगूर पत्ती काला सड़न",
+        "description": "काला सड़न अंगूर की सबसे विनाशकारी बीमारियों में से एक है।"
+      },
+      "kn": {
+        "name": "ದ್ರಾಕ್ಷಿ ಎಲೆ ಕಪ್ಪು ಕೊಳೆತ",
+        "description": "ಕಪ್ಪು ಕೊಳೆತವು ದ್ರಾಕ್ಷಿಯ ಅತ್ಯಂತ ವಿನಾಶಕಾರಿ ರೋಗಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ."
+      }
+    }
+  },
+  "Peach leaf": {
+    "name": "Healthy Peach Leaf",
+    "scientific_name": "Prunus persica",
+    "description": "A healthy peach leaf with normal coloration.",
+    "symptoms": [
+      "Dark green color",
+      "Smooth surface",
+      "No curling"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper pruning",
+        "Remove fallen leaves"
+      ]
+    },
+    "prevention": [
+      "Maintain tree health",
+      "Regular inspection"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Peach"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Healthy Peach Leaf",
+        "description": "A healthy peach leaf with normal coloration."
+      },
+      "kn": {
+        "name": "Healthy Peach Leaf",
+        "description": "A healthy peach leaf with normal coloration."
+      }
+    }
+  },
+  "Potato leaf": {
+    "name": "Healthy Potato Leaf",
+    "scientific_name": "Solanum tuberosum",
+    "description": "A healthy potato leaf with normal green color.",
+    "symptoms": [
+      "Rich green color",
+      "No spots",
+      "Proper compound structure"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Hill soil",
+        "Consistent moisture"
+      ]
+    },
+    "prevention": [
+      "Use certified seed",
+      "Crop rotation"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Potato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ आलू का पत्ता",
+        "description": "यह एक स्वस्थ आलू का पत्ता है जो कोई बीमारी के लक्षण नहीं दिखाता है।"
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಆಲೂಗಡ್ಡೆ ಎಲೆ",
+        "description": "ಇದು ಯಾವುದೇ ರೋಗದ ಲಕ್ಷಣಗಳನ್ನು ತೋರಿಸದ ಆರೋಗ್ಯಕರ ಆಲೂಗಡ್ಡೆ ಎಲೆಯಾಗಿದೆ."
+      }
+    }
+  },
+  "Potato leaf early blight": {
+    "name": "Potato Leaf Early Blight",
+    "scientific_name": "Alternaria solani",
+    "description": "Early blight causes premature defoliation in potatoes.",
+    "symptoms": [
+      "Dark brown spots with concentric rings",
+      "Yellow halo",
+      "Leaves die from bottom up"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Use sulfur",
+        "Remove infected foliage"
+      ],
+      "chemical": [
+        "Apply mancozeb",
+        "Use chlorothalonil",
+        "Apply azoxystrobin"
+      ],
+      "cultural": [
+        "Hill soil",
+        "Mulch",
+        "Space plants"
+      ]
+    },
+    "prevention": [
+      "Use certified seed",
+      "Rotate crops 3-4 years",
+      "Destroy residue"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Potato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Potato Leaf Early Blight",
+        "description": "Early blight causes premature defoliation in potatoes."
+      },
+      "kn": {
+        "name": "Potato Leaf Early Blight",
+        "description": "Early blight causes premature defoliation in potatoes."
+      }
+    }
+  },
+  "Potato leaf late blight": {
+    "name": "Potato Leaf Late Blight",
+    "scientific_name": "Phytophthora infestans",
+    "description": "Late blight is the most devastating potato disease.",
+    "symptoms": [
+      "Water-soaked spots turn brown-black",
+      "White mold on undersides",
+      "Rapid foliage death",
+      "Tuber rot"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper immediately",
+        "Remove and burn infected plants"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use metalaxyl",
+        "Apply dimethomorph"
+      ],
+      "cultural": [
+        "Destroy volunteers",
+        "Hill soil high",
+        "Avoid overhead watering"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Monitor weather",
+      "Spray before rain"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Potato",
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Potato Leaf Late Blight",
+        "description": "Late blight is the most devastating potato disease."
+      },
+      "kn": {
+        "name": "Potato Leaf Late Blight",
+        "description": "Late blight is the most devastating potato disease."
+      }
+    }
+  },
+  "Raspberry leaf": {
+    "name": "Healthy Raspberry Leaf",
+    "scientific_name": "Rubus idaeus",
+    "description": "A healthy raspberry leaf with proper color.",
+    "symptoms": [
+      "Green with silvery undersides",
+      "Compound leaves",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper pruning",
+        "Remove old canes"
+      ]
+    },
+    "prevention": [
+      "Good air circulation",
+      "Regular inspection"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Raspberry"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Healthy Raspberry Leaf",
+        "description": "A healthy raspberry leaf with proper color."
+      },
+      "kn": {
+        "name": "Healthy Raspberry Leaf",
+        "description": "A healthy raspberry leaf with proper color."
+      }
+    }
+  },
+  "Soyabean leaf": {
+    "name": "Healthy Soybean Leaf",
+    "scientific_name": "Glycine max",
+    "description": "A healthy soybean leaf with proper trifoliate structure.",
+    "symptoms": [
+      "Dark green color",
+      "Trifoliate structure",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper spacing",
+        "Good weed control"
+      ]
+    },
+    "prevention": [
+      "Use quality seed",
+      "Crop rotation"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Soybean"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Healthy Soybean Leaf",
+        "description": "A healthy soybean leaf with proper trifoliate structure."
+      },
+      "kn": {
+        "name": "Healthy Soybean Leaf",
+        "description": "A healthy soybean leaf with proper trifoliate structure."
+      }
+    }
+  },
+  "Squash Powdery mildew leaf": {
+    "name": "Squash Powdery Mildew",
+    "scientific_name": "Podosphaera xanthii",
+    "description": "Powdery mildew appears as white powdery spots on leaves.",
+    "symptoms": [
+      "White powdery spots",
+      "Spots merge to cover leaf",
+      "Yellowing",
+      "Premature death"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use baking soda spray",
+        "Apply neem oil",
+        "Milk spray"
+      ],
+      "chemical": [
+        "Apply myclobutanil",
+        "Use potassium bicarbonate"
+      ],
+      "cultural": [
+        "Improve air circulation",
+        "Avoid overhead watering"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Good air circulation",
+      "Water at base"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Squash",
+      "Cucumber",
+      "Pumpkin"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Squash Powdery Mildew",
+        "description": "Powdery mildew appears as white powdery spots on leaves."
+      },
+      "kn": {
+        "name": "Squash Powdery Mildew",
+        "description": "Powdery mildew appears as white powdery spots on leaves."
+      }
+    }
+  },
+  "Strawberry leaf": {
+    "name": "Healthy Strawberry Leaf",
+    "scientific_name": "Fragaria × ananassa",
+    "description": "A healthy strawberry leaf with proper trifoliate structure.",
+    "symptoms": [
+      "Bright green color",
+      "Trifoliate structure",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Remove old leaves",
+        "Maintain mulch"
+      ]
+    },
+    "prevention": [
+      "Plant disease-free stock",
+      "Good air circulation"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Strawberry"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Healthy Strawberry Leaf",
+        "description": "A healthy strawberry leaf with proper trifoliate structure."
+      },
+      "kn": {
+        "name": "Healthy Strawberry Leaf",
+        "description": "A healthy strawberry leaf with proper trifoliate structure."
+      }
+    }
+  },
+  "Tomato Early blight leaf": {
+    "name": "Tomato Early Blight",
+    "scientific_name": "Alternaria solani",
+    "description": "Early blight causes yield loss in tomatoes.",
+    "symptoms": [
+      "Dark brown spots with concentric rings",
+      "Yellowing around spots",
+      "Leaf drop from bottom",
+      "Stem lesions"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Use compost tea",
+        "Remove infected leaves"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use mancozeb",
+        "Apply azoxystrobin"
+      ],
+      "cultural": [
+        "Mulch plants",
+        "Space adequately",
+        "Water at base"
+      ]
+    },
+    "prevention": [
+      "Disease-free transplants",
+      "Rotate crops 3 years",
+      "Remove debris"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर प्रारंभिक अंगमारी पत्ता",
+        "description": "प्रारंभिक अंगमारी टमाटर की एक सामान्य कवक रोग है।"
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಆರಂಭಿಕ ರೋಗ ಎಲೆ",
+        "description": "ಆರಂಭಿಕ ರೋಗವು ಟೊಮೇಟೊದ ಸಾಮಾನ್ಯ ಶಿಲೀಂಧ್ರ ರೋಗವಾಗಿದೆ."
+      }
+    }
+  },
+  "Tomato leaf": {
+    "name": "Healthy Tomato Leaf",
+    "scientific_name": "Solanum lycopersicum",
+    "description": "A healthy tomato leaf with normal green color.",
+    "symptoms": [
+      "Rich green color",
+      "Compound leaves",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Stake and prune",
+        "Water at base"
+      ]
+    },
+    "prevention": [
+      "Use disease-free transplants",
+      "Crop rotation"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ टमाटर का पत्ता",
+        "description": "यह एक स्वस्थ टमाटर का पत्ता है जो कोई रोग लक्षण नहीं दिखाता है।"
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಟೊಮೇಟೊ ಎಲೆ",
+        "description": "ಇದು ಯಾವುದೇ ರೋಗದ ಲಕ್ಷಣಗಳನ್ನು ತೋರಿಸದ ಆರೋಗ್ಯಕರ ಟೊಮೇಟೊ ಎಲೆಯಾಗಿದೆ."
+      }
+    }
+  },
+  "Tomato leaf bacterial spot": {
+    "name": "Tomato Bacterial Spot",
+    "scientific_name": "Xanthomonas spp.",
+    "description": "Bacterial spot affects leaves, stems, and fruits.",
+    "symptoms": [
+      "Small dark brown spots with yellow halos",
+      "Greasy appearance",
+      "Leaves yellow and drop",
+      "Raised fruit spots"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper bactericides",
+        "Remove infected plants",
+        "Use hydrogen peroxide"
+      ],
+      "chemical": [
+        "Apply copper hydroxide",
+        "Use copper sulfate",
+        "Apply streptomycin"
+      ],
+      "cultural": [
+        "Remove infected parts",
+        "Avoid overhead watering",
+        "Disinfect tools"
+      ]
+    },
+    "prevention": [
+      "Disease-free seeds",
+      "Plant resistant varieties",
+      "3-year rotation"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato",
+      "Pepper"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर पत्ती बैक्टीरियल धब्बा",
+        "description": "बैक्टीरियल धब्बा पत्तियों, तनों और फलों को प्रभावित करता है।"
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಎಲೆ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಚುಕ್ಕೆ",
+        "description": "ಬ್ಯಾಕ್ಟೀರಿಯಾ ಚುಕ್ಕೆ ಎಲೆಗಳು, ಕಾಂಡಗಳು ಮತ್ತು ಹಣ್ಣುಗಳ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ."
+      }
+    }
+  },
+  "Tomato leaf late blight": {
+    "name": "Tomato Late Blight",
+    "scientific_name": "Phytophthora infestans",
+    "description": "Late blight can rapidly destroy entire tomato crops.",
+    "symptoms": [
+      "Dark brown to purplish-black spots",
+      "White fuzzy growth on undersides",
+      "Rapid yellowing and death",
+      "Dark fruit spots"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Remove infected parts immediately",
+        "Use baking soda spray"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use mancozeb",
+        "Apply metalaxyl"
+      ],
+      "cultural": [
+        "Improve air circulation",
+        "Water at base",
+        "Remove weeds"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Avoid planting near potatoes",
+      "Apply mulch",
+      "Monitor weather"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Tomato",
+      "Potato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Tomato Late Blight",
+        "description": "Late blight can rapidly destroy entire tomato crops."
+      },
+      "kn": {
+        "name": "Tomato Late Blight",
+        "description": "Late blight can rapidly destroy entire tomato crops."
+      }
+    }
+  },
+  "Tomato leaf mosaic virus": {
+    "name": "Tomato Mosaic Virus",
+    "scientific_name": "Tomato mosaic virus (ToMV)",
+    "description": "Tomato mosaic virus causes mottled patterns on leaves.",
+    "symptoms": [
+      "Mottled light and dark green pattern",
+      "Distorted fernlike leaves",
+      "Stunted growth",
+      "Yellow fruit streaking"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove infected plants immediately",
+        "Disinfect tools with bleach",
+        "Wash hands",
+        "No cure available"
+      ],
+      "chemical": [
+        "No chemical treatment for viruses",
+        "Control aphid vectors"
+      ],
+      "cultural": [
+        "Remove infected plants",
+        "Disinfect equipment",
+        "Control insects"
+      ]
+    },
+    "prevention": [
+      "Use virus-free seeds",
+      "Plant resistant varieties",
+      "Wash hands",
+      "Disinfect tools"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Tomato",
+      "Pepper"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर पत्ती मोज़ेक वायरस",
+        "description": "मोज़ेक वायरस पत्तियों पर मोज़ेक पैटर्न का कारण बनता है।"
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಎಲೆ ಮೊಸಾಯಿಕ್ ವೈರಸ್",
+        "description": "ಮೊಸಾಯಿಕ್ ವೈರಸ್ ಎಲೆಗಳ ಮೇಲೆ ಮೊಸಾಯಿಕ್ ಮಾದರಿಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ."
+      }
+    }
+  },
+  "Tomato leaf yellow virus": {
+    "name": "Tomato Yellow Leaf Curl Virus",
+    "scientific_name": "Tomato yellow leaf curl virus (TYLCV)",
+    "description": "TYLCV transmitted by whiteflies causes severe yellowing.",
+    "symptoms": [
+      "Upward curling leaf margins",
+      "Yellowing leaf edges",
+      "Severely stunted growth",
+      "Reduced flowering"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove infected plants",
+        "Control whiteflies with neem oil",
+        "Use yellow sticky traps"
+      ],
+      "chemical": [
+        "No chemical cure",
+        "Apply imidacloprid for whiteflies"
+      ],
+      "cultural": [
+        "Use reflective mulches",
+        "Remove infected plants",
+        "Install insect screening"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Control whiteflies",
+      "Use insect netting",
+      "Remove weeds"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Tomato",
+      "Bean",
+      "Pepper"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Tomato Yellow Leaf Curl Virus",
+        "description": "TYLCV transmitted by whiteflies causes severe yellowing."
+      },
+      "kn": {
+        "name": "Tomato Yellow Leaf Curl Virus",
+        "description": "TYLCV transmitted by whiteflies causes severe yellowing."
+      }
+    }
+  },
+  "Tomato mold leaf": {
+    "name": "Tomato Leaf Mold",
+    "scientific_name": "Passalora fulva",
+    "description": "Leaf mold primarily affects greenhouse tomatoes.",
+    "symptoms": [
+      "Pale yellow spots on upper surface",
+      "Olive-green fuzzy mold on undersides",
+      "Spots turn brown",
+      "Leaves wilt"
+    ],
+    "treatment": {
+      "organic": [
+        "Improve air circulation",
+        "Apply copper fungicides",
+        "Use sulfur"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use mancozeb"
+      ],
+      "cultural": [
+        "Reduce humidity below 85%",
+        "Increase ventilation",
+        "Space plants"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Maintain low humidity",
+      "Good ventilation"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Tomato Leaf Mold",
+        "description": "Leaf mold primarily affects greenhouse tomatoes."
+      },
+      "kn": {
+        "name": "Tomato Leaf Mold",
+        "description": "Leaf mold primarily affects greenhouse tomatoes."
+      }
+    }
+  },
+  "Tomato Septoria leaf spot": {
+    "name": "Tomato Septoria Leaf Spot",
+    "scientific_name": "Septoria lycopersici",
+    "description": "Septoria leaf spot causes numerous small spots on leaves.",
+    "symptoms": [
+      "Small circular spots with dark borders",
+      "Gray centers with black specks",
+      "Spots start on lower leaves",
+      "Premature leaf drop"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Remove infected leaves",
+        "Use sulfur"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use mancozeb"
+      ],
+      "cultural": [
+        "Mulch to prevent splash",
+        "Remove lower leaves",
+        "Stake plants"
+      ]
+    },
+    "prevention": [
+      "Disease-free transplants",
+      "Rotate crops 3 years",
+      "Remove debris"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर सेप्टोरिया पत्ती धब्बा",
+        "description": "सेप्टोरिया लीफ स्पॉट टमाटर की एक आम बीमारी है।"
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಚುಕ್ಕೆ",
+        "description": "ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಚುಕ್ಕೆ ಟೊಮೇಟೊದ ಸಾಮಾನ್ಯ ರೋಗವಾಗಿದೆ."
+      }
+    }
+  },
+  "Tomato two spotted spider mites leaf": {
+    "name": "Two Spotted Spider Mites",
+    "scientific_name": "Tetranychus urticae",
+    "description": "Spider mites feed on plant sap causing stippling.",
+    "symptoms": [
+      "Fine yellow speckling",
+      "Fine webbing on undersides",
+      "Leaves turn bronze",
+      "Premature leaf drop"
+    ],
+    "treatment": {
+      "organic": [
+        "Spray with strong water",
+        "Apply neem oil",
+        "Use predatory mites",
+        "Apply horticultural oil"
+      ],
+      "chemical": [
+        "Apply abamectin",
+        "Use bifenthrin",
+        "Apply miticides"
+      ],
+      "cultural": [
+        "Increase humidity",
+        "Remove infested leaves",
+        "Avoid drought stress"
+      ]
+    },
+    "prevention": [
+      "Monitor regularly",
+      "Maintain moisture",
+      "Avoid excessive nitrogen"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato",
+      "Bean",
+      "Cucumber"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर दो धब्बेदार मकड़ी के कीड़े पत्ता",
+        "description": "मकड़ी के कीड़े पत्तियों से रस चूसते हैं, जिससे पीलापन और क्षति होती है।"
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಎರಡು ಚುಕ್ಕೆಯ ಜೇಡ ಹುಳುಗಳು ಎಲೆ",
+        "description": "ಜೇಡ ಹುಳುಗಳು ಎಲೆಗಳಿಂದ ರಸವನ್ನು ಹೀರುತ್ತವೆ, ಇದು ಹಳಸುವಿಕೆ ಮತ್ತು ಹಾನಿಗೆ ಕಾರಣವಾಗುತ್ತದೆ."
+      }
+    }
+  },
+  "Bacterial_Blight": {
+    "name": "Bacterial Blight",
+    "scientific_name": "Xanthomonas oryzae pv. oryzae",
+    "description": "Bacterial blight is a serious disease affecting rice.",
+    "symptoms": [
+      "Water-soaked lesions",
+      "Yellow to white-gray stripes",
+      "Wilting",
+      "Milky bacterial ooze"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove and burn infected plants",
+        "Apply copper bactericides"
+      ],
+      "chemical": [
+        "Apply copper compounds",
+        "Use streptomycin sulfate"
+      ],
+      "cultural": [
+        "Use resistant varieties",
+        "Avoid mechanical injury",
+        "Balance nitrogen"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Use disease-free seeds",
+      "Proper water management"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Rice",
+      "Wheat"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Bacterial Blight",
+        "description": "Bacterial blight is a serious disease affecting rice."
+      },
+      "kn": {
+        "name": "Bacterial Blight",
+        "description": "Bacterial blight is a serious disease affecting rice."
+      }
+    }
+  },
+  "Brown_Spot": {
+    "name": "Brown Spot",
+    "scientific_name": "Bipolaris oryzae",
+    "description": "Brown spot affects rice causing brown lesions.",
+    "symptoms": [
+      "Small circular brown spots with gray centers",
+      "Yellow halos",
+      "Discolored grains"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use copper fungicides"
+      ],
+      "chemical": [
+        "Apply mancozeb",
+        "Use propiconazole",
+        "Treat seeds"
+      ],
+      "cultural": [
+        "Balance soil fertility",
+        "Avoid water stress",
+        "Remove stubble"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Use healthy seeds",
+      "Balanced fertilization"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Rice"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Brown Spot",
+        "description": "Brown spot affects rice causing brown lesions."
+      },
+      "kn": {
+        "name": "Brown Spot",
+        "description": "Brown spot affects rice causing brown lesions."
+      }
+    }
+  },
+  "Rice_Blast": {
+    "name": "Rice Blast",
+    "scientific_name": "Magnaporthe oryzae",
+    "description": "Rice blast is the most serious disease of rice worldwide.",
+    "symptoms": [
+      "Diamond-shaped lesions with gray centers",
+      "Lesions on nodes",
+      "Neck rot",
+      "Unfilled grains"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use copper compounds",
+        "Apply silicon"
+      ],
+      "chemical": [
+        "Apply tricyclazole",
+        "Use carbendazim",
+        "Apply at tillering"
+      ],
+      "cultural": [
+        "Plant resistant varieties",
+        "Avoid excessive nitrogen",
+        "Proper water depth"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Disease-free seeds",
+      "Balance nitrogen"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Rice",
+      "Wheat"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Rice Blast",
+        "description": "Rice blast is the most serious disease of rice worldwide."
+      },
+      "kn": {
+        "name": "Rice Blast",
+        "description": "Rice blast is the most serious disease of rice worldwide."
+      }
+    }
+  },
+  "Septoria": {
+    "name": "Septoria Leaf Blotch",
+    "scientific_name": "Septoria tritici",
+    "description": "Septoria leaf blotch is a major wheat disease.",
+    "symptoms": [
+      "Brown to tan blotches",
+      "Small black pycnidia in lesions",
+      "Lesions between veins",
+      "Lower leaves first"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Remove lower leaves"
+      ],
+      "chemical": [
+        "Apply propiconazole",
+        "Use strobilurin fungicides",
+        "Apply chlorothalonil"
+      ],
+      "cultural": [
+        "Plant resistant varieties",
+        "Bury residue",
+        "Rotate crops"
+      ]
+    },
+    "prevention": [
+      "Choose resistant varieties",
+      "Crop rotation",
+      "Bury debris"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Wheat",
+      "Barley"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Septoria Leaf Blotch",
+        "description": "Septoria leaf blotch is a major wheat disease."
+      },
+      "kn": {
+        "name": "Septoria Leaf Blotch",
+        "description": "Septoria leaf blotch is a major wheat disease."
+      }
+    }
+  },
+  "Stripe Rust": {
+    "name": "Stripe Rust",
+    "scientific_name": "Puccinia striiformis",
+    "description": "Stripe rust produces yellow-orange stripes on wheat leaves.",
+    "symptoms": [
+      "Yellow-orange pustules in stripes",
+      "Pustules parallel to veins",
+      "Premature yellowing",
+      "Reduced grain fill"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Remove infected material",
+        "Use resistant varieties"
+      ],
+      "chemical": [
+        "Apply tebuconazole",
+        "Use propiconazole",
+        "Apply at first rust sign"
+      ],
+      "cultural": [
+        "Plant resistant varieties",
+        "Destroy volunteers",
+        "Avoid early planting"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties (most effective)",
+      "Monitor forecasts",
+      "Destroy volunteers"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Wheat",
+      "Barley",
+      "Rye"
+    ],
+    "translations": {
+      "hi": {
+        "name": "Stripe Rust",
+        "description": "Stripe rust produces yellow-orange stripes on wheat leaves."
+      },
+      "kn": {
+        "name": "Stripe Rust",
+        "description": "Stripe rust produces yellow-orange stripes on wheat leaves."
+      }
+    }
+  }
+}

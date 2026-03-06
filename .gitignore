@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# Environment
+.env
+.env.local
+
+# Database
+*.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Model weights (large files - use Git LFS or download separately)
+# Uncomment the next line if you don't want to commit model weights
+# Backend/models/agriscan_combined/weights/*.pt
+
+# Uploads
+Backend/data/uploads/*
+!Backend/data/uploads/.gitkeep

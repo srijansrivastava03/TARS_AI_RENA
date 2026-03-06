@@ -1,0 +1,3219 @@
+{
+  "Apple leaf": {
+    "name": "Healthy Apple Leaf",
+    "scientific_name": "Malus domestica",
+    "description": "This is a healthy apple leaf showing no signs of disease or pest damage.",
+    "symptoms": [
+      "Vibrant green color",
+      "No spots or lesions",
+      "Proper leaf structure"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue regular care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Maintain proper spacing",
+        "Regular pruning"
+      ]
+    },
+    "prevention": [
+      "Continue good practices",
+      "Regular inspection"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Apple"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ सेब का पत्ता",
+        "description": "यह एक स्वस्थ सेब का पत्ता है जो रोग या कीट क्षति के कोई लक्षण नहीं दिखाता है।",
+        "symptoms": [
+          "चमकीला हरा रंग",
+          "कोई धब्बे या घाव नहीं",
+          "उचित पत्ती संरचना"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "नियमित देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "उचित दूरी बनाए रखें",
+            "नियमित छंटाई"
+          ]
+        },
+        "prevention": [
+          "अच्छी प्रथाओं को जारी रखें",
+          "नियमित निरीक्षण"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಸೇಬು ಎಲೆ",
+        "description": "ಇದು ರೋಗ ಅಥವಾ ಕೀಟ ಹಾನಿಯ ಯಾವುದೇ ಚಿಹ್ನೆಗಳನ್ನು ತೋರಿಸದ ಆರೋಗ್ಯಕರ ಸೇಬು ಎಲೆಯಾಗಿದೆ.",
+        "symptoms": [
+          "ರೋಮಾಂಚಕ ಹಸಿರು ಬಣ್ಣ",
+          "ಯಾವುದೇ ಕಲೆಗಳು ಅಥವಾ ಗಾಯಗಳಿಲ್ಲ",
+          "ಸರಿಯಾದ ಎಲೆ ರಚನೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ನಿಯಮಿತ ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಸರಿಯಾದ ಅಂತರವನ್ನು ಕಾಯ್ದುಕೊಳ್ಳಿ",
+            "ನಿಯಮಿತ ಸಮರುವಿಕೆ"
+          ]
+        },
+        "prevention": [
+          "ಉತ್ತಮ ಅಭ್ಯಾಸಗಳನ್ನು ಮುಂದುವರಿಸಿ",
+          "ನಿಯಮಿತ ತಪಾಸಣೆ"
+        ]
+      }
+    }
+  },
+  "Apple rust leaf": {
+    "name": "Apple Rust Leaf",
+    "scientific_name": "Gymnosporangium juniperi-virginianae",
+    "description": "Cedar-apple rust causes distinctive orange spots on apple leaves.",
+    "symptoms": [
+      "Bright orange spots",
+      "Tube-like projections on leaf undersides",
+      "Premature leaf drop"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove nearby cedar trees",
+        "Apply sulfur fungicides",
+        "Use neem oil"
+      ],
+      "chemical": [
+        "Apply myclobutanil",
+        "Use propiconazole"
+      ],
+      "cultural": [
+        "Plant resistant varieties",
+        "Improve air circulation"
+      ]
+    },
+    "prevention": [
+      "Choose resistant cultivars",
+      "Avoid planting near cedar"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Apple",
+      "Cedar"
+    ],
+    "translations": {
+      "hi": {
+        "name": "सेब जंग पत्ता",
+        "description": "देवदार-सेब जंग सेब के पत्तों पर विशिष्ट नारंगी धब्बे पैदा करता है।",
+        "symptoms": [
+          "चमकीले नारंगी धब्बे",
+          "पत्ती के नीचे ट्यूब जैसी संरचनाएं",
+          "समय से पहले पत्तों का गिरना"
+        ],
+        "treatment": {
+          "organic": [
+            "आस-पास के देवदार के पेड़ हटा दें",
+            "सल्फर फफूंदनाशक लगाएं",
+            "नीम के तेल का प्रयोग करें"
+          ],
+          "chemical": [
+            "माइक्लोबुटानिल लगाएं",
+            "प्रोपिकोनाज़ोल का प्रयोग करें"
+          ],
+          "cultural": [
+            "प्रतिरोधी किस्में लगाएं",
+            "वायु संचार में सुधार करें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में चुनें",
+          "देवदार के पास रोपण से बचें"
+        ]
+      },
+      "kn": {
+        "name": "ಸೇಬು ತುಕ್ಕು ಎಲೆ",
+        "description": "ದೇವದಾರು-ಸೇಬು ತುಕ್ಕು ಸೇಬು ಎಲೆಗಳ ಮೇಲೆ ವಿಶಿಷ್ಟವಾದ ಕಿತ್ತಳೆ ಚುಕ್ಕೆಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಪ್ರಕಾಶಮಾನವಾದ ಕಿತ್ತಳೆ ಚುಕ್ಕೆಗಳು",
+          "ಎಲೆಯ ಕೆಳಭಾಗದಲ್ಲಿ ಟ್ಯೂಬ್ ತರಹದ ರಚನೆಗಳು",
+          "ಅಕಾಲಿಕ ಎಲೆ ಉದುರುವಿಕೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಹತ್ತಿರದ ದೇವದಾರು ಮರಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಸಲ್ಫರ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಬೇವಿನ ಎಣ್ಣೆಯನ್ನು ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಮೈಕ್ಲೋಬುಟಾನಿಲ್ ಅನ್ವಯಿಸಿ",
+            "ಪ್ರೊಪಿಕೊನಜೋಲ್ ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+            "ಗಾಳಿಯ ಪ್ರಸರಣವನ್ನು ಸುಧಾರಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ತಳಿಗಳನ್ನು ಆರಿಸಿ",
+          "ದೇವದಾರು ಬಳಿ ನೆಡುವುದನ್ನು ತಪ್ಪಿಸಿ"
+        ]
+      }
+    }
+  },
+  "Apple Scab Leaf": {
+    "name": "Apple Scab Leaf",
+    "scientific_name": "Venturia inaequalis",
+    "description": "Apple scab is one of the most serious diseases of apple trees.",
+    "symptoms": [
+      "Olive-green to brown velvety spots",
+      "Leaves curl and fall prematurely",
+      "Scabby lesions on fruit"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur sprays",
+        "Use copper fungicides",
+        "Remove fallen leaves"
+      ],
+      "chemical": [
+        "Apply captan or mancozeb",
+        "Use myclobutanil"
+      ],
+      "cultural": [
+        "Prune for air circulation",
+        "Rake fallen leaves"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Begin preventive sprays at bud break"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Apple",
+      "Pear"
+    ],
+    "translations": {
+      "hi": {
+        "name": "सेब पपड़ी पत्ता",
+        "description": "सेब पपड़ी सेब के पेड़ों की सबसे गंभीर बीमारियों में से एक है।",
+        "symptoms": [
+          "जैतूनी-हरे से भूरे मखमली धब्बे",
+          "पत्तियां मुड़ जाती हैं और समय से पहले गिर जाती हैं",
+          "फल पर खुरदुरे घाव"
+        ],
+        "treatment": {
+          "organic": [
+            "सल्फर स्प्रे लगाएं",
+            "कॉपर फफूंदनाशक का प्रयोग करें",
+            "गिरी हुई पत्तियां हटाएं"
+          ],
+          "chemical": [
+            "कैप्टन या मैनकोज़ेब लगाएं",
+            "माइक्लोबुटानिल का प्रयोग करें"
+          ],
+          "cultural": [
+            "वायु संचार के लिए छंटाई करें",
+            "गिरी हुई पत्तियां इकट्ठी करें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "कली खिलने पर निवारक स्प्रे शुरू करें"
+        ]
+      },
+      "kn": {
+        "name": "ಸೇಬು ಹೊರೆಪದರ ಎಲೆ",
+        "description": "ಸೇಬು ಹೊರೆಪದರವು ಸೇಬು ಮರಗಳ ಅತ್ಯಂತ ಗಂಭೀರ ರೋಗಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ.",
+        "symptoms": [
+          "ಆಲಿವ್-ಹಸಿರುಯಿಂದ ಕಂದು ಬಣ್ಣದ ಮೃದುವಾದ ಚುಕ್ಕೆಗಳು",
+          "ಎಲೆಗಳು ಸುರುಳಿಯಾಗಿ ಅಕಾಲಿಕವಾಗಿ ಬೀಳುತ್ತವೆ",
+          "ಹಣ್ಣಿನ ಮೇಲೆ ಗಾಯದ ಗುರುತುಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸಲ್ಫರ್ ಸ್ಪ್ರೇಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ",
+            "ಬಿದ್ದ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ],
+          "chemical": [
+            "ಕ್ಯಾಪ್ಟನ್ ಅಥವಾ ಮ್ಯಾಂಕೋಜೆಬ್ ಅನ್ವಯಿಸಿ",
+            "ಮೈಕ್ಲೋಬುಟಾನಿಲ್ ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ಗಾಳಿಯ ಪ್ರಸರಣಕ್ಕಾಗಿ ಸಮರುವಿಕೆ ಮಾಡಿ",
+            "ಬಿದ್ದ ಎಲೆಗಳನ್ನು ಒಟ್ಟುಗೂಡಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ಮೊಗ್ಗು ಒಡೆಯುವಾಗ ತಡೆಗಟ್ಟುವ ಸ್ಪ್ರೇಗಳನ್ನು ಪ್ರಾರಂಭಿಸಿ"
+        ]
+      }
+    }
+  },
+  "Bell_pepper leaf": {
+    "name": "Healthy Bell Pepper Leaf",
+    "scientific_name": "Capsicum annuum",
+    "description": "A healthy bell pepper leaf with vibrant green coloration.",
+    "symptoms": [
+      "Deep green color",
+      "Smooth surface",
+      "No spots or discoloration"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue balanced fertilization"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper spacing",
+        "Water at base"
+      ]
+    },
+    "prevention": [
+      "Maintain healthy conditions",
+      "Regular inspection"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Bell Pepper"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ शिमला मिर्च का पत्ता",
+        "description": "चमकीले हरे रंग के साथ एक स्वस्थ शिमला मिर्च का पत्ता।",
+        "symptoms": [
+          "गहरा हरा रंग",
+          "चिकनी सतह",
+          "कोई धब्बे या मलिनकिरण नहीं"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "संतुलित निषेचन जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "उचित दूरी",
+            "आधार पर पानी दें"
+          ]
+        },
+        "prevention": [
+          "स्वस्थ स्थितियां बनाए रखें",
+          "नियमित निरीक्षण"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಬೆಲ್ ಪೆಪ್ಪರ್ ಎಲೆ",
+        "description": "ರೋಮಾಂಚಕ ಹಸಿರು ಬಣ್ಣವನ್ನು ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ಬೆಲ್ ಪೆಪ್ಪರ್ ಎಲೆ.",
+        "symptoms": [
+          "ಆಳವಾದ ಹಸಿರು ಬಣ್ಣ",
+          "ನಯವಾದ ಮೇಲ್ಮೈ",
+          "ಯಾವುದೇ ಕಲೆಗಳು ಅಥವಾ ಬಣ್ಣ ಬದಲಾವಣೆ ಇಲ್ಲ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಸಮತೋಲಿತ ಫಲೀಕರಣವನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಸರಿಯಾದ ಅಂತರ",
+            "ಮೂಲದಲ್ಲಿ ನೀರು ಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ಆರೋಗ್ಯಕರ ಪರಿಸ್ಥಿತಿಗಳನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ",
+          "ನಿಯಮಿತ ತಪಾಸಣೆ"
+        ]
+      }
+    }
+  },
+  "Bell_pepper leaf spot": {
+    "name": "Bell Pepper Leaf Spot",
+    "scientific_name": "Xanthomonas campestris pv. vesicatoria",
+    "description": "Bacterial leaf spot causes leaf drop and reduced fruit quality.",
+    "symptoms": [
+      "Small dark brown spots with yellow halos",
+      "Leaves yellow and drop",
+      "Raised spots on fruits"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper bactericides",
+        "Remove infected plants",
+        "Use hydrogen peroxide spray"
+      ],
+      "chemical": [
+        "Apply copper hydroxide",
+        "Use copper sulfate"
+      ],
+      "cultural": [
+        "Remove infected parts",
+        "Avoid overhead watering"
+      ]
+    },
+    "prevention": [
+      "Use disease-free seeds",
+      "Rotate crops 3 years minimum"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Bell pepper",
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "शिमला मिर्च पत्ती धब्बा",
+        "description": "जीवाणु पत्ती धब्बा पत्ती गिरने और फल की गुणवत्ता में कमी का कारण बनता है।",
+        "symptoms": [
+          "पीले घेरे के साथ छोटे गहरे भूरे धब्बे",
+          "पत्तियां पीली होकर गिर जाती हैं",
+          "फलों पर उभरे हुए धब्बे"
+        ],
+        "treatment": {
+          "organic": [
+            "कॉपर जीवाणुनाशक लगाएं",
+            "संक्रमित पौधे हटाएं",
+            "हाइड्रोजन पेरोक्साइड स्प्रे का प्रयोग करें"
+          ],
+          "chemical": [
+            "कॉपर हाइड्रॉक्साइड लगाएं",
+            "कॉपर सल्फेट का प्रयोग करें"
+          ],
+          "cultural": [
+            "संक्रमित हिस्से हटाएं",
+            "ऊपर से पानी देने से बचें"
+          ]
+        },
+        "prevention": [
+          "रोग मुक्त बीजों का प्रयोग करें",
+          "फसलों को न्यूनतम 3 साल तक घुमाएं"
+        ]
+      },
+      "kn": {
+        "name": "ಬೆಲ್ ಪೆಪ್ಪರ್ ಎಲೆ ಚುಕ್ಕೆ",
+        "description": "ಬ್ಯಾಕ್ಟೀರಿಯಾದ ಎಲೆ ಚುಕ್ಕೆ ಎಲೆ ಉದುರುವಿಕೆ ಮತ್ತು ಹಣ್ಣಿನ ಗುಣಮಟ್ಟವನ್ನು ಕಡಿಮೆ ಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಹಳದಿ ಸೆಳೆತವಿರುವ ಸಣ್ಣ ಕಡು ಕಂದು ಚುಕ್ಕೆಗಳು",
+          "ಎಲೆಗಳು ಹಳದಿಯಾಗಿ ಉದುರುತ್ತವೆ",
+          "ಹಣ್ಣುಗಳ ಮೇಲೆ ಉಬ್ಬಿದ ಚುಕ್ಕೆಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರದ ಬ್ಯಾಕ್ಟೀರಿಯಾನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸೋಂಕಿತ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಹೈಡ್ರೋಜನ್ ಪೆರಾಕ್ಸೈಡ್ ಸ್ಪ್ರೇ ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ತಾಮ್ರದ ಹೈಡ್ರಾಕ್ಸೈಡ್ ಅನ್ವಯಿಸಿ",
+            "ತಾಮ್ರದ ಸಲ್ಫೇಟ್ ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ಸೋಂಕಿತ ಭಾಗಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಓವರ್ಹೆಡ್ ನೀರುಹಾಕುವುದನ್ನು ತಪ್ಪಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ರೋಗಮುಕ್ತ ಬೀಜಗಳನ್ನು ಬಳಸಿ",
+          "ಕನಿಷ್ಠ 3 ವರ್ಷಗಳ ಬೆಳೆ ಸರದಿ ಮಾಡಿ"
+        ]
+      }
+    }
+  },
+  "Blueberry leaf": {
+    "name": "Healthy Blueberry Leaf",
+    "scientific_name": "Vaccinium spp.",
+    "description": "A healthy blueberry leaf with proper color.",
+    "symptoms": [
+      "Rich green color",
+      "Smooth surface",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Maintain acidic soil"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Maintain mulch",
+        "Ensure consistent moisture"
+      ]
+    },
+    "prevention": [
+      "Maintain soil acidity",
+      "Good drainage"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Blueberry"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ ब्लूबेरी पत्ता",
+        "description": "उचित रंग के साथ एक स्वस्थ ब्लूबेरी पत्ता।",
+        "symptoms": [
+          "गहरा हरा रंग",
+          "चिकनी सतह",
+          "कोई धब्बे नहीं"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "अम्लीय मिट्टी बनाए रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "पलवार बनाए रखें",
+            "लगातार नमी सुनिश्चित करें"
+          ]
+        },
+        "prevention": [
+          "मिट्टी की अम्लता बनाए रखें",
+          "अच्छी जल निकासी"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಬ್ಲೂಬೆರ್ರಿ ಎಲೆ",
+        "description": "ಸರಿಯಾದ ಬಣ್ಣವನ್ನು ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ಬ್ಲೂಬೆರ್ರಿ ಎಲೆ.",
+        "symptoms": [
+          "ಶ್ರೀಮಂತ ಹಸಿರು ಬಣ್ಣ",
+          "ನಯವಾದ ಮೇಲ್ಮೈ",
+          "ಯಾವುದೇ ಚುಕ್ಕೆಗಳಿಲ್ಲ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆಮ್ಲೀಯ ಮಣ್ಣನ್ನು ನಿರ್ವಹಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಮಲ್ಚ್ ಅನ್ನು ನಿರ್ವಹಿಸಿ",
+            "ಸ್ಥಿರವಾದ ತೇವಾಂಶವನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ"
+          ]
+        },
+        "prevention": [
+          "ಮಣ್ಣಿನ ಆಮ್ಲೀಯತೆಯನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ",
+          "ಉತ್ತಮ ಒಳಚರಂಡಿ"
+        ]
+      }
+    }
+  },
+  "Cherry leaf": {
+    "name": "Healthy Cherry Leaf",
+    "scientific_name": "Prunus avium",
+    "description": "A healthy cherry leaf with normal coloration.",
+    "symptoms": [
+      "Bright green color",
+      "No spots",
+      "Proper structure"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper pruning",
+        "Good air circulation"
+      ]
+    },
+    "prevention": [
+      "Maintain tree health",
+      "Regular monitoring"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Cherry"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ चेरी पत्ता",
+        "description": "सामान्य रंग के साथ एक स्वस्थ चेरी पत्ता।",
+        "symptoms": [
+          "चमकीला हरा रंग",
+          "कोई धब्बे नहीं",
+          "उचित संरचना"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "उचित छंटाई",
+            "अच्छा वायु संचार"
+          ]
+        },
+        "prevention": [
+          "पेड़ का स्वास्थ्य बनाए रखें",
+          "नियमित निगरानी"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಚೆರ್ರಿ ಎಲೆ",
+        "description": "ಸಾಮಾನ್ಯ ಬಣ್ಣವನ್ನು ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ಚೆರ್ರಿ ಎಲೆ.",
+        "symptoms": [
+          "ಪ್ರಕಾಶಮಾನವಾದ ಹಸಿರು ಬಣ್ಣ",
+          "ಯಾವುದೇ ಚುಕ್ಕೆಗಳಿಲ್ಲ",
+          "ಸರಿಯಾದ ರಚನೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಸರಿಯಾದ ಸಮರುವಿಕೆ",
+            "ಉತ್ತಮ ಗಾಳಿಯ ಪ್ರಸರಣ"
+          ]
+        },
+        "prevention": [
+          "ಮರದ ಆರೋಗ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ",
+          "ನಿಯಮಿತ ಮೇಲ್ವಿಚಾರಣೆ"
+        ]
+      }
+    }
+  },
+  "Corn Gray leaf spot": {
+    "name": "Corn Gray Leaf Spot",
+    "scientific_name": "Cercospora zeae-maydis",
+    "description": "Gray leaf spot causes rectangular lesions on corn leaves.",
+    "symptoms": [
+      "Rectangular gray-tan lesions",
+      "Lesions parallel to veins",
+      "Premature leaf death"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove infected leaves",
+        "Apply copper fungicides"
+      ],
+      "chemical": [
+        "Apply azoxystrobin",
+        "Use triazole fungicides"
+      ],
+      "cultural": [
+        "Plant resistant hybrids",
+        "Rotate crops"
+      ]
+    },
+    "prevention": [
+      "Choose resistant hybrids",
+      "Bury crop debris"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Corn"
+    ],
+    "translations": {
+      "hi": {
+        "name": "मक्का भूरा पत्ता धब्बा",
+        "description": "ग्रे लीफ स्पॉट मक्का पत्तियों पर आयताकार घाव पैदा करता है।",
+        "symptoms": [
+          "आयताकार भूरे-तन घाव",
+          "नसों के समानांतर घाव",
+          "समय से पहले पत्ती की मृत्यु"
+        ],
+        "treatment": {
+          "organic": [
+            "संक्रमित पत्तियां हटाएं",
+            "कॉपर फफूंदनाशक लगाएं"
+          ],
+          "chemical": [
+            "एज़ोक्सिस्ट्रोबिन लगाएं",
+            "ट्रायज़ोल फफूंदनाशक का प्रयोग करें"
+          ],
+          "cultural": [
+            "प्रतिरोधी हाइब्रिड लगाएं",
+            "फसलें घुमाएं"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी हाइब्रिड चुनें",
+          "फसल अवशेषों को दबा दें"
+        ]
+      },
+      "kn": {
+        "name": "ಜೋಳ ಬೂದು ಎಲೆ ಚುಕ್ಕೆ",
+        "description": "ಬೂದು ಎಲೆ ಚುಕ್ಕೆ ಜೋಳ ಎಲೆಗಳ ಮೇಲೆ ಆಯತಾಕಾರದ ಗಾಯಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಆಯತಾಕಾರದ ಬೂದು-ಕಂದು ಗಾಯಗಳು",
+          "ಸಿರೆಗಳಿಗೆ ಸಮಾನಾಂತರವಾದ ಗಾಯಗಳು",
+          "ಅಕಾಲಿಕ ಎಲೆ ಸಾವು"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸೋಂಕಿತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ"
+          ],
+          "chemical": [
+            "ಅಜೋಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ ಅನ್ವಯಿಸಿ",
+            "ಟ್ರಯಾಜೋಲ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ನಿರೋಧಕ ಹೈಬ್ರಿಡ್‌ಗಳನ್ನು ನೆಡಿ",
+            "ಬೆಳೆ ಸರದಿ ಮಾಡಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಹೈಬ್ರಿಡ್‌ಗಳನ್ನು ಆರಿಸಿ",
+          "ಬೆಳೆ ಅವಶೇಷಗಳನ್ನು ಹೂತುಹಾಕಿ"
+        ]
+      }
+    }
+  },
+  "Corn leaf blight": {
+    "name": "Corn Leaf Blight",
+    "scientific_name": "Exserohilum turcicum",
+    "description": "Northern corn leaf blight reduces yield significantly.",
+    "symptoms": [
+      "Long elliptical gray-green lesions",
+      "Lesions merge on leaves",
+      "Premature leaf death"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use copper fungicides"
+      ],
+      "chemical": [
+        "Apply azoxystrobin",
+        "Use propiconazole"
+      ],
+      "cultural": [
+        "Plant resistant hybrids",
+        "Bury crop residue"
+      ]
+    },
+    "prevention": [
+      "Choose resistant varieties",
+      "Crop rotation"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Corn"
+    ],
+    "translations": {
+      "hi": {
+        "name": "मक्का पत्ती अंगमारी",
+        "description": "उत्तरी मक्का पत्ती अंगमारी उपज में काफी कमी लाती है।",
+        "symptoms": [
+          "लंबे अंडाकार भूरे-हरे घाव",
+          "पत्तियों पर घावों का विलय",
+          "समय से पहले पत्ती की मृत्यु"
+        ],
+        "treatment": {
+          "organic": [
+            "सल्फर फफूंदनाशक लगाएं",
+            "कॉपर फफूंदनाशक का प्रयोग करें"
+          ],
+          "chemical": [
+            "एज़ोक्सिस्ट्रोबिन लगाएं",
+            "प्रोपिकोनाज़ोल का प्रयोग करें"
+          ],
+          "cultural": [
+            "प्रतिरोधी हाइब्रिड लगाएं",
+            "फसल अवशेषों को दबा दें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में चुनें",
+          "फसल चक्र"
+        ]
+      },
+      "kn": {
+        "name": "ಜೋಳ ಎಲೆ ರೋಗ",
+        "description": "ಉತ್ತರ ಜೋಳ ಎಲೆ ರೋಗವು ಇಳುವರಿಯಲ್ಲಿ ಗಣೀಯ ಇಳಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ.",
+        "symptoms": [
+          "ಉದ್ದವಾದ ಅಂಡಾಕಾರದ ಬೂದು-ಹಸಿರು ಗಾಯಗಳು",
+          "ಎಲೆಗಳ ಮೇಲೆ ಗಾಯಗಳು ವಿಲೀನಗೊಳ್ಳುತ್ತವೆ",
+          "ಅಕಾಲಿಕ ಎಲೆ ಸಾವು"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸಲ್ಫರ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಅಜೋಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ ಅನ್ವಯಿಸಿ",
+            "ಪ್ರೊಪಿಕೊನಜೋಲ್ ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ನಿರೋಧಕ ಹೈಬ್ರಿಡ್‌ಗಳನ್ನು ನೆಡಿ",
+            "ಬೆಳೆ ಅವಶೇಷಗಳನ್ನು ಹೂತುಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ಆರಿಸಿ",
+          "ಬೆಳೆ ಸರದಿ"
+        ]
+      }
+    }
+  },
+  "Corn rust leaf": {
+    "name": "Corn Rust Leaf",
+    "scientific_name": "Puccinia sorghi",
+    "description": "Common rust produces pustules on corn leaves.",
+    "symptoms": [
+      "Small reddish-brown pustules",
+      "Pustules on both surfaces",
+      "Yellowing"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use neem oil"
+      ],
+      "chemical": [
+        "Apply propiconazole",
+        "Use strobilurin fungicides"
+      ],
+      "cultural": [
+        "Plant resistant hybrids",
+        "Adequate spacing"
+      ]
+    },
+    "prevention": [
+      "Choose resistant varieties",
+      "Monitor regularly"
+    ],
+    "severity": "low",
+    "affected_plants": [
+      "Corn"
+    ],
+    "translations": {
+      "hi": {
+        "name": "मक्का रस्ट पत्ता",
+        "description": "सामान्य रस्ट मक्का की पत्तियों पर फुंसियां पैदा करता है।",
+        "symptoms": [
+          "छोटे लाल-भूरे फुंसियां",
+          "दोनों सतहों पर फुंसियां",
+          "पीलापन"
+        ],
+        "treatment": {
+          "organic": [
+            "सल्फर फफूंदनाशक लगाएं",
+            "नीम के तेल का प्रयोग करें"
+          ],
+          "chemical": [
+            "प्रोपिकोनाज़ोल लगाएं",
+            "स्ट्रोबिल्यूरिन फफूंदनाशक का प्रयोग करें"
+          ],
+          "cultural": [
+            "प्रतिरोधी हाइब्रिड लगाएं",
+            "पर्याप्त दूरी"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में चुनें",
+          "नियमित रूप से निगरानी करें"
+        ]
+      },
+      "kn": {
+        "name": "ಜೋಳ ತುಕ್ಕು ಎಲೆ",
+        "description": "ಸಾಮಾನ್ಯ ತುಕ್ಕು ಜೋಳದ ಎಲೆಗಳ ಮೇಲೆ ಗುಳ್ಳೆಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಸಣ್ಣ ಕೆಂಪು-ಕಂದು ಗುಳ್ಳೆಗಳು",
+          "ಎರಡೂ ಮೇಲ್ಮೈಗಳಲ್ಲಿ ಗುಳ್ಳೆಗಳು",
+          "ಹಳದಿಯಾಗುವಿಕೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸಲ್ಫರ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಬೇವಿನ ಎಣ್ಣೆಯನ್ನು ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಪ್ರೊಪಿಕೊನಜೋಲ್ ಅನ್ವಯಿಸಿ",
+            "ಸ್ಟ್ರೋಬಿಲುರಿನ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ನಿರೋಧಕ ಹೈಬ್ರಿಡ್‌ಗಳನ್ನು ನೆಡಿ",
+            "ಸಾಕಷ್ಟು ಅಂತರ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ಆರಿಸಿ",
+          "ನಿಯಮಿತವಾಗಿ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ"
+        ]
+      }
+    }
+  },
+  "grape leaf": {
+    "name": "Healthy Grape Leaf",
+    "scientific_name": "Vitis vinifera",
+    "description": "A healthy grape leaf with proper color.",
+    "symptoms": [
+      "Vibrant green",
+      "No spots",
+      "Proper lobed structure"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper training",
+        "Good air circulation"
+      ]
+    },
+    "prevention": [
+      "Maintain vine health",
+      "Regular monitoring"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Grape"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ अंगूर का पत्ता",
+        "description": "उचित रंग के साथ एक स्वस्थ अंगूर का पत्ता।",
+        "symptoms": [
+          "चमकीला हरा",
+          "कोई धब्बे नहीं",
+          "उचित लोब्ड संरचना"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "उचित प्रशिक्षण",
+            "अच्छा वायु संचार"
+          ]
+        },
+        "prevention": [
+          "बेल का स्वास्थ्य बनाए रखें",
+          "नियमित निगरानी"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ದ್ರಾಕ್ಷಿ ಎಲೆ",
+        "description": "ಸರಿಯಾದ ಬಣ್ಣವನ್ನು ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ದ್ರಾಕ್ಷಿ ಎಲೆ.",
+        "symptoms": [
+          "ರೋಮಾಂಚಕ ಹಸಿರು",
+          "ಯಾವುದೇ ಚುಕ್ಕೆಗಳಿಲ್ಲ",
+          "ಸರಿಯಾದ ಹಾಲೆಗಳ ರಚನೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಸರಿಯಾದ ತರಬೇತಿ",
+            "ಉತ್ತಮ ಗಾಳಿಯ ಪ್ರಸರಣ"
+          ]
+        },
+        "prevention": [
+          "ಬಳ್ಳಿಯ ಆರೋಗ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ",
+          "ನಿಯಮಿತ ಮೇಲ್ವಿಚಾರಣೆ"
+        ]
+      }
+    }
+  },
+  "grape leaf black rot": {
+    "name": "Grape Leaf Black Rot",
+    "scientific_name": "Guignardia bidwellii",
+    "description": "Black rot is one of the most serious grape diseases.",
+    "symptoms": [
+      "Circular reddish-brown spots",
+      "Tan centers with dark margins",
+      "Black pycnidia in centers",
+      "Berries shrivel into mummies"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Use sulfur sprays",
+        "Remove infected parts"
+      ],
+      "chemical": [
+        "Apply mancozeb",
+        "Use myclobutanil",
+        "Apply chlorothalonil"
+      ],
+      "cultural": [
+        "Prune for air circulation",
+        "Remove infected leaves"
+      ]
+    },
+    "prevention": [
+      "Remove mummified berries",
+      "Apply dormant copper sprays",
+      "Monitor weather"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Grape"
+    ],
+    "translations": {
+      "hi": {
+        "name": "अंगूर पत्ती काला सड़न",
+        "description": "काला सड़न अंगूर की सबसे गंभीर बीमारियों में से एक है।",
+        "symptoms": [
+          "गोलाकार लाल-भूरे धब्बे",
+          "काले किनारों के साथ भूरे केंद्र",
+          "केंद्रों में काले पिक्निडिया",
+          "जामुन सूखकर ममी बन जाते हैं"
+        ],
+        "treatment": {
+          "organic": [
+            "कॉपर फफूंदनाशक लगाएं",
+            "सल्फर स्प्रे का प्रयोग करें",
+            "संक्रमित हिस्से हटाएं"
+          ],
+          "chemical": [
+            "मैनकोज़ेब लगाएं",
+            "माइक्लोबुटानिल का प्रयोग करें",
+            "क्लोरोथैलोनिल लगाएं"
+          ],
+          "cultural": [
+            "वायु संचार के लिए छंटाई करें",
+            "संक्रमित पत्तियां हटाएं"
+          ]
+        },
+        "prevention": [
+          "ममी बने जामुन हटाएं",
+          "सुप्त कॉपर स्प्रे लगाएं",
+          "मौसम की निगरानी करें"
+        ]
+      },
+      "kn": {
+        "name": "ದ್ರಾಕ್ಷಿ ಎಲೆ ಕಪ್ಪು ಕೊಳೆತ",
+        "description": "ಕಪ್ಪು ಕೊಳೆತವು ದ್ರಾಕ್ಷಿಯ ಅತ್ಯಂತ ಗಂಭೀರ ರೋಗಗಳಲ್ಲಿ ಒಂದಾಗಿದೆ.",
+        "symptoms": [
+          "ವೃತ್ತಾಕಾರದ ಕೆಂಪು-ಕಂದು ಚುಕ್ಕೆಗಳು",
+          "ಕಪ್ಪು ಅಂಚುಗಳೊಂದಿಗೆ ಕಂದು ಕೇಂದ್ರಗಳು",
+          "ಕೇಂದ್ರಗಳಲ್ಲಿ ಕಪ್ಪು ಪಿಕ್ನಿಡಿಯಾ",
+          "ಹಣ್ಣುಗಳು ಒಣಗಿ ಮಮ್ಮಿಗಳಾಗುತ್ತವೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸಲ್ಫರ್ ಸ್ಪ್ರೇಗಳನ್ನು ಬಳಸಿ",
+            "ಸೋಂಕಿತ ಭಾಗಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ],
+          "chemical": [
+            "ಮ್ಯಾಂಕೋಜೆಬ್ ಅನ್ವಯಿಸಿ",
+            "ಮೈಕ್ಲೋಬುಟಾನಿಲ್ ಬಳಸಿ",
+            "ಕ್ಲೋರೊಥಾಲೋನಿಲ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ಗಾಳಿಯ ಪ್ರಸರಣಕ್ಕಾಗಿ ಸಮರುವಿಕೆ ಮಾಡಿ",
+            "ಸೋಂಕಿತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ಒಣಗಿದ ಹಣ್ಣುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+          "ಸುಪ್ತ ತಾಮ್ರದ ಸ್ಪ್ರೇಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+          "ಹವಾಮಾನವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ"
+        ]
+      }
+    }
+  },
+  "Peach leaf": {
+    "name": "Healthy Peach Leaf",
+    "scientific_name": "Prunus persica",
+    "description": "A healthy peach leaf with normal coloration.",
+    "symptoms": [
+      "Dark green color",
+      "Smooth surface",
+      "No curling"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper pruning",
+        "Remove fallen leaves"
+      ]
+    },
+    "prevention": [
+      "Maintain tree health",
+      "Regular inspection"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Peach"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ आड़ू का पत्ता",
+        "description": "सामान्य रंग के साथ एक स्वस्थ आड़ू का पत्ता।",
+        "symptoms": [
+          "गहरा हरा रंग",
+          "चिकनी सतह",
+          "कोई कर्लिंग नहीं"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "उचित छंटाई",
+            "गिरी हुई पत्तियां हटाएं"
+          ]
+        },
+        "prevention": [
+          "पेड़ का स्वास्थ्य बनाए रखें",
+          "नियमित निरीक्षण"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಪೀಚ್ ಎಲೆ",
+        "description": "ಸಾಮಾನ್ಯ ಬಣ್ಣವನ್ನು ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ಪೀಚ್ ಎಲೆ.",
+        "symptoms": [
+          "ಕಡು ಹಸಿರು ಬಣ್ಣ",
+          "ನಯವಾದ ಮೇಲ್ಮೈ",
+          "ಯಾವುದೇ ಸುರುಳಿಯಾಗಿಲ್ಲ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಸರಿಯಾದ ಸಮರುವಿಕೆ",
+            "ಬಿದ್ದ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ಮರದ ಆರೋಗ್ಯವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ",
+          "ನಿಯಮಿತ ತಪಾಸಣೆ"
+        ]
+      }
+    }
+  },
+  "Potato leaf": {
+    "name": "Healthy Potato Leaf",
+    "scientific_name": "Solanum tuberosum",
+    "description": "A healthy potato leaf with normal green color.",
+    "symptoms": [
+      "Rich green color",
+      "No spots",
+      "Proper compound structure"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Hill soil",
+        "Consistent moisture"
+      ]
+    },
+    "prevention": [
+      "Use certified seed",
+      "Crop rotation"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Potato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ आलू का पत्ता",
+        "description": "सामान्य हरे रंग के साथ एक स्वस्थ आलू का पत्ता।",
+        "symptoms": [
+          "गहरा हरा रंग",
+          "कोई धब्बे नहीं",
+          "उचित यौगिक संरचना"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "मिट्टी चढ़ाना",
+            "लगातार नमी"
+          ]
+        },
+        "prevention": [
+          "प्रमाणित बीज का प्रयोग करें",
+          "फसल चक्र"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಆಲೂಗಡ್ಡೆ ಎಲೆ",
+        "description": "ಸಾಮಾನ್ಯ ಹಸಿರು ಬಣ್ಣವನ್ನು ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ಆಲೂಗಡ್ಡೆ ಎಲೆ.",
+        "symptoms": [
+          "ಶ್ರೀಮಂತ ಹಸಿರು ಬಣ್ಣ",
+          "ಯಾವುದೇ ಚುಕ್ಕೆಗಳಿಲ್ಲ",
+          "ಸರಿಯಾದ ಸಂಯುಕ್ತ ರಚನೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಮಣ್ಣು ಏರಿಸುವುದು",
+            "ಸ್ಥಿರವಾದ ತೇವಾಂಶ"
+          ]
+        },
+        "prevention": [
+          "ಪ್ರಮಾಣೀಕೃತ ಬೀಜ ಬಳಸಿ",
+          "ಬೆಳೆ ಸರದಿ"
+        ]
+      }
+    }
+  },
+  "Potato leaf early blight": {
+    "name": "Potato Leaf Early Blight",
+    "scientific_name": "Alternaria solani",
+    "description": "Early blight causes premature defoliation in potatoes.",
+    "symptoms": [
+      "Dark brown spots with concentric rings",
+      "Yellow halo",
+      "Leaves die from bottom up"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Use sulfur",
+        "Remove infected foliage"
+      ],
+      "chemical": [
+        "Apply mancozeb",
+        "Use chlorothalonil",
+        "Apply azoxystrobin"
+      ],
+      "cultural": [
+        "Hill soil",
+        "Mulch",
+        "Space plants"
+      ]
+    },
+    "prevention": [
+      "Use certified seed",
+      "Rotate crops 3-4 years",
+      "Destroy residue"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Potato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "आलू पत्ती अगेती झुलसा",
+        "description": "अगेती झुलसा आलू में समय से पहले पत्तियां गिराने का कारण बनता है।",
+        "symptoms": [
+          "संकेंद्रित छल्लों के साथ गहरे भूरे धब्बे",
+          "पीला प्रभामंडल",
+          "पत्तियां नीचे से ऊपर की ओर मरती हैं"
+        ],
+        "treatment": {
+          "organic": [
+            "कॉपर फफूंदनाशक लगाएं",
+            "सल्फर का प्रयोग करें",
+            "संक्रमित पत्तियां हटाएं"
+          ],
+          "chemical": [
+            "मैनकोज़ेब लगाएं",
+            "क्लोरोथैलोनिल का प्रयोग करें",
+            "एज़ोक्सिस्ट्रोबिन लगाएं"
+          ],
+          "cultural": [
+            "मिट्टी चढ़ाना",
+            "पलवार",
+            "पौधों के बीच जगह रखें"
+          ]
+        },
+        "prevention": [
+          "प्रमाणित बीज का प्रयोग करें",
+          "3-4 साल तक फसलें घुमाएं",
+          "अवशेषों को नष्ट करें"
+        ]
+      },
+      "kn": {
+        "name": "ಆಲೂಗಡ್ಡೆ ಎಲೆ ಆರಂಭಿಕ ರೋಗ",
+        "description": "ಆರಂಭಿಕ ರೋಗವು ಆಲೂಗಡ್ಡೆಯಲ್ಲಿ ಅಕಾಲಿಕ ಎಲೆ ಉದುರುವಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ.",
+        "symptoms": [
+          "ಕೇಂದ್ರೀಕೃತ ಉಂಗುರಗಳೊಂದಿಗೆ ಕಡು ಕಂದು ಚುಕ್ಕೆಗಳು",
+          "ಹಳದಿ ಸೆಳೆತ",
+          "ಎಲೆಗಳು ಕೆಳಗಿನಿಂದ ಮೇಲಕ್ಕೆ ಸಾಯುತ್ತವೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸಲ್ಫರ್ ಬಳಸಿ",
+            "ಸೋಂಕಿತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ],
+          "chemical": [
+            "ಮ್ಯಾಂಕೋಜೆಬ್ ಅನ್ವಯಿಸಿ",
+            "ಕ್ಲೋರೊಥಾಲೋನಿಲ್ ಬಳಸಿ",
+            "ಅಜೋಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ಮಣ್ಣು ಏರಿಸುವುದು",
+            "ಮಲ್ಚ್",
+            "ಸಸ್ಯಗಳಿಗೆ ಜಾಗ ನೀಡಿ"
+          ]
+        },
+        "prevention": [
+          "ಪ್ರಮಾಣೀಕೃತ ಬೀಜ ಬಳಸಿ",
+          "3-4 ವರ್ಷಗಳ ಬೆಳೆ ಸರದಿ ಮಾಡಿ",
+          "ಅವಶೇಷಗಳನ್ನು ನಾಶಮಾಡಿ"
+        ]
+      }
+    }
+  },
+  "Potato leaf late blight": {
+    "name": "Potato Leaf Late Blight",
+    "scientific_name": "Phytophthora infestans",
+    "description": "Late blight is the most devastating potato disease.",
+    "symptoms": [
+      "Water-soaked spots turn brown-black",
+      "White mold on undersides",
+      "Rapid foliage death",
+      "Tuber rot"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper immediately",
+        "Remove and burn infected plants"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use metalaxyl",
+        "Apply dimethomorph"
+      ],
+      "cultural": [
+        "Destroy volunteers",
+        "Hill soil high",
+        "Avoid overhead watering"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Monitor weather",
+      "Spray before rain"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Potato",
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "आलू पत्ती पछेती झुलसा",
+        "description": "पछेती झुलसा आलू की सबसे विनाशकारी बीमारी है।",
+        "symptoms": [
+          "पानी से भीगे धब्बे भूरे-काले हो जाते हैं",
+          "नीचे की तरफ सफेद फफूंदी",
+          "तेजी से पर्ण मृत्यु",
+          "कंद सड़न"
+        ],
+        "treatment": {
+          "organic": [
+            "तुरंत कॉपर लगाएं",
+            "संक्रमित पौधों को हटा दें और जला दें"
+          ],
+          "chemical": [
+            "क्लोरोथैलोनिल लगाएं",
+            "मेटलैक्सिल का प्रयोग करें",
+            "डाइमेथोमोर्फ लगाएं"
+          ],
+          "cultural": [
+            "स्वयं उगे पौधों को नष्ट करें",
+            "मिट्टी ऊंची चढ़ाएं",
+            "ऊपर से पानी देने से बचें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "मौसम की निगरानी करें",
+          "बारिश से पहले स्प्रे करें"
+        ]
+      },
+      "kn": {
+        "name": "ಆಲೂಗಡ್ಡೆ ಎಲೆ ತಡವಾದ ರೋಗ",
+        "description": "ತಡವಾದ ರೋಗವು ಅತ್ಯಂತ ವಿನಾಶಕಾರಿ ಆಲೂಗಡ್ಡೆ ರೋಗವಾಗಿದೆ.",
+        "symptoms": [
+          "ನೀರಿನಲ್ಲಿ ನೆನೆದ ಕಲೆಗಳು ಕಂದು-ಕಪ್ಪು ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತವೆ",
+          "ಕೆಳಭಾಗದಲ್ಲಿ ಬಿಳಿ ಅಚ್ಚು",
+          "ವೇಗವಾದ ಎಲೆ ಸಾವು",
+          "ಗೆಡ್ಡೆ ಕೊಳೆತ"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರವನ್ನು ತಕ್ಷಣ ಅನ್ವಯಿಸಿ",
+            "ಸೋಂಕಿತ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದು ಸುಟ್ಟುಹಾಕಿ"
+          ],
+          "chemical": [
+            "ಕ್ಲೋರೊಥಾಲೋನಿಲ್ ಅನ್ವಯಿಸಿ",
+            "ಮೆಟಲಾಕ್ಸಿಲ್ ಬಳಸಿ",
+            "ಡೈಮೆಥೋಮಾರ್ಫ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ಸ್ವಯಂಸೇವಕ ಸಸ್ಯಗಳನ್ನು ನಾಶಮಾಡಿ",
+            "ಮಣ್ಣನ್ನು ಎತ್ತರಕ್ಕೆ ಏರಿಸಿ",
+            "ಓವರ್ಹೆಡ್ ನೀರುಹಾಕುವುದನ್ನು ತಪ್ಪಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ಹವಾಮಾನವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ",
+          "ಮಳೆಯ ಮೊದಲು ಸಿಂಪಡಿಸಿ"
+        ]
+      }
+    }
+  },
+  "Raspberry leaf": {
+    "name": "Healthy Raspberry Leaf",
+    "scientific_name": "Rubus idaeus",
+    "description": "A healthy raspberry leaf with proper color.",
+    "symptoms": [
+      "Green with silvery undersides",
+      "Compound leaves",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper pruning",
+        "Remove old canes"
+      ]
+    },
+    "prevention": [
+      "Good air circulation",
+      "Regular inspection"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Raspberry"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ रास्पबेरी पत्ता",
+        "description": "उचित रंग के साथ एक स्वस्थ रास्पबेरी पत्ता।",
+        "symptoms": [
+          "चांदी जैसे नीचे के हिस्से के साथ हरा",
+          "यौगिक पत्तियां",
+          "कोई धब्बे नहीं"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "उचित छंटाई",
+            "पुरानी टहनियां हटाएं"
+          ]
+        },
+        "prevention": [
+          "अच्छा वायु संचार",
+          "नियमित निरीक्षण"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ರಾಸ್ಪ್ಬೆರಿ ಎಲೆ",
+        "description": "ಸರಿಯಾದ ಬಣ್ಣವನ್ನು ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ರಾಸ್ಪ್ಬೆರಿ ಎಲೆ.",
+        "symptoms": [
+          "ಬೆಳ್ಳಿಯ ಕೆಳಭಾಗದೊಂದಿಗೆ ಹಸಿರು",
+          "ಸಂಯುಕ್ತ ಎಲೆಗಳು",
+          "ಯಾವುದೇ ಚುಕ್ಕೆಗಳಿಲ್ಲ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಸರಿಯಾದ ಸಮರುವಿಕೆ",
+            "ಹಳೆಯ ಕೊಂಬೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ಉತ್ತಮ ಗಾಳಿಯ ಪ್ರಸರಣ",
+          "ನಿಯಮಿತ ತಪಾಸಣೆ"
+        ]
+      }
+    }
+  },
+  "Soyabean leaf": {
+    "name": "Healthy Soybean Leaf",
+    "scientific_name": "Glycine max",
+    "description": "A healthy soybean leaf with proper trifoliate structure.",
+    "symptoms": [
+      "Dark green color",
+      "Trifoliate structure",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Proper spacing",
+        "Good weed control"
+      ]
+    },
+    "prevention": [
+      "Use quality seed",
+      "Crop rotation"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Soybean"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ सोयाबीन पत्ता",
+        "description": "उचित ट्राइफोलिएट संरचना के साथ एक स्वस्थ सोयाबीन पत्ता।",
+        "symptoms": [
+          "गहरा हरा रंग",
+          "ट्राइफोलिएट संरचना",
+          "कोई धब्बे नहीं"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "उचित दूरी",
+            "अच्छा खरपतवार नियंत्रण"
+          ]
+        },
+        "prevention": [
+          "गुणवत्ता वाले बीज का प्रयोग करें",
+          "फसल चक्र"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಸೋಯಾಬೀನ್ ಎಲೆ",
+        "description": "ಸರಿಯಾದ ಟ್ರೈಫೋಲಿಯೇಟ್ ರಚನೆಯೊಂದಿಗೆ ಆರೋಗ್ಯಕರ ಸೋಯಾಬೀನ್ ಎಲೆ.",
+        "symptoms": [
+          "ಕಡು ಹಸಿರು ಬಣ್ಣ",
+          "ಟ್ರೈಫೋಲಿಯೇಟ್ ರಚನೆ",
+          "ಯಾವುದೇ ಚುಕ್ಕೆಗಳಿಲ್ಲ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಸರಿಯಾದ ಅಂತರ",
+            "ಉತ್ತಮ ಕಳೆ ನಿಯಂತ್ರಣ"
+          ]
+        },
+        "prevention": [
+          "ಗುಣಮಟ್ಟದ ಬೀಜ ಬಳಸಿ",
+          "ಬೆಳೆ ಸರದಿ"
+        ]
+      }
+    }
+  },
+  "Squash Powdery mildew leaf": {
+    "name": "Squash Powdery Mildew",
+    "scientific_name": "Podosphaera xanthii",
+    "description": "Powdery mildew appears as white powdery spots on leaves.",
+    "symptoms": [
+      "White powdery spots",
+      "Spots merge to cover leaf",
+      "Yellowing",
+      "Premature death"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use baking soda spray",
+        "Apply neem oil",
+        "Milk spray"
+      ],
+      "chemical": [
+        "Apply myclobutanil",
+        "Use potassium bicarbonate"
+      ],
+      "cultural": [
+        "Improve air circulation",
+        "Avoid overhead watering"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Good air circulation",
+      "Water at base"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Squash",
+      "Cucumber",
+      "Pumpkin"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्क्वैश पाउडरी मिल्ड्यू",
+        "description": "पाउडरी मिल्ड्यू पत्तियों पर सफेद पाउडर जैसे धब्बों के रूप में दिखाई देता है।",
+        "symptoms": [
+          "सफेद पाउडर जैसे धब्बे",
+          "धब्बे मिलकर पत्ती को ढक लेते हैं",
+          "पीलापन",
+          "समय से पहले मृत्यु"
+        ],
+        "treatment": {
+          "organic": [
+            "सल्फर फफूंदनाशक लगाएं",
+            "बेकिंग सोडा स्प्रे का प्रयोग करें",
+            "नीम का तेल लगाएं",
+            "दूध का स्प्रे"
+          ],
+          "chemical": [
+            "माइक्लोबुटानिल लगाएं",
+            "पोटेशियम बाइकार्बोनेट का प्रयोग करें"
+          ],
+          "cultural": [
+            "वायु संचार में सुधार करें",
+            "ऊपर से पानी देने से बचें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "अच्छा वायु संचार",
+          "आधार पर पानी दें"
+        ]
+      },
+      "kn": {
+        "name": "ಕುಂಬಳಕಾಯಿ ಬೂದು ರೋಗ",
+        "description": "ಬೂದು ರೋಗವು ಎಲೆಗಳ ಮೇಲೆ ಬಿಳಿ ಪುಡಿಯಂತಹ ಚುಕ್ಕೆಗಳಾಗಿ ಕಾಣಿಸಿಕೊಳ್ಳುತ್ತದೆ.",
+        "symptoms": [
+          "ಬಿಳಿ ಪುಡಿಯಂತಹ ಚುಕ್ಕೆಗಳು",
+          "ಚುಕ್ಕೆಗಳು ವಿಲೀನಗೊಂಡು ಎಲೆಯನ್ನು ಮುಚ್ಚುತ್ತವೆ",
+          "ಹಳದಿಯಾಗುವಿಕೆ",
+          "ಅಕಾಲಿಕ ಸಾವು"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸಲ್ಫರ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಬೇಕಿಂಗ್ ಸೋಡಾ ಸ್ಪ್ರೇ ಬಳಸಿ",
+            "ಬೇವಿನ ಎಣ್ಣೆಯನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಹಾಲಿನ ಸ್ಪ್ರೇ"
+          ],
+          "chemical": [
+            "ಮೈಕ್ಲೋಬುಟಾನಿಲ್ ಅನ್ವಯಿಸಿ",
+            "ಪೊಟ್ಯಾಸಿಯಮ್ ಬೈಕಾರ್ಬನೇಟ್ ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ಗಾಳಿಯ ಪ್ರಸರಣವನ್ನು ಸುಧಾರಿಸಿ",
+            "ಓವರ್ಹೆಡ್ ನೀರುಹಾಕುವುದನ್ನು ತಪ್ಪಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ಉತ್ತಮ ಗಾಳಿಯ ಪ್ರಸರಣ",
+          "ಮೂಲದಲ್ಲಿ ನೀರು ಹಾಕಿ"
+        ]
+      }
+    }
+  },
+  "Strawberry leaf": {
+    "name": "Healthy Strawberry Leaf",
+    "scientific_name": "Fragaria × ananassa",
+    "description": "A healthy strawberry leaf with proper trifoliate structure.",
+    "symptoms": [
+      "Bright green color",
+      "Trifoliate structure",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Remove old leaves",
+        "Maintain mulch"
+      ]
+    },
+    "prevention": [
+      "Plant disease-free stock",
+      "Good air circulation"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Strawberry"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ स्ट्रॉबेरी पत्ता",
+        "description": "उचित ट्राइफोलिएट संरचना के साथ एक स्वस्थ स्ट्रॉबेरी पत्ता।",
+        "symptoms": [
+          "चमकीला हरा रंग",
+          "ट्राइफोलिएट संरचना",
+          "कोई धब्बे नहीं"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "पुरानी पत्तियां हटाएं",
+            "पलवार बनाए रखें"
+          ]
+        },
+        "prevention": [
+          "रोग मुक्त स्टॉक लगाएं",
+          "अच्छा वायु संचार"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಸ್ಟ್ರಾಬೆರಿ ಎಲೆ",
+        "description": "ಸರಿಯಾದ ಟ್ರೈಫೋಲಿಯೇಟ್ ರಚನೆಯೊಂದಿಗೆ ಆರೋಗ್ಯಕರ ಸ್ಟ್ರಾಬೆರಿ ಎಲೆ.",
+        "symptoms": [
+          "ಪ್ರಕಾಶಮಾನವಾದ ಹಸಿರು ಬಣ್ಣ",
+          "ಟ್ರೈಫೋಲಿಯೇಟ್ ರಚನೆ",
+          "ಯಾವುದೇ ಚುಕ್ಕೆಗಳಿಲ್ಲ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಹಳೆಯ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಮಲ್ಚ್ ಅನ್ನು ನಿರ್ವಹಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ರೋಗಮುಕ್ತ ಸಸಿಗಳನ್ನು ನೆಡಿ",
+          "ಉತ್ತಮ ಗಾಳಿಯ ಪ್ರಸರಣ"
+        ]
+      }
+    }
+  },
+  "Tomato Early blight leaf": {
+    "name": "Tomato Early Blight",
+    "scientific_name": "Alternaria solani",
+    "description": "Early blight causes yield loss in tomatoes.",
+    "symptoms": [
+      "Dark brown spots with concentric rings",
+      "Yellowing around spots",
+      "Leaf drop from bottom",
+      "Stem lesions"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Use compost tea",
+        "Remove infected leaves"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use mancozeb",
+        "Apply azoxystrobin"
+      ],
+      "cultural": [
+        "Mulch plants",
+        "Space adequately",
+        "Water at base"
+      ]
+    },
+    "prevention": [
+      "Disease-free transplants",
+      "Rotate crops 3 years",
+      "Remove debris"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर अगेती झुलसा पत्ता",
+        "description": "अगेती झुलसा टमाटर में उपज हानि का कारण बनता है।",
+        "symptoms": [
+          "संकेंद्रित छल्लों के साथ गहरे भूरे धब्बे",
+          "धब्बों के चारों ओर पीलापन",
+          "नीचे से पत्तों का गिरना",
+          "तने पर घाव"
+        ],
+        "treatment": {
+          "organic": [
+            "कॉपर फफूंदनाशक लगाएं",
+            "कम्पोस्ट चाय का प्रयोग करें",
+            "संक्रमित पत्तियां हटाएं"
+          ],
+          "chemical": [
+            "क्लोरोथैलोनिल लगाएं",
+            "मैनकोज़ेब का प्रयोग करें",
+            "एज़ोक्सिस्ट्रोबिन लगाएं"
+          ],
+          "cultural": [
+            "पौधों पर पलवार करें",
+            "पर्याप्त जगह दें",
+            "आधार पर पानी दें"
+          ]
+        },
+        "prevention": [
+          "रोग मुक्त रोपाई",
+          "3 साल तक फसलें घुमाएं",
+          "मलबा हटाएं"
+        ]
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಆರಂಭಿಕ ರೋಗ ಎಲೆ",
+        "description": "ಆರಂಭಿಕ ರೋಗವು ಟೊಮೇಟೊದಲ್ಲಿ ಇಳುವರಿ ನಷ್ಟವನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಕೇಂದ್ರೀಕೃತ ಉಂಗುರಗಳೊಂದಿಗೆ ಕಡು ಕಂದು ಚುಕ್ಕೆಗಳು",
+          "ಚುಕ್ಕೆಗಳ ಸುತ್ತ ಹಳದಿಯಾಗುವುದು",
+          "ಕೆಳಗಿನಿಂದ ಎಲೆ ಉದುರುವುದು",
+          "ಕಾಂಡದ ಗಾಯಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಕಾಂಪೋಸ್ಟ್ ಟೀ ಬಳಸಿ",
+            "ಸೋಂಕಿತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ],
+          "chemical": [
+            "ಕ್ಲೋರೊಥಾಲೋನಿಲ್ ಅನ್ವಯಿಸಿ",
+            "ಮ್ಯಾಂಕೋಜೆಬ್ ಬಳಸಿ",
+            "ಅಜೋಕ್ಸಿಸ್ಟ್ರೋಬಿನ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ಸಸ್ಯಗಳಿಗೆ ಮಲ್ಚ್ ಮಾಡಿ",
+            "ಸಾಕಷ್ಟು ಅಂತರ ನೀಡಿ",
+            "ಮೂಲದಲ್ಲಿ ನೀರು ಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ರೋಗಮುಕ್ತ ಸಸಿಗಳು",
+          "3 ವರ್ಷಗಳ ಬೆಳೆ ಸರದಿ ಮಾಡಿ",
+          "ಅವಶೇಷಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+        ]
+      }
+    }
+  },
+  "Tomato leaf": {
+    "name": "Healthy Tomato Leaf",
+    "scientific_name": "Solanum lycopersicum",
+    "description": "A healthy tomato leaf with normal green color.",
+    "symptoms": [
+      "Rich green color",
+      "Compound leaves",
+      "No spots"
+    ],
+    "treatment": {
+      "organic": [
+        "No treatment needed",
+        "Continue care"
+      ],
+      "chemical": [
+        "No chemical treatment required"
+      ],
+      "cultural": [
+        "Stake and prune",
+        "Water at base"
+      ]
+    },
+    "prevention": [
+      "Use disease-free transplants",
+      "Crop rotation"
+    ],
+    "severity": "none",
+    "affected_plants": [
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "स्वस्थ टमाटर का पत्ता",
+        "description": "सामान्य हरे रंग के साथ एक स्वस्थ टमाटर का पत्ता।",
+        "symptoms": [
+          "गहरा हरा रंग",
+          "यौगिक पत्तियां",
+          "कोई धब्बे नहीं"
+        ],
+        "treatment": {
+          "organic": [
+            "कोई उपचार आवश्यक नहीं",
+            "देखभाल जारी रखें"
+          ],
+          "chemical": [
+            "कोई रासायनिक उपचार आवश्यक नहीं"
+          ],
+          "cultural": [
+            "सहारा दें और छंटाई करें",
+            "आधार पर पानी दें"
+          ]
+        },
+        "prevention": [
+          "रोग मुक्त रोपाई का प्रयोग करें",
+          "फसल चक्र"
+        ]
+      },
+      "kn": {
+        "name": "ಆರೋಗ್ಯಕರ ಟೊಮೇಟೊ ಎಲೆ",
+        "description": "ಸಾಮಾನ್ಯ ಹಸಿರು ಬಣ್ಣವನ್ನು ಹೊಂದಿರುವ ಆರೋಗ್ಯಕರ ಟೊಮೇಟೊ ಎಲೆ.",
+        "symptoms": [
+          "ಶ್ರೀಮಂತ ಹಸಿರು ಬಣ್ಣ",
+          "ಸಂಯುಕ್ತ ಎಲೆಗಳು",
+          "ಯಾವುದೇ ಚುಕ್ಕೆಗಳಿಲ್ಲ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ",
+            "ಆರೈಕೆಯನ್ನು ಮುಂದುವರಿಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಅಗತ್ಯವಿಲ್ಲ"
+          ],
+          "cultural": [
+            "ಕೋಲು ನೆಡಿ ಮತ್ತು ಸಮರುವಿಕೆ ಮಾಡಿ",
+            "ಮೂಲದಲ್ಲಿ ನೀರು ಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ರೋಗಮುಕ್ತ ಸಸಿಗಳನ್ನು ಬಳಸಿ",
+          "ಬೆಳೆ ಸರದಿ"
+        ]
+      }
+    }
+  },
+  "Tomato leaf bacterial spot": {
+    "name": "Tomato Bacterial Spot",
+    "scientific_name": "Xanthomonas spp.",
+    "description": "Bacterial spot affects leaves, stems, and fruits.",
+    "symptoms": [
+      "Small dark brown spots with yellow halos",
+      "Greasy appearance",
+      "Leaves yellow and drop",
+      "Raised fruit spots"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper bactericides",
+        "Remove infected plants",
+        "Use hydrogen peroxide"
+      ],
+      "chemical": [
+        "Apply copper hydroxide",
+        "Use copper sulfate",
+        "Apply streptomycin"
+      ],
+      "cultural": [
+        "Remove infected parts",
+        "Avoid overhead watering",
+        "Disinfect tools"
+      ]
+    },
+    "prevention": [
+      "Disease-free seeds",
+      "Plant resistant varieties",
+      "3-year rotation"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato",
+      "Pepper"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर पत्ती बैक्टीरियल धब्बा",
+        "description": "बैक्टीरियल धब्बा पत्तियों, तनों और फलों को प्रभावित करता है।",
+        "symptoms": [
+          "पीले घेरे के साथ छोटे गहरे भूरे धब्बे",
+          "चिकना दिखना",
+          "पत्तियां पीली होकर गिर जाती हैं",
+          "फलों पर उभरे हुए धब्बे"
+        ],
+        "treatment": {
+          "organic": [
+            "कॉपर जीवाणुनाशक लगाएं",
+            "संक्रमित पौधे हटाएं",
+            "हाइड्रोजन पेरोक्साइड का प्रयोग करें"
+          ],
+          "chemical": [
+            "कॉपर हाइड्रॉक्साइड लगाएं",
+            "कॉपर सल्फेट का प्रयोग करें",
+            "स्ट्रेप्टोमाइसिन लगाएं"
+          ],
+          "cultural": [
+            "संक्रमित हिस्से हटाएं",
+            "ऊपर से पानी देने से बचें",
+            "उपकरणों को कीटाणुरहित करें"
+          ]
+        },
+        "prevention": [
+          "रोग मुक्त बीज",
+          "प्रतिरोधी किस्में लगाएं",
+          "3-वर्षीय चक्र"
+        ]
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಎಲೆ ಬ್ಯಾಕ್ಟೀರಿಯಾ ಚುಕ್ಕೆ",
+        "description": "ಬ್ಯಾಕ್ಟೀರಿಯಾ ಚುಕ್ಕೆ ಎಲೆಗಳು, ಕಾಂಡಗಳು ಮತ್ತು ಹಣ್ಣುಗಳ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.",
+        "symptoms": [
+          "ಹಳದಿ ಸೆಳೆತವಿರುವ ಸಣ್ಣ ಕಡು ಕಂದು ಚುಕ್ಕೆಗಳು",
+          "ಜಿಡ್ಡಿನ ನೋಟ",
+          "ಎಲೆಗಳು ಹಳದಿಯಾಗಿ ಉದುರುತ್ತವೆ",
+          "ಹಣ್ಣಿನ ಮೇಲೆ ಉಬ್ಬಿದ ಚುಕ್ಕೆಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರದ ಬ್ಯಾಕ್ಟೀರಿಯಾನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸೋಂಕಿತ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಹೈಡ್ರೋಜನ್ ಪೆರಾಕ್ಸೈಡ್ ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ತಾಮ್ರದ ಹೈಡ್ರಾಕ್ಸೈಡ್ ಅನ್ವಯಿಸಿ",
+            "ತಾಮ್ರದ ಸಲ್ಫೇಟ್ ಬಳಸಿ",
+            "ಸ್ಟ್ರೆಪ್ಟೊಮೈಸಿನ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ಸೋಂಕಿತ ಭಾಗಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಓವರ್ಹೆಡ್ ನೀರುಹಾಕುವುದನ್ನು ತಪ್ಪಿಸಿ",
+            "ಉಪಕರಣಗಳನ್ನು ಸೋಂಕುರಹಿತಗೊಳಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ರೋಗಮುಕ್ತ ಬೀಜಗಳು",
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "3-ವರ್ಷದ ಸರದಿ"
+        ]
+      }
+    }
+  },
+  "Tomato leaf late blight": {
+    "name": "Tomato Late Blight",
+    "scientific_name": "Phytophthora infestans",
+    "description": "Late blight can rapidly destroy entire tomato crops.",
+    "symptoms": [
+      "Dark brown to purplish-black spots",
+      "White fuzzy growth on undersides",
+      "Rapid yellowing and death",
+      "Dark fruit spots"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Remove infected parts immediately",
+        "Use baking soda spray"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use mancozeb",
+        "Apply metalaxyl"
+      ],
+      "cultural": [
+        "Improve air circulation",
+        "Water at base",
+        "Remove weeds"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Avoid planting near potatoes",
+      "Apply mulch",
+      "Monitor weather"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Tomato",
+      "Potato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर पछेती झुलसा",
+        "description": "पछेती झुलसा टमाटर की पूरी फसल को तेजी से नष्ट कर सकता है।",
+        "symptoms": [
+          "गहरे भूरे से बैंगनी-काले धब्बे",
+          "नीचे की तरफ सफेद रोयेंदार वृद्धि",
+          "तेजी से पीलापन और मृत्यु",
+          "फलों पर गहरे धब्बे"
+        ],
+        "treatment": {
+          "organic": [
+            "कॉपर फफूंदनाशक लगाएं",
+            "संक्रमित हिस्सों को तुरंत हटाएं",
+            "बेकिंग सोडा स्प्रे का प्रयोग करें"
+          ],
+          "chemical": [
+            "क्लोरोथैलोनिल लगाएं",
+            "मैनकोज़ेब का प्रयोग करें",
+            "मेटलैक्सिल लगाएं"
+          ],
+          "cultural": [
+            "वायु संचार में सुधार करें",
+            "आधार पर पानी दें",
+            "खरपतवार हटाएं"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "आलू के पास रोपण से बचें",
+          "पलवार लगाएं",
+          "मौसम की निगरानी करें"
+        ]
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ತಡವಾದ ರೋಗ",
+        "description": "ತಡವಾದ ರೋಗವು ಸಂಪೂರ್ಣ ಟೊಮೇಟೊ ಬೆಳೆಗಳನ್ನು ವೇಗವಾಗಿ ನಾಶಪಡಿಸುತ್ತದೆ.",
+        "symptoms": [
+          "ಕಡು ಕಂದು ಬಣ್ಣದಿಂದ ನೇರಳೆ-ಕಪ್ಪು ಚುಕ್ಕೆಗಳು",
+          "ಕೆಳಭಾಗದಲ್ಲಿ ಬಿಳಿ ಮೃದುವಾದ ಬೆಳವಣಿಗೆ",
+          "ವೇಗವಾಗಿ ಹಳದಿಯಾಗುವುದು ಮತ್ತು ಸಾಯುವುದು",
+          "ಹಣ್ಣಿನ ಮೇಲೆ ಕಪ್ಪು ಚುಕ್ಕೆಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸೋಂಕಿತ ಭಾಗಗಳನ್ನು ತಕ್ಷಣ ತೆಗೆದುಹಾಕಿ",
+            "ಬೇಕಿಂಗ್ ಸೋಡಾ ಸ್ಪ್ರೇ ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಕ್ಲೋರೊಥಾಲೋನಿಲ್ ಅನ್ವಯಿಸಿ",
+            "ಮ್ಯಾಂಕೋಜೆಬ್ ಬಳಸಿ",
+            "ಮೆಟಲಾಕ್ಸಿಲ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ಗಾಳಿಯ ಪ್ರಸರಣವನ್ನು ಸುಧಾರಿಸಿ",
+            "ಮೂಲದಲ್ಲಿ ನೀರು ಹಾಕಿ",
+            "ಕಳೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ಆಲೂಗಡ್ಡೆ ಬಳಿ ನೆಡುವುದನ್ನು ತಪ್ಪಿಸಿ",
+          "ಮಲ್ಚ್ ಅನ್ವಯಿಸಿ",
+          "ಹವಾಮಾನವನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ"
+        ]
+      }
+    }
+  },
+  "Tomato leaf mosaic virus": {
+    "name": "Tomato Mosaic Virus",
+    "scientific_name": "Tomato mosaic virus (ToMV)",
+    "description": "Tomato mosaic virus causes mottled patterns on leaves.",
+    "symptoms": [
+      "Mottled light and dark green pattern",
+      "Distorted fernlike leaves",
+      "Stunted growth",
+      "Yellow fruit streaking"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove infected plants immediately",
+        "Disinfect tools with bleach",
+        "Wash hands",
+        "No cure available"
+      ],
+      "chemical": [
+        "No chemical treatment for viruses",
+        "Control aphid vectors"
+      ],
+      "cultural": [
+        "Remove infected plants",
+        "Disinfect equipment",
+        "Control insects"
+      ]
+    },
+    "prevention": [
+      "Use virus-free seeds",
+      "Plant resistant varieties",
+      "Wash hands",
+      "Disinfect tools"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Tomato",
+      "Pepper"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर पत्ती मोज़ेक वायरस",
+        "description": "टमाटर मोज़ेक वायरस पत्तियों पर धब्बेदार पैटर्न का कारण बनता है।",
+        "symptoms": [
+          "हल्के और गहरे हरे रंग का धब्बेदार पैटर्न",
+          "विकृत पर्ण जैसी पत्तियां",
+          "रुका हुआ विकास",
+          "फलों पर पीली धारियां"
+        ],
+        "treatment": {
+          "organic": [
+            "संक्रमित पौधों को तुरंत हटाएं",
+            "उपकरणों को ब्लीच से कीटाणुरहित करें",
+            "हाथ धोएं",
+            "कोई इलाज उपलब्ध नहीं"
+          ],
+          "chemical": [
+            "वायरस के लिए कोई रासायनिक उपचार नहीं",
+            "एफिड वैक्टर को नियंत्रित करें"
+          ],
+          "cultural": [
+            "संक्रमित पौधे हटाएं",
+            "उपकरणों को कीटाणुरहित करें",
+            "कीटों को नियंत्रित करें"
+          ]
+        },
+        "prevention": [
+          "वायरस मुक्त बीजों का प्रयोग करें",
+          "प्रतिरोधी किस्में लगाएं",
+          "हाथ धोएं",
+          "उपकरणों को कीटाणुरहित करें"
+        ]
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಎಲೆ ಮೊಸಾಯಿಕ್ ವೈರಸ್",
+        "description": "ಟೊಮೇಟೊ ಮೊಸಾಯಿಕ್ ವೈರಸ್ ಎಲೆಗಳ ಮೇಲೆ ಮೊಸಾಯಿಕ್ ಮಾದರಿಯನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಮಚ್ಚೆಯುಳ್ಳ ತಿಳಿ ಮತ್ತು ಕಡು ಹಸಿರು ಮಾದರಿ",
+          "ವಿಕೃತಗೊಂಡ ಫರ್ನ್ ತರಹದ ಎಲೆಗಳು",
+          "ಕುಂಠಿತ ಬೆಳವಣಿಗೆ",
+          "ಹಣ್ಣಿನ ಮೇಲೆ ಹಳದಿ ಗೆರೆಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸೋಂಕಿತ ಸಸ್ಯಗಳನ್ನು ತಕ್ಷಣ ತೆಗೆದುಹಾಕಿ",
+            "ಉಪಕರಣಗಳನ್ನು ಬ್ಲೀಚ್‌ನಿಂದ ಸೋಂಕುರಹಿತಗೊಳಿಸಿ",
+            "ಕೈ ತೊಳೆಯಿರಿ",
+            "ಯಾವುದೇ ಚಿಕಿತ್ಸೆ ಲಭ್ಯವಿಲ್ಲ"
+          ],
+          "chemical": [
+            "ವೈರಸ್‌ಗಳಿಗೆ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಇಲ್ಲ",
+            "ಏಫಿಡ್ ವಾಹಕಗಳನ್ನು ನಿಯಂತ್ರಿಸಿ"
+          ],
+          "cultural": [
+            "ಸೋಂಕಿತ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಉಪಕರಣಗಳನ್ನು ಸೋಂಕುರಹಿತಗೊಳಿಸಿ",
+            "ಕೀಟಗಳನ್ನು ನಿಯಂತ್ರಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ವೈರಸ್-ಮುಕ್ತ ಬೀಜಗಳನ್ನು ಬಳಸಿ",
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ಕೈ ತೊಳೆಯಿರಿ",
+          "ಉಪಕರಣಗಳನ್ನು ಸೋಂಕುರಹಿತಗೊಳಿಸಿ"
+        ]
+      }
+    }
+  },
+  "Tomato leaf yellow virus": {
+    "name": "Tomato Yellow Leaf Curl Virus",
+    "scientific_name": "Tomato yellow leaf curl virus (TYLCV)",
+    "description": "TYLCV transmitted by whiteflies causes severe yellowing.",
+    "symptoms": [
+      "Upward curling leaf margins",
+      "Yellowing leaf edges",
+      "Severely stunted growth",
+      "Reduced flowering"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove infected plants",
+        "Control whiteflies with neem oil",
+        "Use yellow sticky traps"
+      ],
+      "chemical": [
+        "No chemical cure",
+        "Apply imidacloprid for whiteflies"
+      ],
+      "cultural": [
+        "Use reflective mulches",
+        "Remove infected plants",
+        "Install insect screening"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Control whiteflies",
+      "Use insect netting",
+      "Remove weeds"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Tomato",
+      "Bean",
+      "Pepper"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर येलो लीफ कर्ल वायरस",
+        "description": "सफेद मक्खियों द्वारा प्रेषित TYLCV गंभीर पीलापन का कारण बनता है।",
+        "symptoms": [
+          "पत्ती के किनारे ऊपर की ओर मुड़ना",
+          "पत्ती के किनारों का पीला पड़ना",
+          "गंभीर रूप से रुका हुआ विकास",
+          "फूलों में कमी"
+        ],
+        "treatment": {
+          "organic": [
+            "संक्रमित पौधे हटाएं",
+            "नीम के तेल से सफेद मक्खियों को नियंत्रित करें",
+            "पीले चिपचिपे जाल का प्रयोग करें"
+          ],
+          "chemical": [
+            "कोई रासायनिक इलाज नहीं",
+            "सफेद मक्खियों के लिए इमिडाक्लोप्रिड लगाएं"
+          ],
+          "cultural": [
+            "चिंतनशील पलवार का प्रयोग करें",
+            "संक्रमित पौधे हटाएं",
+            "कीट स्क्रीनिंग स्थापित करें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "सफेद मक्खियों को नियंत्रित करें",
+          "कीट जाली का प्रयोग करें",
+          "खरपतवार हटाएं"
+        ]
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಹಳದಿ ಎಲೆ ಸುರುಳಿ ವೈರಸ್",
+        "description": "ಬಿಳಿನೊಣಗಳಿಂದ ಹರಡುವ TYLCV ತೀವ್ರ ಹಳದಿಯಾಗುವಿಕೆಗೆ ಕಾರಣವಾಗುತ್ತದೆ.",
+        "symptoms": [
+          "ಎಲೆಗಳ ಅಂಚುಗಳು ಮೇಲಕ್ಕೆ ಸುರುಳಿಯಾಗುವುದು",
+          "ಎಲೆಗಳ ಅಂಚುಗಳು ಹಳದಿಯಾಗುವುದು",
+          "ತೀವ್ರವಾಗಿ ಕುಂಠಿತಗೊಂಡ ಬೆಳವಣಿಗೆ",
+          "ಕಡಿಮೆ ಹೂಬಿಡುವಿಕೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸೋಂಕಿತ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಬೇವಿನ ಎಣ್ಣೆಯಿಂದ ಬಿಳಿನೊಣಗಳನ್ನು ನಿಯಂತ್ರಿಸಿ",
+            "ಹಳದಿ ಜಿಗುಟಾದ ಬಲೆಗಳನ್ನು ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಯಾವುದೇ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಇಲ್ಲ",
+            "ಬಿಳಿನೊಣಗಳಿಗಾಗಿ ಇಮಿಡಾಕ್ಲೋಪ್ರಿಡ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ಪ್ರತಿಫಲಿತ ಮಲ್ಚ್‌ಗಳನ್ನು ಬಳಸಿ",
+            "ಸೋಂಕಿತ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಕೀಟ ಪರದೆಯನ್ನು ಸ್ಥಾಪಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ಬಿಳಿನೊಣಗಳನ್ನು ನಿಯಂತ್ರಿಸಿ",
+          "ಕೀಟ ಬಲೆಯನ್ನು ಬಳಸಿ",
+          "ಕಳೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+        ]
+      }
+    }
+  },
+  "Tomato mold leaf": {
+    "name": "Tomato Leaf Mold",
+    "scientific_name": "Passalora fulva",
+    "description": "Leaf mold primarily affects greenhouse tomatoes.",
+    "symptoms": [
+      "Pale yellow spots on upper surface",
+      "Olive-green fuzzy mold on undersides",
+      "Spots turn brown",
+      "Leaves wilt"
+    ],
+    "treatment": {
+      "organic": [
+        "Improve air circulation",
+        "Apply copper fungicides",
+        "Use sulfur"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use mancozeb"
+      ],
+      "cultural": [
+        "Reduce humidity below 85%",
+        "Increase ventilation",
+        "Space plants"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Maintain low humidity",
+      "Good ventilation"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर पत्ती फफूंदी",
+        "description": "पत्ती फफूंदी मुख्य रूप से ग्रीनहाउस टमाटर को प्रभावित करती है।",
+        "symptoms": [
+          "ऊपरी सतह पर हल्के पीले धब्बे",
+          "नीचे की तरफ जैतूनी-हरी रोयेंदार फफूंदी",
+          "धब्बे भूरे हो जाते हैं",
+          "पत्तियां मुरझा जाती हैं"
+        ],
+        "treatment": {
+          "organic": [
+            "वायु संचार में सुधार करें",
+            "कॉपर फफूंदनाशक लगाएं",
+            "सल्फर का प्रयोग करें"
+          ],
+          "chemical": [
+            "क्लोरोथैलोनिल लगाएं",
+            "मैनकोज़ेब का प्रयोग करें"
+          ],
+          "cultural": [
+            "आर्द्रता 85% से नीचे कम करें",
+            "वेंटिलेशन बढ़ाएं",
+            "पौधों के बीच जगह रखें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "कम आर्द्रता बनाए रखें",
+          "अच्छा वेंटिलेशन"
+        ]
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಎಲೆ ಅಚ್ಚು",
+        "description": "ಎಲೆ ಅಚ್ಚು ಮುಖ್ಯವಾಗಿ ಹಸಿರುಮನೆ ಟೊಮೇಟೊಗಳ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ.",
+        "symptoms": [
+          "ಮೇಲ್ಮೈಯಲ್ಲಿ ತಿಳಿ ಹಳದಿ ಚುಕ್ಕೆಗಳು",
+          "ಕೆಳಭಾಗದಲ್ಲಿ ಆಲಿವ್-ಹಸಿರು ಮೃದುವಾದ ಅಚ್ಚು",
+          "ಚುಕ್ಕೆಗಳು ಕಂದು ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತವೆ",
+          "ಎಲೆಗಳು ಬಾಡುತ್ತವೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಗಾಳಿಯ ಪ್ರಸರಣವನ್ನು ಸುಧಾರಿಸಿ",
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸಲ್ಫರ್ ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಕ್ಲೋರೊಥಾಲೋನಿಲ್ ಅನ್ವಯಿಸಿ",
+            "ಮ್ಯಾಂಕೋಜೆಬ್ ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ತೇವಾಂಶವನ್ನು 85% ಕ್ಕಿಂತ ಕಡಿಮೆ ಮಾಡಿ",
+            "ವಾತಾಯನವನ್ನು ಹೆಚ್ಚಿಸಿ",
+            "ಸಸ್ಯಗಳಿಗೆ ಜಾಗ ನೀಡಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ಕಡಿಮೆ ತೇವಾಂಶವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ",
+          "ಉತ್ತಮ ವಾತಾಯನ"
+        ]
+      }
+    }
+  },
+  "Tomato Septoria leaf spot": {
+    "name": "Tomato Septoria Leaf Spot",
+    "scientific_name": "Septoria lycopersici",
+    "description": "Septoria leaf spot causes numerous small spots on leaves.",
+    "symptoms": [
+      "Small circular spots with dark borders",
+      "Gray centers with black specks",
+      "Spots start on lower leaves",
+      "Premature leaf drop"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Remove infected leaves",
+        "Use sulfur"
+      ],
+      "chemical": [
+        "Apply chlorothalonil",
+        "Use mancozeb"
+      ],
+      "cultural": [
+        "Mulch to prevent splash",
+        "Remove lower leaves",
+        "Stake plants"
+      ]
+    },
+    "prevention": [
+      "Disease-free transplants",
+      "Rotate crops 3 years",
+      "Remove debris"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato"
+    ],
+    "translations": {
+      "hi": {
+        "name": "टमाटर सेप्टोरिया पत्ती धब्बा",
+        "description": "सेप्टोरिया लीफ स्पॉट पत्तियों पर कई छोटे धब्बों का कारण बनता है।",
+        "symptoms": [
+          "काले किनारों के साथ छोटे गोलाकार धब्बे",
+          "काले धब्बों के साथ भूरे केंद्र",
+          "धब्बे निचली पत्तियों पर शुरू होते हैं",
+          "समय से पहले पत्तों का गिरना"
+        ],
+        "treatment": {
+          "organic": [
+            "कॉपर फफूंदनाशक लगाएं",
+            "संक्रमित पत्तियां हटाएं",
+            "सल्फर का प्रयोग करें"
+          ],
+          "chemical": [
+            "क्लोरोथैलोनिल लगाएं",
+            "मैनकोज़ेब का प्रयोग करें"
+          ],
+          "cultural": [
+            "छींटों को रोकने के लिए पलवार करें",
+            "निचली पत्तियां हटाएं",
+            "पौधों को सहारा दें"
+          ]
+        },
+        "prevention": [
+          "रोग मुक्त रोपाई",
+          "3 साल तक फसलें घुमाएं",
+          "मलबा हटाएं"
+        ]
+      },
+      "kn": {
+        "name": "ಟೊಮೇಟೊ ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಚುಕ್ಕೆ",
+        "description": "ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಚುಕ್ಕೆ ಎಲೆಗಳ ಮೇಲೆ ಹಲವಾರು ಸಣ್ಣ ಚುಕ್ಕೆಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಕಪ್ಪು ಅಂಚುಗಳೊಂದಿಗೆ ಸಣ್ಣ ವೃತ್ತಾಕಾರದ ಚುಕ್ಕೆಗಳು",
+          "ಕಪ್ಪು ಚುಕ್ಕೆಗಳೊಂದಿಗೆ ಬೂದು ಕೇಂದ್ರಗಳು",
+          "ಕೆಳಗಿನ ಎಲೆಗಳಲ್ಲಿ ಚುಕ್ಕೆಗಳು ಪ್ರಾರಂಭವಾಗುತ್ತವೆ",
+          "ಅಕಾಲಿಕ ಎಲೆ ಉದುರುವಿಕೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸೋಂಕಿತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಸಲ್ಫರ್ ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಕ್ಲೋರೊಥಾಲೋನಿಲ್ ಅನ್ವಯಿಸಿ",
+            "ಮ್ಯಾಂಕೋಜೆಬ್ ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ನೀರು ಸಿಡಿಯುವುದನ್ನು ತಡೆಯಲು ಮಲ್ಚ್ ಮಾಡಿ",
+            "ಕೆಳಗಿನ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಸಸ್ಯಗಳಿಗೆ ಕೋಲು ನೆಡಿ"
+          ]
+        },
+        "prevention": [
+          "ರೋಗಮುಕ್ತ ಸಸಿಗಳು",
+          "3 ವರ್ಷಗಳ ಬೆಳೆ ಸರದಿ ಮಾಡಿ",
+          "ಅವಶೇಷಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+        ]
+      }
+    }
+  },
+  "Tomato two spotted spider mites leaf": {
+    "name": "Two Spotted Spider Mites",
+    "scientific_name": "Tetranychus urticae",
+    "description": "Spider mites feed on plant sap causing stippling.",
+    "symptoms": [
+      "Fine yellow speckling",
+      "Fine webbing on undersides",
+      "Leaves turn bronze",
+      "Premature leaf drop"
+    ],
+    "treatment": {
+      "organic": [
+        "Spray with strong water",
+        "Apply neem oil",
+        "Use predatory mites",
+        "Apply horticultural oil"
+      ],
+      "chemical": [
+        "Apply abamectin",
+        "Use bifenthrin",
+        "Apply miticides"
+      ],
+      "cultural": [
+        "Increase humidity",
+        "Remove infested leaves",
+        "Avoid drought stress"
+      ]
+    },
+    "prevention": [
+      "Monitor regularly",
+      "Maintain moisture",
+      "Avoid excessive nitrogen"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Tomato",
+      "Bean",
+      "Cucumber"
+    ],
+    "translations": {
+      "hi": {
+        "name": "दो धब्बेदार मकड़ी के कीड़े",
+        "description": "मकड़ी के कीड़े पौधे का रस चूसते हैं, जिससे धब्बे पड़ते हैं।",
+        "symptoms": [
+          "बारीक पीले धब्बे",
+          "नीचे की तरफ बारीक जाला",
+          "पत्तियां कांस्य रंग की हो जाती हैं",
+          "समय से पहले पत्तों का गिरना"
+        ],
+        "treatment": {
+          "organic": [
+            "तेज पानी से स्प्रे करें",
+            "नीम का तेल लगाएं",
+            "शिकारी माइट्स का प्रयोग करें",
+            "बागवानी तेल लगाएं"
+          ],
+          "chemical": [
+            "एबाamectin लगाएं",
+            "बिफेंथ्रिन का प्रयोग करें",
+            "माइटिसाइड्स लगाएं"
+          ],
+          "cultural": [
+            "आर्द्रता बढ़ाएं",
+            "संक्रमित पत्तियां हटाएं",
+            "सूखे के तनाव से बचें"
+          ]
+        },
+        "prevention": [
+          "नियमित रूप से निगरानी करें",
+          "नमी बनाए रखें",
+          "अत्यधिक नाइट्रोजन से बचें"
+        ]
+      },
+      "kn": {
+        "name": "ಎರಡು ಚುಕ್ಕೆಯ ಜೇಡ ಹುಳುಗಳು",
+        "description": "ಜೇಡ ಹುಳುಗಳು ಸಸ್ಯದ ರಸವನ್ನು ತಿನ್ನುತ್ತವೆ, ಇದರಿಂದ ಚುಕ್ಕೆಗಳು ಉಂಟಾಗುತ್ತವೆ.",
+        "symptoms": [
+          "ಸೂಕ್ಷ್ಮ ಹಳದಿ ಚುಕ್ಕೆಗಳು",
+          "ಕೆಳಭಾಗದಲ್ಲಿ ಸೂಕ್ಷ್ಮ ಜಾಲ",
+          "ಎಲೆಗಳು ಕಂಚಿನ ಬಣ್ಣಕ್ಕೆ ತಿರುಗುತ್ತವೆ",
+          "ಅಕಾಲಿಕ ಎಲೆ ಉದುರುವಿಕೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಬಲವಾದ ನೀರಿನಿಂದ ಸಿಂಪಡಿಸಿ",
+            "ಬೇವಿನ ಎಣ್ಣೆಯನ್ನು ಅನ್ವಯಿಸಿ",
+            " ಪರಭಕ್ಷಕ ಹುಳುಗಳನ್ನು ಬಳಸಿ",
+            "ತೋಟಗಾರಿಕಾ ತೈಲವನ್ನು ಅನ್ವಯಿಸಿ"
+          ],
+          "chemical": [
+            "ಅಬಾಮೆಕ್ಟಿನ್ ಅನ್ವಯಿಸಿ",
+            "ಬೈಫೆಂಥ್ರಿನ್ ಬಳಸಿ",
+            "ಮೈಟಿಸೈಡ್‌ಗಳನ್ನು ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ತೇವಾಂಶವನ್ನು ಹೆಚ್ಚಿಸಿ",
+            "ಸೋಂಕಿತ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ಬರಗಾಲದ ಒತ್ತಡವನ್ನು ತಪ್ಪಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿಯಮಿತವಾಗಿ ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ",
+          "ತೇವಾಂಶವನ್ನು ಕಾಪಾಡಿಕೊಳ್ಳಿ",
+          "ಅತಿಯಾದ ಸಾರಜನಕವನ್ನು ತಪ್ಪಿಸಿ"
+        ]
+      }
+    }
+  },
+  "Bacterial_Blight": {
+    "name": "Bacterial Blight",
+    "scientific_name": "Xanthomonas oryzae pv. oryzae",
+    "description": "Bacterial blight is a serious disease affecting rice.",
+    "symptoms": [
+      "Water-soaked lesions",
+      "Yellow to white-gray stripes",
+      "Wilting",
+      "Milky bacterial ooze"
+    ],
+    "treatment": {
+      "organic": [
+        "Remove and burn infected plants",
+        "Apply copper bactericides"
+      ],
+      "chemical": [
+        "Apply copper compounds",
+        "Use streptomycin sulfate"
+      ],
+      "cultural": [
+        "Use resistant varieties",
+        "Avoid mechanical injury",
+        "Balance nitrogen"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Use disease-free seeds",
+      "Proper water management"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Rice",
+      "Wheat"
+    ],
+    "translations": {
+      "hi": {
+        "name": "बैक्टीरियल ब्लाइट",
+        "description": "बैक्टीरियल ब्लाइट चावल को प्रभावित करने वाली एक गंभीर बीमारी है।",
+        "symptoms": [
+          "पानी से भीगे घाव",
+          "पीली से सफेद-ग्रे धारियां",
+          "मुरझाना",
+          "दूधिया जीवाणु रिसाव"
+        ],
+        "treatment": {
+          "organic": [
+            "संक्रमित पौधों को हटा दें और जला दें",
+            "कॉपर जीवाणुनाशक लगाएं"
+          ],
+          "chemical": [
+            "कॉपर यौगिक लगाएं",
+            "स्ट्रेप्टोमाइसिन सल्फेट का प्रयोग करें"
+          ],
+          "cultural": [
+            "प्रतिरोधी किस्मों का प्रयोग करें",
+            "यांत्रिक चोट से बचें",
+            "नाइट्रोजन को संतुलित करें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "रोग मुक्त बीजों का प्रयोग करें",
+          "उचित जल प्रबंधन"
+        ]
+      },
+      "kn": {
+        "name": "ಬ್ಯಾಕ್ಟೀರಿಯಾ ರೋಗ",
+        "description": "ಬ್ಯಾಕ್ಟೀರಿಯಾ ರೋಗವು ಅಕ್ಕಿಯ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುವ ಗಂಭೀರ ಕಾಯಿಲೆಯಾಗಿದೆ.",
+        "symptoms": [
+          "ನೀರಿನಲ್ಲಿ ನೆನೆದ ಗಾಯಗಳು",
+          "ಹಳದಿಯಿಂದ ಬಿಳಿ-ಬೂದು ಪಟ್ಟೆಗಳು",
+          "ಬಾಡುವುದು",
+          "ಹಾಲಿನಂತಹ ಬ್ಯಾಕ್ಟೀರಿಯಾದ ಸ್ರಾವ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸೋಂಕಿತ ಸಸ್ಯಗಳನ್ನು ತೆಗೆದು ಸುಟ್ಟುಹಾಕಿ",
+            "ತಾಮ್ರದ ಬ್ಯಾಕ್ಟೀರಿಯಾನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ"
+          ],
+          "chemical": [
+            "ತಾಮ್ರದ ಸಂಯುಕ್ತಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸ್ಟ್ರೆಪ್ಟೊಮೈಸಿನ್ ಸಲ್ಫೇಟ್ ಬಳಸಿ"
+          ],
+          "cultural": [
+            "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ಬಳಸಿ",
+            "ಯಾಂತ್ರಿಕ ಗಾಯವನ್ನು ತಪ್ಪಿಸಿ",
+            "ಸಾರಜನಕವನ್ನು ಸಮತೋಲನಗೊಳಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ರೋಗಮುಕ್ತ ಬೀಜಗಳನ್ನು ಬಳಸಿ",
+          "ಸರಿಯಾದ ನೀರಿನ ನಿರ್ವಹಣೆ"
+        ]
+      }
+    }
+  },
+  "Brown_Spot": {
+    "name": "Brown Spot",
+    "scientific_name": "Bipolaris oryzae",
+    "description": "Brown spot affects rice causing brown lesions.",
+    "symptoms": [
+      "Small circular brown spots with gray centers",
+      "Yellow halos",
+      "Discolored grains"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use copper fungicides"
+      ],
+      "chemical": [
+        "Apply mancozeb",
+        "Use propiconazole",
+        "Treat seeds"
+      ],
+      "cultural": [
+        "Balance soil fertility",
+        "Avoid water stress",
+        "Remove stubble"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Use healthy seeds",
+      "Balanced fertilization"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Rice"
+    ],
+    "translations": {
+      "hi": {
+        "name": " भूरा धब्बा",
+        "description": "भूरा धब्बा चावल को प्रभावित करता है जिससे भूरे रंग के घाव हो जाते हैं।",
+        "symptoms": [
+          "भूरे केंद्रों के साथ छोटे गोलाकार भूरे धब्बे",
+          "पीले प्रभामंडल",
+          " फीके पड़े दाने"
+        ],
+        "treatment": {
+          "organic": [
+            "सल्फर फफूंदनाशक लगाएं",
+            "कॉपर फफूंदनाशक का प्रयोग करें"
+          ],
+          "chemical": [
+            "मैनकोज़ेब लगाएं",
+            "प्रोपिकोनाज़ोल का प्रयोग करें",
+            "बीजों का उपचार करें"
+          ],
+          "cultural": [
+            "मिट्टी की उर्वरता को संतुलित करें",
+            "पानी के तनाव से बचें",
+            "ठूंठ हटा दें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "स्वस्थ बीजों का प्रयोग करें",
+          "संतुलित निषेचन"
+        ]
+      },
+      "kn": {
+        "name": "ಕಂದು ಚುಕ್ಕೆ",
+        "description": "ಕಂದು ಚುಕ್ಕೆ ರೋಗವು ಅಕ್ಕಿಯ ಮೇಲೆ ಪರಿಣಾಮ ಬೀರುತ್ತದೆ, ಕಂದು ಗಾಯಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಬೂದು ಕೇಂದ್ರಗಳೊಂದಿಗೆ ಸಣ್ಣ ವೃತ್ತಾಕಾರದ ಕಂದು ಚುಕ್ಕೆಗಳು",
+          "ಹಳದಿ ಸೆಳೆತ",
+          "ಬಣ್ಣಬಣ್ಣದ ಧಾನ್ಯಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸಲ್ಫರ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಮ್ಯಾಂಕೋಜೆಬ್ ಅನ್ವಯಿಸಿ",
+            "ಪ್ರೊಪಿಕೊನಜೋಲ್ ಬಳಸಿ",
+            "ಬೀಜಗಳಿಗೆ ಚಿಕಿತ್ಸೆ ನೀಡಿ"
+          ],
+          "cultural": [
+            "ಮಣ್ಣಿನ ಫಲವತ್ತತೆಯನ್ನು ಸಮತೋಲನಗೊಳಿಸಿ",
+            "ನೀರಿನ ಒತ್ತಡವನ್ನು ತಪ್ಪಿಸಿ",
+            "ಕೂಳೆ ತೆಗೆದುಹಾಕಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ಆರೋಗ್ಯಕರ ಬೀಜಗಳನ್ನು ಬಳಸಿ",
+          "ಸಮತೋಲಿತ ಫಲೀಕರಣ"
+        ]
+      }
+    }
+  },
+  "Rice_Blast": {
+    "name": "Rice Blast",
+    "scientific_name": "Magnaporthe oryzae",
+    "description": "Rice blast is the most serious disease of rice worldwide.",
+    "symptoms": [
+      "Diamond-shaped lesions with gray centers",
+      "Lesions on nodes",
+      "Neck rot",
+      "Unfilled grains"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Use copper compounds",
+        "Apply silicon"
+      ],
+      "chemical": [
+        "Apply tricyclazole",
+        "Use carbendazim",
+        "Apply at tillering"
+      ],
+      "cultural": [
+        "Plant resistant varieties",
+        "Avoid excessive nitrogen",
+        "Proper water depth"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties",
+      "Disease-free seeds",
+      "Balance nitrogen"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Rice",
+      "Wheat"
+    ],
+    "translations": {
+      "hi": {
+        "name": "राइस ब्लास्ट",
+        "description": "राइस ब्लास्ट दुनिया भर में चावल की सबसे गंभीर बीमारी है।",
+        "symptoms": [
+          "भूरे केंद्रों के साथ हीरे के आकार के घाव",
+          "गांठों पर घाव",
+          "गर्दन सड़न",
+          "भरे न हुए दाने"
+        ],
+        "treatment": {
+          "organic": [
+            "सल्फर फफूंदनाशक लगाएं",
+            "कॉपर यौगिकों का प्रयोग करें",
+            "सिलिकॉन लगाएं"
+          ],
+          "chemical": [
+            "ट्राइसाइक्लाज़ोल लगाएं",
+            "कार्बेन्डाजिम का प्रयोग करें",
+            "टिलरिंग पर लगाएं"
+          ],
+          "cultural": [
+            "प्रतिरोधी किस्में लगाएं",
+            "अत्यधिक नाइट्रोजन से बचें",
+            "उचित पानी की गहराई"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं",
+          "रोग मुक्त बीज",
+          "नाइट्रोजन को संतुलित करें"
+        ]
+      },
+      "kn": {
+        "name": "ಭತ್ತದ ಸ್ಫೋಟ",
+        "description": "ಭತ್ತದ ಸ್ಫೋಟವು ವಿಶ್ವಾದ್ಯಂತ ಅಕ್ಕಿಯ ಅತ್ಯಂತ ಗಂಭೀರ ಕಾಯಿಲೆಯಾಗಿದೆ.",
+        "symptoms": [
+          "ಬೂದು ಕೇಂದ್ರಗಳೊಂದಿಗೆ ವಜ್ರದ ಆಕಾರದ ಗಾಯಗಳು",
+          "ನೋಡ್‌ಗಳ ಮೇಲೆ ಗಾಯಗಳು",
+          "ಕುತ್ತಿಗೆ ಕೊಳೆತ",
+          "ತುಂಬದ ಧಾನ್ಯಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸಲ್ಫರ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ತಾಮ್ರದ ಸಂಯುಕ್ತಗಳನ್ನು ಬಳಸಿ",
+            "ಸಿಲಿಕಾನ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "chemical": [
+            "ಟ್ರೈಸೈಕ್ಲಾಜೋಲ್ ಅನ್ವಯಿಸಿ",
+            "ಕಾರ್ಬೆಂಡಜಿಮ್ ಬಳಸಿ",
+            "ಟಿల్లರಿಂಗ್ ಸಮಯದಲ್ಲಿ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+            "ಅತಿಯಾದ ಸಾರಜನಕವನ್ನು ತಪ್ಪಿಸಿ",
+            "ಸರಿಯಾದ ನೀರಿನ ಆಳ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+          "ರೋಗಮುಕ್ತ ಬೀಜಗಳು",
+          "ಸಾರಜನಕವನ್ನು ಸಮತೋಲನಗೊಳಿಸಿ"
+        ]
+      }
+    }
+  },
+  "Septoria": {
+    "name": "Septoria Leaf Blotch",
+    "scientific_name": "Septoria tritici",
+    "description": "Septoria leaf blotch is a major wheat disease.",
+    "symptoms": [
+      "Brown to tan blotches",
+      "Small black pycnidia in lesions",
+      "Lesions between veins",
+      "Lower leaves first"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply copper fungicides",
+        "Remove lower leaves"
+      ],
+      "chemical": [
+        "Apply propiconazole",
+        "Use strobilurin fungicides",
+        "Apply chlorothalonil"
+      ],
+      "cultural": [
+        "Plant resistant varieties",
+        "Bury residue",
+        "Rotate crops"
+      ]
+    },
+    "prevention": [
+      "Choose resistant varieties",
+      "Crop rotation",
+      "Bury debris"
+    ],
+    "severity": "medium",
+    "affected_plants": [
+      "Wheat",
+      "Barley"
+    ],
+    "translations": {
+      "hi": {
+        "name": "सेप्टोरिया लीफ ब्लॉच",
+        "description": "सेप्टोरिया लीफ ब्लॉच गेहूं की एक प्रमुख बीमारी है।",
+        "symptoms": [
+          "भूरे से तन धब्बे",
+          "घावों में छोटे काले पिक्निडिया",
+          "नसों के बीच घाव",
+          "पहले निचली पत्तियां"
+        ],
+        "treatment": {
+          "organic": [
+            "कॉपर फफूंदनाशक लगाएं",
+            "निचली पत्तियां हटाएं"
+          ],
+          "chemical": [
+            "प्रोपिकोनाज़ोल लगाएं",
+            "स्ट्रोबिल्यूरिन फफूंदनाशक का प्रयोग करें",
+            "क्लोरोथैलोनिल लगाएं"
+          ],
+          "cultural": [
+            "प्रतिरोधी किस्में लगाएं",
+            "अवशेषों को दबा दें",
+            "फसलें घुमाएं"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में चुनें",
+          "फसल चक्र",
+          "मलबा दबा दें"
+        ]
+      },
+      "kn": {
+        "name": "ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಕಲೆ",
+        "description": "ಸೆಪ್ಟೋರಿಯಾ ಎಲೆ ಕಲೆಯು ಗೋದಿಯ ಪ್ರಮುಖ ರೋಗವಾಗಿದೆ.",
+        "symptoms": [
+          "ಕಂದು ಬಣ್ಣದಿಂದ ತಿಳಿ ಕಂದು ಬಣ್ಣದ ಕಲೆಗಳು",
+          "ಗಾಯಗಳಲ್ಲಿ ಸಣ್ಣ ಕಪ್ಪು ಪಿಕ್ನಿಡಿಯಾ",
+          "ಸಿರೆಗಳ ನಡುವೆ ಗಾಯಗಳು",
+          "ಮೊದಲು ಕೆಳಗಿನ ಎಲೆಗಳು"
+        ],
+        "treatment": {
+          "organic": [
+            "ತಾಮ್ರದ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಕೆಳಗಿನ ಎಲೆಗಳನ್ನು ತೆಗೆದುಹಾಕಿ"
+          ],
+          "chemical": [
+            "ಪ್ರೊಪಿಕೊನಜೋಲ್ ಅನ್ವಯಿಸಿ",
+            "ಸ್ಟ್ರೋಬಿಲುರಿನ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಬಳಸಿ",
+            "ಕ್ಲೋರೊಥಾಲೋನಿಲ್ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+            "ಅವಶೇಷಗಳನ್ನು ಹೂತುಹಾಕಿ",
+            "ಬೆಳೆ ಸರದಿ ಮಾಡಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ಆರಿಸಿ",
+          "ಬೆಳೆ ಸರದಿ",
+          "ಅವಶೇಷಗಳನ್ನು ಹೂತುಹಾಕಿ"
+        ]
+      }
+    }
+  },
+  "Stripe Rust": {
+    "name": "Stripe Rust",
+    "scientific_name": "Puccinia striiformis",
+    "description": "Stripe rust produces yellow-orange stripes on wheat leaves.",
+    "symptoms": [
+      "Yellow-orange pustules in stripes",
+      "Pustules parallel to veins",
+      "Premature yellowing",
+      "Reduced grain fill"
+    ],
+    "treatment": {
+      "organic": [
+        "Apply sulfur fungicides",
+        "Remove infected material",
+        "Use resistant varieties"
+      ],
+      "chemical": [
+        "Apply tebuconazole",
+        "Use propiconazole",
+        "Apply at first rust sign"
+      ],
+      "cultural": [
+        "Plant resistant varieties",
+        "Destroy volunteers",
+        "Avoid early planting"
+      ]
+    },
+    "prevention": [
+      "Plant resistant varieties (most effective)",
+      "Monitor forecasts",
+      "Destroy volunteers"
+    ],
+    "severity": "high",
+    "affected_plants": [
+      "Wheat",
+      "Barley",
+      "Rye"
+    ],
+    "translations": {
+      "hi": {
+        "name": "धारीदार रस्ट",
+        "description": "धारीदार रस्ट गेहूं की पत्तियों पर पीली-नारंगी धारियां पैदा करता है।",
+        "symptoms": [
+          "धारियों में पीले-नारंगी फुंसियां",
+          "नसों के समानांतर फुंसियां",
+          "समय से पहले पीलापन",
+          "अनाज भरने में कमी"
+        ],
+        "treatment": {
+          "organic": [
+            "सल्फर फफूंदनाशक लगाएं",
+            "संक्रमित सामग्री हटाएं",
+            "प्रतिरोधी किस्मों का प्रयोग करें"
+          ],
+          "chemical": [
+            "टेबुकोनाज़ोल लगाएं",
+            "प्रोपिकोनाज़ोल का प्रयोग करें",
+            "रस्ट के पहले संकेत पर लगाएं"
+          ],
+          "cultural": [
+            "प्रतिरोधी किस्में लगाएं",
+            "स्वयं उगे पौधों को नष्ट करें",
+            "जल्दी रोपण से बचें"
+          ]
+        },
+        "prevention": [
+          "प्रतिरोधी किस्में लगाएं (सबसे प्रभावी)",
+          "पूर्वानुमानों की निगरानी करें",
+          "स्वयं उगे पौधों को नष्ट करें"
+        ]
+      },
+      "kn": {
+        "name": "ಪಟ್ಟೆ ತುಕ್ಕು",
+        "description": "ಪಟ್ಟೆ ತುಕ್ಕು ಗೋಧಿ ಎಲೆಗಳ ಮೇಲೆ ಹಳದಿ-ಕಿತ್ತಳೆ ಪಟ್ಟೆಗಳನ್ನು ಉಂಟುಮಾಡುತ್ತದೆ.",
+        "symptoms": [
+          "ಪಟ್ಟೆಗಳಲ್ಲಿ ಹಳದಿ-ಕಿತ್ತಳೆ ಗುಳ್ಳೆಗಳು",
+          "ಸಿರೆಗಳಿಗೆ ಸಮಾನಾಂತರವಾದ ಗುಳ್ಳೆಗಳು",
+          "ಅಕಾಲಿಕ ಹಳದಿಯಾಗುವಿಕೆ",
+          "ಕಡಿಮೆ ಧಾನ್ಯ ತುಂಬುವಿಕೆ"
+        ],
+        "treatment": {
+          "organic": [
+            "ಸಲ್ಫರ್ ಶಿಲೀಂಧ್ರನಾಶಕಗಳನ್ನು ಅನ್ವಯಿಸಿ",
+            "ಸೋಂಕಿತ ವಸ್ತುಗಳನ್ನು ತೆಗೆದುಹಾಕಿ",
+            "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ಬಳಸಿ"
+          ],
+          "chemical": [
+            "ಟೆಬುಕೊನಜೋಲ್ ಅನ್ವಯಿಸಿ",
+            "ಪ್ರೊಪಿಕೊನಜೋಲ್ ಬಳಸಿ",
+            "ತುಕ್ಕುನ ಮೊದಲ ಚಿಹ್ನೆಯಲ್ಲಿ ಅನ್ವಯಿಸಿ"
+          ],
+          "cultural": [
+            "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ",
+            "ಸ್ವಯಂಸೇವಕ ಸಸ್ಯಗಳನ್ನು ನಾಶಮಾಡಿ",
+            "ಆರಂಭಿಕ ನೆಡುವಿಕೆಯನ್ನು ತಪ್ಪಿಸಿ"
+          ]
+        },
+        "prevention": [
+          "ನಿರೋಧಕ ಪ್ರಭೇದಗಳನ್ನು ನೆಡಿ (ಅತ್ಯಂತ ಪರಿಣಾಮಕಾರಿ)",
+          "ಮುನ್ಸೂಚನೆಗಳನ್ನು ಮೇಲ್ವಿಚಾರಣೆ ಮಾಡಿ",
+          "ಸ್ವಯಂಸೇವಕ ಸಸ್ಯಗಳನ್ನು ನಾಶಮಾಡಿ"
+        ]
+      }
+    }
+  }
+}
