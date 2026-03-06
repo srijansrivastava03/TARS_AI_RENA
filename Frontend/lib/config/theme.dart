@@ -3,18 +3,18 @@ import 'package:google_fonts/google_fonts.dart';
 
 /// App-wide color palette
 class AppColors {
-  // Primary greens (agriculture theme)
-  static const Color primary = Color(0xFF2E7D32);
-  static const Color primaryLight = Color(0xFF4CAF50);
-  static const Color primaryDark = Color(0xFF1B5E20);
-  static const Color primarySurface = Color(0xFFE8F5E9);
+  // Primary colors
+  static const Color primary = Color(0xFF86978F);
+  static const Color primaryLight = Color(0xFFA3B0A9);
+  static const Color primaryDark = Color(0xFF6A7D74);
+  static const Color primarySurface = Color(0xFFECF0EE);
 
   // Accent
   static const Color accent = Color(0xFFFF9800);
   static const Color accentLight = Color(0xFFFFF3E0);
 
   // Severity colors
-  static const Color healthy = Color(0xFF4CAF50);
+  static const Color healthy = Color(0xFF86978F);
   static const Color lowSeverity = Color(0xFFFFC107);
   static const Color mediumSeverity = Color(0xFFFF9800);
   static const Color highSeverity = Color(0xFFF44336);
