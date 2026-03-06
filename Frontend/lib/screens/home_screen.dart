@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
-import '../config/app_config.dart';
 import '../config/theme.dart';
 import '../providers/app_provider.dart';
 import '../providers/detection_provider.dart';
@@ -57,8 +56,12 @@ class _HomeScreenState extends State<HomeScreen> {
               _buildQuickActions(),
               const SizedBox(height: 28),
 
-              // Plant Care Tips
-              _buildPlantCareTips(),
+              // Features section
+              const SectionHeader(
+                title: 'Features',
+                icon: Icons.star_rounded,
+              ),
+              _buildFeaturesList(),
             ],
           ),
         ),
@@ -92,66 +95,31 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
-        // Language selector
-        PopupMenuButton<String>(
-          onSelected: (lang) => app.setLanguage(lang),
-          offset: const Offset(0, 40),
-          shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(12),
-          ),
-          itemBuilder: (_) => AppConfig.supportedLanguages.entries.map((e) {
-            final isSelected = app.language == e.key;
-            return PopupMenuItem<String>(
-              value: e.key,
-              child: Row(
-                children: [
-                  Icon(
-                    isSelected
-                        ? Icons.radio_button_checked_rounded
-                        : Icons.radio_button_off_rounded,
-                    size: 18,
-                    color: isSelected ? AppColors.primary : AppColors.textSecondary,
-                  ),
-                  const SizedBox(width: 10),
-                  Text(
-                    e.value,
-                    style: TextStyle(
-                      fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
-                      color: isSelected ? AppColors.primary : null,
-                    ),
-                  ),
-                ],
-              ),
-            );
-          }).toList(),
+        // Server status
+        GestureDetector(
+          onTap: () => detection.checkServer(),
           child: Container(
             padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
             decoration: BoxDecoration(
-              color: AppColors.primary.withValues(alpha: 0.1),
+              color: detection.isServerOnline
+                  ? AppColors.healthy.withValues(alpha: 0.1)
+                  : AppColors.error.withValues(alpha: 0.1),
               borderRadius: BorderRadius.circular(20),
             ),
             child: Row(
               mainAxisSize: MainAxisSize.min,
               children: [
-                Icon(
-                  Icons.language_rounded,
-                  size: 18,
-                  color: AppColors.primary,
-                ),
+                StatusDot(isOnline: detection.isServerOnline),
                 const SizedBox(width: 6),
                 Text(
-                  app.languageName,
+                  detection.isServerOnline ? 'Online' : 'Offline',
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
-                    color: AppColors.primary,
+                    color: detection.isServerOnline
+                        ? AppColors.healthy
+                        : AppColors.error,
                   ),
-                ),
-                const SizedBox(width: 2),
-                Icon(
-                  Icons.arrow_drop_down_rounded,
-                  size: 18,
-                  color: AppColors.primary,
                 ),
               ],
             ),
@@ -244,59 +212,59 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   Widget _buildQuickActions() {
+    final actions = [
+      _QuickAction(
+        icon: Icons.history_rounded,
+        label: 'History',
+        color: Colors.blue,
+        onTap: widget.onHistoryTap,
+      ),
+      _QuickAction(
+        icon: Icons.menu_book_rounded,
+        label: 'Diseases',
+        color: Colors.orange,
+        onTap: widget.onDiseasesTap,
+      ),
+      _QuickAction(
+        icon: Icons.photo_library_rounded,
+        label: 'Gallery',
+        color: Colors.purple,
+        onTap: widget.onScanTap,
+      ),
+    ];
+
     return Row(
-      children: [
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(right: 6),
-            child: _buildActionCard(
-              icon: Icons.history_rounded,
-              label: 'View Plant History',
-              color: Colors.blue,
-              onTap: widget.onHistoryTap,
-            ),
-          ),
-        ),
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 6),
-            child: _buildActionCard(
-              icon: Icons.eco_rounded,
-              label: 'Disease Library',
-              color: Colors.orange,
-              onTap: widget.onDiseasesTap,
-            ),
-          ),
-        ),
-      ],
+      children: actions
+          .map((action) => Expanded(
+                child: Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 4),
+                  child: _buildActionCard(action),
+                ),
+              ))
+          .toList(),
     ).animate().fadeIn(duration: 500.ms, delay: 200.ms);
   }
 
-  Widget _buildActionCard({
-    required IconData icon,
-    required String label,
-    required Color color,
-    required VoidCallback onTap,
-  }) {
+  Widget _buildActionCard(_QuickAction action) {
     return GestureDetector(
-      onTap: onTap,
+      onTap: action.onTap,
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 20),
         decoration: BoxDecoration(
-          color: color.withValues(alpha: 0.08),
+          color: action.color.withValues(alpha: 0.08),
           borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: color.withValues(alpha: 0.15)),
+          border: Border.all(color: action.color.withValues(alpha: 0.15)),
         ),
         child: Column(
           children: [
-            Icon(icon, color: color, size: 28),
+            Icon(action.icon, color: action.color, size: 28),
             const SizedBox(height: 8),
             Text(
-              label,
+              action.label,
               style: TextStyle(
                 fontWeight: FontWeight.w600,
                 fontSize: 13,
-                color: color,
+                color: action.color,
               ),
             ),
           ],
@@ -305,67 +273,48 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 
-  Widget _buildPlantCareTips() {
-    const tips = [
-      _CareTip(
-        crop: '🍅 Tomato',
-        tip: 'Water deeply 2-3 times a week. Avoid wetting leaves to prevent blight. Stake plants for airflow.',
+  Widget _buildFeaturesList() {
+    final features = [
+      _Feature(
+        icon: Icons.auto_awesome,
+        title: 'AI Detection',
+        subtitle: '34 plant diseases recognized with YOLO',
       ),
-      _CareTip(
-        crop: '🌾 Rice',
-        tip: 'Maintain 2-5 cm standing water during growth. Apply nitrogen fertilizer in 3 split doses.',
+      _Feature(
+        icon: Icons.translate,
+        title: 'Multilingual',
+        subtitle: 'English, Hindi, and Kannada support',
       ),
-      _CareTip(
-        crop: '🌽 Corn',
-        tip: 'Plant in blocks for wind pollination. Water 1 inch per week. Side-dress with nitrogen at knee height.',
+      _Feature(
+        icon: Icons.wifi_off_rounded,
+        title: 'Offline Ready',
+        subtitle: 'Cached diagnoses work without internet',
       ),
-      _CareTip(
-        crop: '🥔 Potato',
-        tip: 'Hill soil around stems as they grow. Keep soil moist but not waterlogged. Watch for late blight.',
-      ),
-      _CareTip(
-        crop: '🍇 Grape',
-        tip: 'Prune heavily in winter. Train vines on trellises. Apply fungicide before monsoon season.',
-      ),
-      _CareTip(
-        crop: '🌶️ Chili',
-        tip: 'Needs full sun and well-drained soil. Water regularly but avoid overwatering. Pinch early flowers for bushier growth.',
+      _Feature(
+        icon: Icons.medical_information_rounded,
+        title: 'Smart Diagnosis',
+        subtitle: 'Treatment & prevention recommendations',
       ),
     ];
 
     return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            Icon(Icons.tips_and_updates_rounded,
-                color: AppColors.primary, size: 20),
-            const SizedBox(width: 8),
-            Text(
-              'Plant Care Tips',
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w600,
-                color: AppColors.textPrimary,
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 14),
-        ...tips.asMap().entries.map((entry) => Padding(
-              padding: const EdgeInsets.only(bottom: 10),
-              child: _buildCareTipCard(entry.value)
-                  .animate()
-                  .fadeIn(
-                      duration: 400.ms,
-                      delay: Duration(milliseconds: 300 + entry.key * 80))
-                  .slideX(begin: 0.05),
-            )),
-      ],
+      children: features
+          .asMap()
+          .entries
+          .map((entry) => Padding(
+                padding: const EdgeInsets.only(bottom: 10),
+                child: _buildFeatureTile(entry.value)
+                    .animate()
+                    .fadeIn(
+                        duration: 400.ms,
+                        delay: Duration(milliseconds: 300 + entry.key * 80))
+                    .slideX(begin: 0.05),
+              ))
+          .toList(),
     );
   }
 
-  Widget _buildCareTipCard(_CareTip tip) {
+  Widget _buildFeatureTile(_Feature feature) {
     return Container(
       padding: const EdgeInsets.all(14),
       decoration: BoxDecoration(
@@ -374,28 +323,33 @@ class _HomeScreenState extends State<HomeScreen> {
         border: Border.all(color: AppColors.divider),
       ),
       child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          Text(tip.crop.split(' ').first, style: const TextStyle(fontSize: 28)),
-          const SizedBox(width: 12),
+          Container(
+            padding: const EdgeInsets.all(10),
+            decoration: BoxDecoration(
+              color: AppColors.primarySurface,
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Icon(feature.icon, color: AppColors.primary, size: 22),
+          ),
+          const SizedBox(width: 14),
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  tip.crop.split(' ').last,
+                  feature.title,
                   style: const TextStyle(
                     fontWeight: FontWeight.w600,
                     fontSize: 14,
                   ),
                 ),
-                const SizedBox(height: 4),
+                const SizedBox(height: 2),
                 Text(
-                  tip.tip,
+                  feature.subtitle,
                   style: const TextStyle(
                     fontSize: 12,
                     color: AppColors.textSecondary,
-                    height: 1.4,
                   ),
                 ),
               ],
@@ -405,14 +359,30 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
     );
   }
-
 }
 
-class _CareTip {
-  final String crop;
-  final String tip;
+class _QuickAction {
+  final IconData icon;
+  final String label;
+  final Color color;
+  final VoidCallback onTap;
 
-  const _CareTip({required this.crop, required this.tip});
+  const _QuickAction({
+    required this.icon,
+    required this.label,
+    required this.color,
+    required this.onTap,
+  });
 }
 
+class _Feature {
+  final IconData icon;
+  final String title;
+  final String subtitle;
 
+  const _Feature({
+    required this.icon,
+    required this.title,
+    required this.subtitle,
+  });
+}

@@ -1,3 +1,5 @@
+import 'dart:async';
+import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
 import '../config/theme.dart';
 import 'home_screen.dart';
@@ -5,7 +7,9 @@ import 'scan_screen.dart';
 import 'results_screen.dart';
 import 'history_screen.dart';
 import 'diseases_screen.dart';
-import 'account_screen.dart';
+import 'settings_screen.dart';
+import 'analytics_screen.dart';
+import 'notifications_screen.dart';
 
 /// Main app shell with bottom navigation
 class AppShell extends StatefulWidget {
@@ -16,14 +20,105 @@ class AppShell extends StatefulWidget {
 }
 
 class _AppShellState extends State<AppShell> {
+  // Nav indices: 0=Home, 1=Notifications, 2=Scan, 3=Analytics, 4=Account(Settings)
   int _currentIndex = 0;
 
-  // Navigation indices: 0 = Home, 1 = Scan, 2 = Account
+  late final StreamSubscription<List<ConnectivityResult>> _connectivitySub;
+  bool _wasConnected = true;
+  bool _initialCheckDone = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _connectivitySub = Connectivity()
+        .onConnectivityChanged
+        .listen(_handleConnectivityChange);
+
+    // Show welcome snackbar (simulates successful login)
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      _showSnackBar(
+        icon: Icons.check_circle_rounded,
+        message: 'Welcome back! You\'re logged in.',
+        color: const Color(0xFF4CAF50),
+      );
+    });
+  }
+
+  @override
+  void dispose() {
+    _connectivitySub.cancel();
+    super.dispose();
+  }
+
+  void _handleConnectivityChange(List<ConnectivityResult> results) {
+    final isConnected =
+        results.any((r) => r != ConnectivityResult.none);
+
+    // Skip the very first event to avoid a false "back online" on launch
+    if (!_initialCheckDone) {
+      _wasConnected = isConnected;
+      _initialCheckDone = true;
+      return;
+    }
+
+    if (isConnected && !_wasConnected) {
+      _showSnackBar(
+        icon: Icons.wifi_rounded,
+        message: 'You\'re back online!',
+        color: const Color(0xFF4CAF50),
+      );
+    } else if (!isConnected && _wasConnected) {
+      _showSnackBar(
+        icon: Icons.wifi_off_rounded,
+        message: 'You\'re offline. Check your connection.',
+        color: const Color(0xFFF44336),
+        duration: const Duration(seconds: 5),
+      );
+    }
+    _wasConnected = isConnected;
+  }
+
+  void _showSnackBar({
+    required IconData icon,
+    required String message,
+    required Color color,
+    Duration duration = const Duration(seconds: 3),
+  }) {
+    if (!mounted) return;
+    ScaffoldMessenger.of(context)
+      ..clearSnackBars()
+      ..showSnackBar(
+        SnackBar(
+          behavior: SnackBarBehavior.floating,
+          margin: const EdgeInsets.fromLTRB(16, 0, 16, 90),
+          shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(12)),
+          backgroundColor: color,
+          duration: duration,
+          content: Row(
+            children: [
+              Icon(icon, color: Colors.white, size: 20),
+              const SizedBox(width: 10),
+              Expanded(
+                child: Text(
+                  message,
+                  style: const TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      fontSize: 13),
+                ),
+              ),
+            ],
+          ),
+        ),
+      );
+  }
+
   void _onTabTapped(int index) {
     setState(() => _currentIndex = index);
   }
 
-  void _goToScan() => setState(() => _currentIndex = 1);
+  void _goToScan() => setState(() => _currentIndex = 2);
   void _goToResults() => _navigateTo(const ResultsScreen());
   void _goToHistory() => _navigateTo(const HistoryScreen());
   void _goToDiseases() => _navigateTo(const DiseasesScreen());
@@ -40,8 +135,10 @@ class _AppShellState extends State<AppShell> {
         onHistoryTap: _goToHistory,
         onDiseasesTap: _goToDiseases,
       ),
+      const NotificationsScreen(),
       ScanScreen(onResultReady: () => _navigateTo(const ResultsScreen())),
-      const AccountScreen(),
+      const AnalyticsScreen(),
+      const SettingsScreen(),
     ];
 
     return Scaffold(
@@ -54,8 +151,8 @@ class _AppShellState extends State<AppShell> {
           Positioned(
             left: 16,
             right: 16,
-            bottom: MediaQuery.of(context).padding.bottom + 8,
-            child: _CustomBottomNav(
+            bottom: MediaQuery.of(context).padding.bottom + 10,
+            child: _FloatingNavBar(
               currentIndex: _currentIndex,
               onTap: _onTabTapped,
             ),
@@ -66,60 +163,96 @@ class _AppShellState extends State<AppShell> {
   }
 }
 
-/// Custom bottom navigation bar with an elevated center scan button
-class _CustomBottomNav extends StatelessWidget {
+class _FloatingNavBar extends StatelessWidget {
   final int currentIndex;
   final ValueChanged<int> onTap;
 
-  const _CustomBottomNav({
-    required this.currentIndex,
-    required this.onTap,
-  });
+  const _FloatingNavBar({required this.currentIndex, required this.onTap});
 
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 70,
+      height: 72,
       child: Stack(
         clipBehavior: Clip.none,
         alignment: Alignment.bottomCenter,
         children: [
           // Dark bar
           Container(
-            height: 56,
+            height: 58,
             decoration: BoxDecoration(
-              color: const Color(0xFF4A5D55),
-              borderRadius: BorderRadius.circular(32),
+              color: const Color(0xFF1A3C34),
+              borderRadius: BorderRadius.circular(30),
             ),
-            padding: const EdgeInsets.symmetric(horizontal: 32),
+            padding: const EdgeInsets.symmetric(horizontal: 12),
             child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                // Home button
                 _NavItem(
                   icon: Icons.home_rounded,
                   label: 'Home',
                   isSelected: currentIndex == 0,
                   onTap: () => onTap(0),
                 ),
-                // Spacer for center button
+                _NavItem(
+                  icon: Icons.notifications_rounded,
+                  label: 'Alerts',
+                  isSelected: currentIndex == 1,
+                  onTap: () => onTap(1),
+                ),
+                // Spacer for scan button
                 const SizedBox(width: 56),
-                // Account button
+                _NavItem(
+                  icon: Icons.pie_chart_rounded,
+                  label: 'Analytics',
+                  isSelected: currentIndex == 3,
+                  onTap: () => onTap(3),
+                ),
                 _NavItem(
                   icon: Icons.person_rounded,
                   label: 'Account',
-                  isSelected: currentIndex == 2,
-                  onTap: () => onTap(2),
+                  isSelected: currentIndex == 4,
+                  onTap: () => onTap(4),
                 ),
               ],
             ),
           ),
           // Floating scan button
           Positioned(
-            top: -10,
-            child: _ScanButton(
-              isSelected: currentIndex == 1,
-              onTap: () => onTap(1),
+            top: -6,
+            child: GestureDetector(
+              onTap: () => onTap(2),
+              child: Container(
+                width: 56,
+                height: 56,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black.withValues(alpha: 0.1),
+                      blurRadius: 8,
+                      offset: const Offset(0, 2),
+                    ),
+                  ],
+                ),
+                padding: const EdgeInsets.all(3),
+                child: Container(
+                  decoration: const BoxDecoration(
+                    gradient: LinearGradient(
+                      begin: Alignment.topLeft,
+                      end: Alignment.bottomRight,
+                      colors: [Color(0xFFE85D4A), Color(0xFFD94437)],
+                    ),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.document_scanner_rounded,
+                    color: Colors.white,
+                    size: 24,
+                  ),
+                ),
+              ),
             ),
           ),
         ],
@@ -128,7 +261,6 @@ class _CustomBottomNav extends StatelessWidget {
   }
 }
 
-/// Regular nav item (Home / Account)
 class _NavItem extends StatelessWidget {
   final IconData icon;
   final String label;
@@ -144,95 +276,28 @@ class _NavItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final color = isSelected ? Colors.white : Colors.white60;
-
+    final color = isSelected ? Colors.white : Colors.white54;
     return GestureDetector(
       onTap: onTap,
       behavior: HitTestBehavior.opaque,
       child: SizedBox(
-        width: 56,
+        width: 52,
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, color: color, size: 22),
+            Icon(icon, color: color, size: 20),
             const SizedBox(height: 2),
             Text(
               label,
               style: TextStyle(
                 color: color,
-                fontSize: 10,
+                fontSize: 9,
                 fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
               ),
+              overflow: TextOverflow.ellipsis,
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-/// Elevated center scan button that floats above the bar
-class _ScanButton extends StatelessWidget {
-  final bool isSelected;
-  final VoidCallback onTap;
-
-  const _ScanButton({
-    required this.isSelected,
-    required this.onTap,
-  });
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          // White ring behind the scan circle
-          Container(
-            width: 60,
-            height: 60,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              shape: BoxShape.circle,
-              boxShadow: [
-                BoxShadow(
-                  color: Colors.black.withValues(alpha: 0.08),
-                  blurRadius: 8,
-                  offset: const Offset(0, 2),
-                ),
-              ],
-            ),
-            padding: const EdgeInsets.all(4),
-            child: Container(
-              decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [
-                    Color(0xFFE85D4A),
-                    Color(0xFFD94437),
-                  ],
-                ),
-                shape: BoxShape.circle,
-              ),
-              child: const Icon(
-                Icons.document_scanner_rounded,
-                color: Colors.white,
-                size: 26,
-              ),
-            ),
-          ),
-          const SizedBox(height: 1),
-          Text(
-            'Scan',
-            style: TextStyle(
-              color: isSelected ? Colors.white : Colors.white60,
-              fontSize: 10,
-              fontWeight: isSelected ? FontWeight.w600 : FontWeight.w400,
-            ),
-          ),
-        ],
       ),
     );
   }
