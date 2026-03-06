@@ -36,17 +36,23 @@ class YOLOModelService:
         """Load YOLO model"""
         try:
             from ultralytics import YOLO
-            from ultralytics.nn.tasks import DetectionModel
             import torch
             
             if not config.MODEL_PATH.exists():
                 raise FileNotFoundError(f"Model not found at {config.MODEL_PATH}")
             
-            # Fix for PyTorch 2.6 - allow loading ultralytics models
-            # IMPORTANT: Pass the actual class object, not a string!
-            torch.serialization.add_safe_globals([DetectionModel])
+            # Fix for PyTorch 2.6+ - override torch.load to allow ultralytics weights
+            _original_load = torch.load
+            def _patched_load(*args, **kwargs):
+                kwargs['weights_only'] = False
+                return _original_load(*args, **kwargs)
+            torch.load = _patched_load
             
             self.model = YOLO(str(config.MODEL_PATH))
+            
+            # Restore original torch.load
+            torch.load = _original_load
+            
             print(f"✅ Model loaded from {config.MODEL_PATH}")
             
         except Exception as e:

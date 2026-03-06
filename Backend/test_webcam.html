@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🌿 AgriScan — Live Test</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f1a0f; color: #e0e0e0; min-height: 100vh; }
+  
+  .header { background: linear-gradient(135deg, #1b5e20, #2e7d32); padding: 16px 24px; display: flex; align-items: center; gap: 12px; }
+  .header h1 { font-size: 22px; color: white; }
+  .header .status { margin-left: auto; padding: 6px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; }
+  .status.online { background: rgba(76,175,80,0.2); color: #4caf50; }
+  .status.offline { background: rgba(244,67,54,0.2); color: #f44336; }
+
+  .container { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; padding: 20px; max-width: 1200px; margin: 0 auto; }
+  
+  .panel { background: #1a2e1a; border-radius: 16px; border: 1px solid #2e4a2e; overflow: hidden; }
+  .panel-header { padding: 14px 18px; background: #223322; font-weight: 600; font-size: 15px; display: flex; align-items: center; gap: 8px; }
+
+  .video-wrap { position: relative; background: #000; aspect-ratio: 4/3; }
+  video, .video-wrap canvas { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .video-wrap canvas { position: absolute; top: 0; left: 0; pointer-events: none; }
+
+  .controls { padding: 16px; display: flex; gap: 10px; flex-wrap: wrap; }
+  
+  button { padding: 10px 20px; border-radius: 10px; border: none; font-weight: 600; font-size: 14px; cursor: pointer; transition: all 0.2s; }
+  button:hover { transform: translateY(-1px); }
+  button:active { transform: scale(0.97); }
+  
+  .btn-primary { background: #4caf50; color: white; }
+  .btn-primary:hover { background: #43a047; }
+  .btn-danger { background: #f44336; color: white; }
+  .btn-secondary { background: #37474f; color: white; }
+  .btn-upload { background: #ff9800; color: white; }
+  
+  .results-body { padding: 16px; max-height: 500px; overflow-y: auto; }
+  
+  .detection-card { background: #223322; border-radius: 12px; padding: 14px; margin-bottom: 10px; border-left: 4px solid #4caf50; }
+  .detection-card.disease { border-left-color: #f44336; }
+  .detection-card .name { font-size: 16px; font-weight: 700; margin-bottom: 4px; }
+  .detection-card .conf { font-size: 13px; color: #aaa; }
+  .conf-bar { height: 6px; border-radius: 3px; background: #333; margin-top: 6px; }
+  .conf-bar-fill { height: 100%; border-radius: 3px; transition: width 0.3s; }
+  
+  .diagnosis-section { margin-top: 12px; padding-top: 12px; border-top: 1px solid #2e4a2e; }
+  .diagnosis-section h4 { font-size: 13px; color: #4caf50; margin-bottom: 6px; }
+  .diagnosis-section ul { padding-left: 18px; font-size: 13px; line-height: 1.6; color: #ccc; }
+  
+  .severity-badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 700; text-transform: uppercase; }
+  .severity-none { background: rgba(76,175,80,0.2); color: #4caf50; }
+  .severity-low { background: rgba(255,193,7,0.2); color: #ffc107; }
+  .severity-medium { background: rgba(255,152,0,0.2); color: #ff9800; }
+  .severity-high { background: rgba(244,67,54,0.2); color: #f44336; }
+
+  .timing { font-size: 12px; color: #666; padding: 8px 16px; text-align: right; }
+  
+  .empty { text-align: center; padding: 40px; color: #555; }
+  .empty .icon { font-size: 48px; margin-bottom: 12px; }
+  
+  #fileInput { display: none; }
+
+  @media (max-width: 768px) { .container { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <span style="font-size:28px">🌿</span>
+  <h1>AgriScan Live Test</h1>
+  <div id="serverStatus" class="status offline">● Checking...</div>
+</div>
+
+<div class="container">
+  <!-- Left: Camera -->
+  <div class="panel">
+    <div class="panel-header">📷 Camera / Image</div>
+    <div class="video-wrap">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="overlay"></canvas>
+      <img id="uploadedImg" style="display:none; width:100%; height:100%; object-fit:cover;"/>
+    </div>
+    <div class="controls">
+      <button class="btn-primary" id="btnCapture" onclick="captureAndDetect()">📸 Capture & Detect</button>
+      <button class="btn-upload" onclick="document.getElementById('fileInput').click()">📁 Upload Image</button>
+      <button class="btn-secondary" id="btnContinuous" onclick="toggleContinuous()">🔄 Continuous Mode</button>
+      <button class="btn-danger" onclick="resetAll()">🗑 Reset</button>
+      <input type="file" id="fileInput" accept="image/*" onchange="handleUpload(event)"/>
+    </div>
+    <div class="timing" id="timingInfo">Ready — point camera at a plant leaf</div>
+  </div>
+
+  <!-- Right: Results -->
+  <div class="panel">
+    <div class="panel-header">🔍 Detection Results</div>
+    <div class="results-body" id="results">
+      <div class="empty">
+        <div class="icon">🌱</div>
+        <p>Capture or upload a plant leaf image to detect diseases</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<canvas id="captureCanvas" style="display:none;"></canvas>
+
+<script>
+const API = 'http://localhost:5001/api';
+let video, overlay, ctx, captureCanvas, captureCtx;
+let continuousMode = false;
+let continuousTimer = null;
+let stream = null;
+
+// ── Init ───────────────────────────────────────
+window.onload = async () => {
+  video = document.getElementById('video');
+  overlay = document.getElementById('overlay');
+  ctx = overlay.getContext('2d');
+  captureCanvas = document.getElementById('captureCanvas');
+  captureCtx = captureCanvas.getContext('2d');
+  
+  checkServer();
+  startCamera();
+};
+
+async function checkServer() {
+  const el = document.getElementById('serverStatus');
+  try {
+    const r = await fetch(`${API}/health`, { signal: AbortSignal.timeout(3000) });
+    const d = await r.json();
+    if (d.status === 'healthy' && d.model_loaded) {
+      el.className = 'status online';
+      el.textContent = '● Model Ready';
+    } else {
+      el.className = 'status offline';
+      el.textContent = '● Model Not Loaded';
+    }
+  } catch {
+    el.className = 'status offline';
+    el.textContent = '● Server Offline';
+  }
+}
+
+async function startCamera() {
+  try {
+    stream = await navigator.mediaDevices.getUserMedia({ 
+      video: { facingMode: 'environment', width: { ideal: 640 }, height: { ideal: 480 } } 
+    });
+    video.srcObject = stream;
+    video.onloadedmetadata = () => {
+      overlay.width = video.videoWidth;
+      overlay.height = video.videoHeight;
+    };
+  } catch (e) {
+    document.getElementById('timingInfo').textContent = '⚠️ Camera access denied — use Upload instead';
+  }
+}
+
+// ── Capture & Detect ───────────────────────────
+async function captureAndDetect() {
+  const btn = document.getElementById('btnCapture');
+  btn.textContent = '⏳ Detecting...';
+  btn.disabled = true;
+
+  const base64 = getFrameBase64();
+  if (!base64) { btn.textContent = '📸 Capture & Detect'; btn.disabled = false; return; }
+
+  try {
+    const r = await fetch(`${API}/detect`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        image: base64,
+        confidence_threshold: 0.3,
+        auto_diagnose: true,
+        track_primary: true,
+        language: 'en'
+      })
+    });
+    const data = await r.json();
+    showResults(data);
+    drawBoxes(data.detections || []);
+    
+    if (data.timing) {
+      document.getElementById('timingInfo').textContent = 
+        `⚡ Inference: ${data.timing.inference}s | Total: ${data.timing.total}s | Detections: ${(data.detections||[]).length}`;
+    }
+  } catch (e) {
+    document.getElementById('results').innerHTML = `<div class="empty"><p style="color:#f44336">❌ ${e.message}</p></div>`;
+  }
+
+  btn.textContent = '📸 Capture & Detect';
+  btn.disabled = false;
+}
+
+// ── Upload Image ───────────────────────────────
+function handleUpload(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  
+  const reader = new FileReader();
+  reader.onload = async (e) => {
+    // Show uploaded image
+    const img = document.getElementById('uploadedImg');
+    img.src = e.target.result;
+    img.style.display = 'block';
+    video.style.display = 'none';
+    
+    // Extract base64 (remove data:image/...;base64, prefix)
+    const base64 = e.target.result.split(',')[1];
+    
+    document.getElementById('timingInfo').textContent = '⏳ Analyzing uploaded image...';
+    
+    try {
+      const r = await fetch(`${API}/detect`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          image: base64,
+          confidence_threshold: 0.3,
+          auto_diagnose: true,
+          track_primary: true,
+          language: 'en'
+        })
+      });
+      const data = await r.json();
+      showResults(data);
+      
+      // Draw boxes on uploaded image
+      img.onload = () => {
+        overlay.width = img.naturalWidth;
+        overlay.height = img.naturalHeight;
+        drawBoxes(data.detections || [], img.naturalWidth, img.naturalHeight);
+      };
+      if (img.complete) {
+        overlay.width = img.naturalWidth;
+        overlay.height = img.naturalHeight;
+        drawBoxes(data.detections || [], img.naturalWidth, img.naturalHeight);
+      }
+      
+      if (data.timing) {
+        document.getElementById('timingInfo').textContent = 
+          `⚡ Inference: ${data.timing.inference}s | Total: ${data.timing.total}s | Detections: ${(data.detections||[]).length}`;
+      }
+    } catch (e) {
+      document.getElementById('results').innerHTML = `<div class="empty"><p style="color:#f44336">❌ ${e.message}</p></div>`;
+    }
+  };
+  reader.readAsDataURL(file);
+}
+
+// ── Continuous Mode ────────────────────────────
+function toggleContinuous() {
+  continuousMode = !continuousMode;
+  const btn = document.getElementById('btnContinuous');
+  if (continuousMode) {
+    btn.textContent = '⏹ Stop Continuous';
+    btn.classList.remove('btn-secondary');
+    btn.classList.add('btn-danger');
+    runContinuous();
+  } else {
+    btn.textContent = '🔄 Continuous Mode';
+    btn.classList.remove('btn-danger');
+    btn.classList.add('btn-secondary');
+    clearTimeout(continuousTimer);
+  }
+}
+
+async function runContinuous() {
+  if (!continuousMode) return;
+  await captureAndDetect();
+  continuousTimer = setTimeout(runContinuous, 1500);
+}
+
+// ── Get frame as base64 ───────────────────────
+function getFrameBase64() {
+  if (!video.videoWidth) return null;
+  captureCanvas.width = video.videoWidth;
+  captureCanvas.height = video.videoHeight;
+  captureCtx.drawImage(video, 0, 0);
+  return captureCanvas.toDataURL('image/jpeg', 0.85).split(',')[1];
+}
+
+// ── Draw bounding boxes ───────────────────────
+function drawBoxes(detections, imgW, imgH) {
+  const w = imgW || overlay.width;
+  const h = imgH || overlay.height;
+  ctx.clearRect(0, 0, overlay.width, overlay.height);
+  
+  detections.forEach(det => {
+    const box = det.bounding_box;
+    // Use pixel coordinates
+    const x1 = box.x1 * (overlay.width / w);
+    const y1 = box.y1 * (overlay.height / h);
+    const x2 = box.x2 * (overlay.width / w);
+    const y2 = box.y2 * (overlay.height / h);
+    
+    const isHealthy = det.class_name.toLowerCase().includes('healthy') || 
+      (!det.class_name.toLowerCase().match(/blight|spot|rot|rust|mold|virus|mites|mildew|bacterial|powdery|septoria|spider/));
+    
+    const color = isHealthy ? '#4caf50' : '#f44336';
+    
+    // Box
+    ctx.strokeStyle = color;
+    ctx.lineWidth = 3;
+    ctx.strokeRect(x1, y1, x2-x1, y2-y1);
+    
+    // Label background
+    const label = `${det.class_name} ${(det.confidence*100).toFixed(1)}%`;
+    ctx.font = 'bold 14px sans-serif';
+    const tw = ctx.measureText(label).width;
+    ctx.fillStyle = color;
+    ctx.fillRect(x1, y1 - 22, tw + 10, 22);
+    
+    // Label text
+    ctx.fillStyle = 'white';
+    ctx.fillText(label, x1 + 5, y1 - 6);
+  });
+}
+
+// ── Show Results ──────────────────────────────
+function showResults(data) {
+  const el = document.getElementById('results');
+  
+  if (!data.success) {
+    el.innerHTML = `<div class="empty"><p style="color:#f44336">❌ ${data.error}</p></div>`;
+    return;
+  }
+  
+  if (!data.detections || data.detections.length === 0) {
+    el.innerHTML = `<div class="empty"><div class="icon">🔍</div><p>No diseases detected — try a closer shot</p></div>`;
+    return;
+  }
+
+  let html = '';
+  
+  // Primary detection
+  if (data.primary_detection) {
+    const p = data.primary_detection;
+    const isHealthy = p.class_name.toLowerCase().includes('healthy') ||
+      (!p.class_name.toLowerCase().match(/blight|spot|rot|rust|mold|virus|mites|mildew|bacterial|powdery|septoria|spider/));
+    
+    html += `<div style="background:${isHealthy?'rgba(76,175,80,0.1)':'rgba(244,67,54,0.1)'};border-radius:12px;padding:14px;margin-bottom:14px;border:1px solid ${isHealthy?'#2e7d32':'#c62828'}">
+      <div style="font-size:13px;color:${isHealthy?'#4caf50':'#f44336'};font-weight:700;margin-bottom:4px">
+        ${isHealthy ? '✅ PRIMARY — HEALTHY' : '⚠️ PRIMARY — DISEASE DETECTED'}
+      </div>
+      <div style="font-size:20px;font-weight:700">${p.class_name}</div>
+      <div style="font-size:14px;color:#aaa;margin-top:2px">${(p.confidence*100).toFixed(1)}% confidence</div>
+    </div>`;
+  }
+
+  // Diagnosis
+  if (data.diagnosis) {
+    const d = data.diagnosis;
+    html += `<div class="detection-card" style="border-left-color:#ff9800">
+      <div class="name">📋 Diagnosis</div>`;
+    
+    if (d.severity) html += `<span class="severity-badge severity-${d.severity}">${d.severity}</span> `;
+    if (d.scientific_name) html += `<span style="font-style:italic;color:#888;font-size:13px">${d.scientific_name}</span>`;
+    if (d.description) html += `<p style="font-size:13px;margin-top:8px;color:#ccc;line-height:1.5">${d.description}</p>`;
+    
+    if (d.symptoms && d.symptoms.length) {
+      html += `<div class="diagnosis-section"><h4>🤒 Symptoms</h4><ul>${d.symptoms.map(s=>`<li>${s}</li>`).join('')}</ul></div>`;
+    }
+    if (d.treatment) {
+      html += `<div class="diagnosis-section"><h4>💊 Treatment</h4>`;
+      if (d.treatment.organic?.length) html += `<p style="color:#4caf50;font-size:12px;font-weight:600">🌿 Organic</p><ul>${d.treatment.organic.map(t=>`<li>${t}</li>`).join('')}</ul>`;
+      if (d.treatment.chemical?.length) html += `<p style="color:#ff9800;font-size:12px;font-weight:600">🧪 Chemical</p><ul>${d.treatment.chemical.map(t=>`<li>${t}</li>`).join('')}</ul>`;
+      if (d.treatment.cultural?.length) html += `<p style="color:#2196f3;font-size:12px;font-weight:600">🌱 Cultural</p><ul>${d.treatment.cultural.map(t=>`<li>${t}</li>`).join('')}</ul>`;
+      html += `</div>`;
+    }
+    if (d.prevention && d.prevention.length) {
+      html += `<div class="diagnosis-section"><h4>🛡 Prevention</h4><ul>${d.prevention.map(p=>`<li>${p}</li>`).join('')}</ul></div>`;
+    }
+    html += `</div>`;
+  }
+
+  // All detections list
+  html += `<div style="margin-top:8px;font-size:12px;color:#666;margin-bottom:8px">All detections (${data.detections.length}):</div>`;
+  data.detections.forEach((det, i) => {
+    const isHealthy = det.class_name.toLowerCase().includes('healthy') ||
+      (!det.class_name.toLowerCase().match(/blight|spot|rot|rust|mold|virus|mites|mildew|bacterial|powdery|septoria|spider/));
+    const pct = (det.confidence * 100).toFixed(1);
+    const color = isHealthy ? '#4caf50' : '#f44336';
+    
+    html += `<div class="detection-card ${isHealthy?'':'disease'}">
+      <div class="name">${i+1}. ${det.class_name}</div>
+      <div class="conf">${pct}% confidence</div>
+      <div class="conf-bar"><div class="conf-bar-fill" style="width:${pct}%;background:${color}"></div></div>
+    </div>`;
+  });
+
+  el.innerHTML = html;
+}
+
+// ── Reset ─────────────────────────────────────
+function resetAll() {
+  ctx.clearRect(0, 0, overlay.width, overlay.height);
+  document.getElementById('results').innerHTML = `<div class="empty"><div class="icon">🌱</div><p>Capture or upload a plant leaf image</p></div>`;
+  document.getElementById('timingInfo').textContent = 'Ready — point camera at a plant leaf';
+  document.getElementById('uploadedImg').style.display = 'none';
+  video.style.display = 'block';
+  continuousMode = false;
+  clearTimeout(continuousTimer);
+  const btn = document.getElementById('btnContinuous');
+  btn.textContent = '🔄 Continuous Mode';
+  btn.classList.remove('btn-danger');
+  btn.classList.add('btn-secondary');
+  
+  // Reset tracking on server
+  fetch(`${API}/detect/reset-tracking`, { method: 'POST' }).catch(()=>{});
+}
+</script>
+</body>
+</html>
