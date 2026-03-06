@@ -107,6 +107,26 @@ class DetectionProvider extends ChangeNotifier {
     notifyListeners();
   }
 
+  // ─── Continuous detect (lightweight, no state change) ────────────
+  Future<DetectionResult?> continuousDetectFromBytes({
+    required Uint8List imageBytes,
+    double confidence = 0.5,
+    String language = 'en',
+    int minStability = 5,
+  }) async {
+    final base64Image = base64Encode(imageBytes);
+    try {
+      return await _api.continuousDetect(
+        imageBase64: base64Image,
+        confidence: confidence,
+        language: language,
+        minStability: minStability,
+      );
+    } catch (_) {
+      return null;
+    }
+  }
+
   Future<void> resetTracking() async {
     await _api.resetTracking();
   }
