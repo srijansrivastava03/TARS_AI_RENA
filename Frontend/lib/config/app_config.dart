@@ -1,7 +1,7 @@
 /// AgriScan app configuration
 class AppConfig {
   // API
-  static const String apiBaseUrl = 'https://vesire-35.onrender.com/api';
+  static const String apiBaseUrl = 'https://tars-ai-rena.onrender.com/api';
   static const Duration apiTimeout = Duration(seconds: 60);
   static const Duration detectionTimeout = Duration(seconds: 120);
 
