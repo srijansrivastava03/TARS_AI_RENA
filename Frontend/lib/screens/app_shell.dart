@@ -148,15 +148,16 @@ class _AppShellState extends State<AppShell> {
             index: _currentIndex,
             children: screens,
           ),
-          Positioned(
-            left: 16,
-            right: 16,
-            bottom: MediaQuery.of(context).padding.bottom + 10,
-            child: _FloatingNavBar(
-              currentIndex: _currentIndex,
-              onTap: _onTabTapped,
+          if (_currentIndex != 2)
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: MediaQuery.of(context).padding.bottom + 10,
+              child: _FloatingNavBar(
+                currentIndex: _currentIndex,
+                onTap: _onTabTapped,
+              ),
             ),
-          ),
         ],
       ),
     );
