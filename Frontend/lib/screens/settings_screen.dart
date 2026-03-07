@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../config/app_config.dart';
 import '../config/theme.dart';
+import '../l10n/app_localizations.dart';
 import '../providers/app_provider.dart';
 import '../services/api_service.dart';
 
@@ -40,7 +41,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     if (mounted) {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(
-          content: Text(ok ? '✅ Connected successfully!' : '❌ Connection failed'),
+          content: Text(ok ? S.of(context).connectedSuccessfully : S.of(context).connectionFailed),
           backgroundColor: ok ? AppColors.healthy : AppColors.error,
         ),
       );
@@ -55,13 +56,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
     final app = context.watch<AppProvider>();
 
     return Scaffold(
-      appBar: AppBar(title: const Text('Settings')),
+      appBar: AppBar(title: Text(S.of(context).settings)),
       body: ListView(
         padding: const EdgeInsets.all(16),
         children: [
           // Language
           _buildSection(
-            title: 'Language',
+            title: S.of(context).language,
             icon: Icons.translate_rounded,
             child: Column(
               children: AppConfig.supportedLanguages.entries
@@ -85,12 +86,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
           // Detection Settings
           _buildSection(
-            title: 'Detection',
+            title: S.of(context).detection,
             icon: Icons.tune_rounded,
             child: Column(
               children: [
                 ListTile(
-                  title: const Text('Confidence Threshold'),
+                  title: Text(S.of(context).confidenceThreshold),
                   subtitle: Text('${(app.confidenceThreshold * 100).round()}%'),
                   trailing: SizedBox(
                     width: 180,
@@ -106,11 +107,19 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                 ),
                 SwitchListTile(
-                  title: const Text('Save to History'),
-                  subtitle: const Text('Automatically save scan results'),
+                  title: Text(S.of(context).saveToHistory),
+                  subtitle: Text(S.of(context).saveToHistoryDesc),
                   value: app.saveHistory,
                   activeTrackColor: AppColors.primary,
                   onChanged: (val) => app.setSaveHistory(val),
+                ),
+                SwitchListTile(
+                  title: Text(S.of(context).voiceReading),
+                  subtitle: Text(S.of(context).voiceReadingDesc),
+                  value: app.voiceReadingEnabled,
+                  activeTrackColor: AppColors.primary,
+                  secondary: const Icon(Icons.volume_up_rounded),
+                  onChanged: (val) => app.setVoiceReadingEnabled(val),
                 ),
               ],
             ),
@@ -119,7 +128,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
           // Server Configuration
           _buildSection(
-            title: 'Server',
+            title: S.of(context).server,
             icon: Icons.dns_rounded,
             child: Padding(
               padding: const EdgeInsets.all(16),
@@ -128,8 +137,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 children: [
                   TextField(
                     controller: _urlController,
-                    decoration: const InputDecoration(
-                      labelText: 'API Base URL',
+                    decoration: InputDecoration(
+                      labelText: S.of(context).apiBaseUrl,
                       hintText: 'http://localhost:5001/api',
                     ),
                   ),
@@ -149,7 +158,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                                       strokeWidth: 2),
                                 )
                               : const Icon(Icons.wifi_find_rounded),
-                          label: const Text('Test'),
+                          label: Text(S.of(context).test),
                         ),
                       ),
                       const SizedBox(width: 12),
@@ -158,11 +167,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           onPressed: () {
                             app.setApiBaseUrl(_urlController.text.trim());
                             ScaffoldMessenger.of(context).showSnackBar(
-                              const SnackBar(content: Text('URL saved')),
+                              SnackBar(content: Text(S.of(context).urlSaved)),
                             );
                           },
                           icon: const Icon(Icons.save_rounded),
-                          label: const Text('Save'),
+                          label: Text(S.of(context).save),
                         ),
                       ),
                     ],
@@ -175,11 +184,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
           // Appearance
           _buildSection(
-            title: 'Appearance',
+            title: S.of(context).appearance,
             icon: Icons.palette_rounded,
             child: SwitchListTile(
-              title: const Text('Dark Mode'),
-              subtitle: const Text('Switch to dark theme'),
+              title: Text(S.of(context).darkMode),
+              subtitle: Text(S.of(context).darkModeDesc),
               value: app.darkMode,
               activeTrackColor: AppColors.primary,
               onChanged: (val) => app.setDarkMode(val),
@@ -189,7 +198,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
 
           // About
           _buildSection(
-            title: 'About',
+            title: S.of(context).about,
             icon: Icons.info_outline_rounded,
             child: Padding(
               padding: const EdgeInsets.all(16),
@@ -205,13 +214,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'Version ${AppConfig.appVersion}',
+                    S.of(context).version(AppConfig.appVersion),
                     style: const TextStyle(color: AppColors.textSecondary),
                   ),
                   const SizedBox(height: 8),
-                  const Text(
-                    'AI-powered plant disease detection with multilingual support. '
-                    'Built with Flutter + Flask + YOLO + RAG.',
+                  Text(
+                    S.of(context).aboutDescription,
                     style: TextStyle(fontSize: 13, height: 1.5),
                   ),
                 ],

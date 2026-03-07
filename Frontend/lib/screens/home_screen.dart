@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
+import '../config/app_config.dart';
 import '../config/theme.dart';
+import '../l10n/app_localizations.dart';
 import '../providers/app_provider.dart';
 import '../providers/detection_provider.dart';
 import '../widgets/common_widgets.dart';
@@ -57,8 +59,8 @@ class _HomeScreenState extends State<HomeScreen> {
               const SizedBox(height: 28),
 
               // Features section
-              const SectionHeader(
-                title: 'Features',
+              SectionHeader(
+                title: S.of(context).features,
                 icon: Icons.star_rounded,
               ),
               _buildFeaturesList(),
@@ -77,7 +79,7 @@ class _HomeScreenState extends State<HomeScreen> {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                '🌿 AgriScan',
+                '🌿 ${S.of(context).appName}',
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
@@ -86,7 +88,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
               const SizedBox(height: 4),
               Text(
-                'AI Plant Disease Detection',
+                S.of(context).appTagline,
                 style: TextStyle(
                   fontSize: 14,
                   color: AppColors.textSecondary,
@@ -95,6 +97,9 @@ class _HomeScreenState extends State<HomeScreen> {
             ],
           ),
         ),
+        // Language toggle
+        _buildLanguageChip(app),
+        const SizedBox(width: 8),
         // Server status
         GestureDetector(
           onTap: () => detection.checkServer(),
@@ -112,7 +117,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 StatusDot(isOnline: detection.isServerOnline),
                 const SizedBox(width: 6),
                 Text(
-                  detection.isServerOnline ? 'Online' : 'Offline',
+                  detection.isServerOnline ? S.of(context).online : S.of(context).offline,
                   style: TextStyle(
                     fontSize: 12,
                     fontWeight: FontWeight.w600,
@@ -127,6 +132,43 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
       ],
     ).animate().fadeIn(duration: 400.ms).slideY(begin: -0.1);
+  }
+
+  Widget _buildLanguageChip(AppProvider app) {
+    final languages = AppConfig.supportedLanguages;
+    final keys = languages.keys.toList();
+    final currentIndex = keys.indexOf(app.language);
+    final currentLabel = languages[app.language] ?? 'EN';
+
+    return GestureDetector(
+      onTap: () {
+        final nextIndex = (currentIndex + 1) % keys.length;
+        app.setLanguage(keys[nextIndex]);
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
+        decoration: BoxDecoration(
+          color: AppColors.primary.withValues(alpha: 0.1),
+          borderRadius: BorderRadius.circular(20),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.translate_rounded,
+                size: 14, color: AppColors.primary),
+            const SizedBox(width: 4),
+            Text(
+              currentLabel,
+              style: const TextStyle(
+                fontSize: 11,
+                fontWeight: FontWeight.w600,
+                color: AppColors.primary,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   Widget _buildScanCard() {
@@ -166,9 +208,9 @@ class _HomeScreenState extends State<HomeScreen> {
               ),
             ),
             const SizedBox(height: 20),
-            const Text(
-              'Scan Plant',
-              style: TextStyle(
+            Text(
+              S.of(context).scanPlant,
+              style: const TextStyle(
                 color: Colors.white,
                 fontSize: 24,
                 fontWeight: FontWeight.bold,
@@ -176,7 +218,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             const SizedBox(height: 8),
             Text(
-              'Take a photo or upload an image to detect plant diseases instantly',
+              S.of(context).scanDescription,
               style: TextStyle(
                 color: Colors.white.withValues(alpha: 0.9),
                 fontSize: 14,
@@ -189,15 +231,15 @@ class _HomeScreenState extends State<HomeScreen> {
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(25),
               ),
-              child: const Row(
+              child: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Icon(Icons.camera_alt_rounded,
+                  const Icon(Icons.camera_alt_rounded,
                       color: AppColors.primary, size: 18),
-                  SizedBox(width: 8),
+                  const SizedBox(width: 8),
                   Text(
-                    'Start Scanning',
-                    style: TextStyle(
+                    S.of(context).startScanning,
+                    style: const TextStyle(
                       color: AppColors.primary,
                       fontWeight: FontWeight.w600,
                     ),
@@ -215,19 +257,19 @@ class _HomeScreenState extends State<HomeScreen> {
     final actions = [
       _QuickAction(
         icon: Icons.history_rounded,
-        label: 'History',
+        label: S.of(context).history,
         color: Colors.blue,
         onTap: widget.onHistoryTap,
       ),
       _QuickAction(
         icon: Icons.menu_book_rounded,
-        label: 'Diseases',
+        label: S.of(context).diseases,
         color: Colors.orange,
         onTap: widget.onDiseasesTap,
       ),
       _QuickAction(
         icon: Icons.photo_library_rounded,
-        label: 'Gallery',
+        label: S.of(context).gallery,
         color: Colors.purple,
         onTap: widget.onScanTap,
       ),
@@ -277,23 +319,23 @@ class _HomeScreenState extends State<HomeScreen> {
     final features = [
       _Feature(
         icon: Icons.auto_awesome,
-        title: 'AI Detection',
-        subtitle: '34 plant diseases recognized with YOLO',
+        title: S.of(context).aiDetection,
+        subtitle: S.of(context).aiDetectionDesc,
       ),
       _Feature(
         icon: Icons.translate,
-        title: 'Multilingual',
-        subtitle: 'English, Hindi, and Kannada support',
+        title: S.of(context).multilingual,
+        subtitle: S.of(context).multilingualDesc,
       ),
       _Feature(
         icon: Icons.wifi_off_rounded,
-        title: 'Offline Ready',
-        subtitle: 'Cached diagnoses work without internet',
+        title: S.of(context).offlineReady,
+        subtitle: S.of(context).offlineReadyDesc,
       ),
       _Feature(
         icon: Icons.medical_information_rounded,
-        title: 'Smart Diagnosis',
-        subtitle: 'Treatment & prevention recommendations',
+        title: S.of(context).smartDiagnosis,
+        subtitle: S.of(context).smartDiagnosisDesc,
       ),
     ];
 

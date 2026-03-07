@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../l10n/app_localizations.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -42,7 +43,7 @@ class _LoginScreenState extends State<LoginScreen> {
     final password = _passwordController.text;
 
     if (email.isEmpty || password.isEmpty) {
-      setState(() => _errorMessage = 'Please fill in all fields');
+      setState(() => _errorMessage = S.of(context).fillAllFields);
       return;
     }
 
@@ -50,7 +51,7 @@ class _LoginScreenState extends State<LoginScreen> {
       setState(() => _errorMessage = null);
       Navigator.pushReplacementNamed(context, '/login-success');
     } else {
-      setState(() => _errorMessage = 'Invalid email or password');
+      setState(() => _errorMessage = S.of(context).invalidCredentials);
     }
   }
 
@@ -94,7 +95,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               // ── E-mail label ──
               Text(
-                'E-mail:',
+                S.of(context).email,
                 style: GoogleFonts.poppins(
                   fontSize: 15,
                   fontWeight: FontWeight.w500,
@@ -137,7 +138,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
               // ── Password label ──
               Text(
-                'Password:',
+                S.of(context).password,
                 style: GoogleFonts.poppins(
                   fontSize: 15,
                   fontWeight: FontWeight.w500,

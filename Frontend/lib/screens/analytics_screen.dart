@@ -1,6 +1,7 @@
 import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import '../config/theme.dart';
+import '../l10n/app_localizations.dart';
 
 class AnalyticsScreen extends StatelessWidget {
   const AnalyticsScreen({super.key});
@@ -9,7 +10,7 @@ class AnalyticsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Analytics'),
+        title: Text(S.of(context).analytics),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16),
@@ -141,8 +142,8 @@ class AnalyticsScreen extends StatelessWidget {
                     color: AppColors.primary, size: 20),
               ),
               const SizedBox(width: 10),
-              const Text(
-                'AI Confidence Score',
+              Text(
+                S.of(context).aiConfidenceScore,
                 style: TextStyle(
                   fontSize: 16,
                   fontWeight: FontWeight.w600,
@@ -180,7 +181,7 @@ class AnalyticsScreen extends StatelessWidget {
                           ),
                         ),
                         Text(
-                          'Confident',
+                          S.of(context).confident,
                           style: TextStyle(
                             fontSize: 12,
                             color: AppColors.textSecondary,

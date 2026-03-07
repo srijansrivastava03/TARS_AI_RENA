@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:provider/provider.dart';
+import '../config/app_config.dart';
+import '../l10n/app_localizations.dart';
+import '../providers/app_provider.dart';
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -31,10 +35,19 @@ class WelcomeScreen extends StatelessWidget {
                 bottom: false,
                 child: Column(
                   children: [
-                    const SizedBox(height: 24),
+                    const SizedBox(height: 12),
+                    // Language toggle button
+                    Align(
+                      alignment: Alignment.centerRight,
+                      child: Padding(
+                        padding: const EdgeInsets.only(right: 8),
+                        child: _LanguageToggleChip(),
+                      ),
+                    ),
+                    const SizedBox(height: 8),
                     // "AGRI-SCAN" title
                     Text(
-                      'AGRI-SCAN',
+                      S.of(context).appName.toUpperCase(),
                       style: GoogleFonts.cinzelDecorative(
                         fontSize: 32,
                         fontWeight: FontWeight.w700,
@@ -75,7 +88,7 @@ class WelcomeScreen extends StatelessWidget {
                   const SizedBox(height: 40),
                   // Quote
                   Text(
-                    '\u201CExpert care\nfor every\nleaf\u201D',
+                    S.of(context).expertCare,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.playfairDisplay(
                       fontSize: 34,
@@ -87,7 +100,7 @@ class WelcomeScreen extends StatelessWidget {
                   const SizedBox(height: 24),
                   // Subtitle
                   Text(
-                    'Your smart companion for detecting\nplant diseases and protecting your\nfarm',
+                    S.of(context).welcomeSubtitle,
                     textAlign: TextAlign.center,
                     style: GoogleFonts.poppins(
                       fontSize: 14,
@@ -102,14 +115,14 @@ class WelcomeScreen extends StatelessWidget {
                     children: [
                       Expanded(
                         child: _WelcomeButton(
-                          label: 'REGISTER',
+                          label: S.of(context).register,
                           onTap: () => _navigateForward(context),
                         ),
                       ),
                       const SizedBox(width: 16),
                       Expanded(
                         child: _WelcomeButton(
-                          label: 'SIGN IN',
+                          label: S.of(context).signIn,
                           onTap: () => _navigateForward(context),
                         ),
                       ),
@@ -128,6 +141,54 @@ class WelcomeScreen extends StatelessWidget {
 
   void _navigateForward(BuildContext context) {
     Navigator.pushReplacementNamed(context, '/login');
+  }
+}
+
+/// Language toggle chip — cycles through supported languages
+class _LanguageToggleChip extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final app = context.watch<AppProvider>();
+    final languages = AppConfig.supportedLanguages;
+    final keys = languages.keys.toList();
+    final currentIndex = keys.indexOf(app.language);
+    final currentLabel = languages[app.language] ?? 'English';
+
+    return GestureDetector(
+      onTap: () {
+        final nextIndex = (currentIndex + 1) % keys.length;
+        app.setLanguage(keys[nextIndex]);
+      },
+      child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+        decoration: BoxDecoration(
+          color: const Color(0xFF1A3C34).withValues(alpha: 0.08),
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(
+            color: const Color(0xFF1A3C34).withValues(alpha: 0.2),
+          ),
+        ),
+        child: Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.translate_rounded,
+                size: 16, color: Color(0xFF1A3C34)),
+            const SizedBox(width: 6),
+            Text(
+              currentLabel,
+              style: const TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.w600,
+                color: Color(0xFF1A3C34),
+              ),
+            ),
+            const SizedBox(width: 4),
+            const Icon(Icons.swap_horiz_rounded,
+                size: 14, color: Color(0xFF1A3C34)),
+          ],
+        ),
+      ),
+    );
   }
 }
 

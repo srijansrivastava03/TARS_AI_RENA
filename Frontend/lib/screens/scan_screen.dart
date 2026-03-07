@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:provider/provider.dart';
 import '../config/app_config.dart';
+import '../l10n/app_localizations.dart';
 import '../models/detection_result.dart';
 import '../models/disease.dart';
 import '../providers/app_provider.dart';
@@ -90,7 +91,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
       if (cameras.isEmpty) {
         setState(() {
           _isCameraError = true;
-          _cameraErrorMsg = 'No camera found on this device';
+          _cameraErrorMsg = S.of(context).noCameraFound;
         });
         return;
       }
@@ -111,7 +112,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
       if (mounted) {
         setState(() {
           _isCameraError = true;
-          _cameraErrorMsg = 'Camera initialization failed';
+          _cameraErrorMsg = S.of(context).cameraInitFailed;
         });
       }
     }
@@ -133,12 +134,12 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
       await detection.checkServer();
       if (!mounted) return;
       if (!detection.isServerOnline) {
-        setState(() => _serverError = 'Cannot reach backend server');
+        setState(() => _serverError = S.of(context).cannotReachServer);
       } else {
         setState(() => _serverError = null);
       }
     } catch (_) {
-      if (mounted) setState(() => _serverError = 'Server health check failed');
+      if (mounted) setState(() => _serverError = S.of(context).serverHealthCheckFailed);
     }
   }
 
@@ -214,7 +215,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
       }
     } catch (e) {
       if (mounted) {
-        setState(() => _serverError = 'Detection failed: $e');
+        setState(() => _serverError = '${S.of(context).detectionFailed}: $e');
       }
     } finally {
       _frameInFlight = false;
@@ -259,7 +260,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Capture failed: $e')),
+          SnackBar(content: Text('${S.of(context).captureFailed}: $e')),
         );
       }
     } finally {
@@ -285,7 +286,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Failed to pick image: $e')),
+          SnackBar(content: Text('${S.of(context).failedToPickImage}: $e')),
         );
         setState(() => _isCapturing = false);
       }
@@ -361,13 +362,13 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
           if (_isCapturing)
             Container(
               color: Colors.black54,
-              child: const Center(
+              child: Center(
                 child: Column(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    CircularProgressIndicator(color: Colors.white),
-                    SizedBox(height: 16),
-                    Text('Analyzing plant...', style: TextStyle(color: Colors.white, fontSize: 16)),
+                    const CircularProgressIndicator(color: Colors.white),
+                    const SizedBox(height: 16),
+                    Text(S.of(context).analyzingPlant, style: const TextStyle(color: Colors.white, fontSize: 16)),
                   ],
                 ),
               ),
@@ -393,13 +394,13 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
   }
 
   Widget _buildCameraLoading() {
-    return const Center(
+    return Center(
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          CircularProgressIndicator(color: Colors.white),
-          SizedBox(height: 16),
-          Text('Starting camera...', style: TextStyle(color: Colors.white70, fontSize: 16)),
+          const CircularProgressIndicator(color: Colors.white),
+          const SizedBox(height: 16),
+          Text(S.of(context).startingCamera, style: const TextStyle(color: Colors.white70, fontSize: 16)),
         ],
       ),
     );
@@ -415,7 +416,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
             const Icon(Icons.videocam_off_rounded, size: 64, color: Colors.white38),
             const SizedBox(height: 16),
             Text(
-              _cameraErrorMsg ?? 'Camera unavailable',
+              _cameraErrorMsg ?? S.of(context).cameraUnavailable,
               style: const TextStyle(color: Colors.white70, fontSize: 16),
               textAlign: TextAlign.center,
             ),
@@ -423,7 +424,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
             OutlinedButton.icon(
               onPressed: _pickFromGallery,
               icon: const Icon(Icons.photo_library_rounded),
-              label: const Text('Pick from Gallery'),
+              label: Text(S.of(context).pickFromGallery),
               style: OutlinedButton.styleFrom(
                 foregroundColor: Colors.white,
                 side: const BorderSide(color: Colors.white38),
@@ -534,10 +535,10 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
         ),
         child: Row(
           children: [
-            const Expanded(
+            Expanded(
               child: Text(
-                'Scan Plant',
-                style: TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+                S.of(context).scanPlantTitle,
+                style: const TextStyle(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
               ),
             ),
             // Flash toggle
@@ -566,16 +567,16 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
                   color: Colors.green.withValues(alpha: 0.8),
                   borderRadius: BorderRadius.circular(20),
                 ),
-                child: const Row(
+                child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       width: 8,
                       height: 8,
                       child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white),
                     ),
-                    SizedBox(width: 6),
-                    Text('LIVE', style: TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold)),
+                    const SizedBox(width: 6),
+                    Text(S.of(context).live, style: const TextStyle(color: Colors.white, fontSize: 11, fontWeight: FontWeight.bold)),
                   ],
                 ),
               ),
@@ -612,10 +613,10 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
             // Status text
             Text(
               _analysisReady
-                  ? 'Analysis ready! Swipe up for details.'
+                  ? S.of(context).analysisReady
                   : _isDetectionActive
-                      ? 'Scanning for diseases...'
-                      : 'Tap the circle to start scanning',
+                      ? S.of(context).scanningForDiseases
+                      : S.of(context).tapToStartScanning,
               textAlign: TextAlign.center,
               style: TextStyle(color: Colors.white.withValues(alpha: 0.9), fontSize: 14, fontWeight: FontWeight.w500),
             ),
@@ -626,7 +627,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
                 // Gallery
                 _ControlButton(
                   icon: Icons.photo_library_rounded,
-                  label: 'Gallery',
+                  label: S.of(context).gallery,
                   onTap: _isCapturing ? null : _pickFromGallery,
                 ),
 
@@ -684,7 +685,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
                 // Reset
                 _ControlButton(
                   icon: Icons.refresh_rounded,
-                  label: 'Reset',
+                  label: S.of(context).reset,
                   onTap: () {
                     _stopDetection();
                     context.read<DetectionProvider>().resetTracking();
@@ -839,7 +840,7 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
                 child: ElevatedButton.icon(
                   onPressed: _captureAndAnalyze,
                   icon: const Icon(Icons.fullscreen),
-                  label: const Text('Full Analysis'),
+                  label: Text(S.of(context).fullAnalysis),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFF4CAF50),
                     foregroundColor: Colors.white,
@@ -867,12 +868,12 @@ class _ScanScreenState extends State<ScanScreen> with WidgetsBindingObserver {
             color: Colors.black.withValues(alpha: 0.7),
             borderRadius: BorderRadius.circular(20),
           ),
-          child: const Row(
+          child: Row(
             mainAxisSize: MainAxisSize.min,
             children: [
-              SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white)),
-              SizedBox(width: 10),
-              Text('Fetching diagnosis...', style: TextStyle(color: Colors.white, fontSize: 13)),
+              const SizedBox(width: 16, height: 16, child: CircularProgressIndicator(strokeWidth: 2, color: Colors.white)),
+              const SizedBox(width: 10),
+              Text(S.of(context).fetchingDiagnosis, style: const TextStyle(color: Colors.white, fontSize: 13)),
             ],
           ),
         ),

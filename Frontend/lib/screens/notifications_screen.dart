@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import '../config/theme.dart';
+import '../l10n/app_localizations.dart';
 
 class NotificationsScreen extends StatelessWidget {
   const NotificationsScreen({super.key});
@@ -9,22 +10,22 @@ class NotificationsScreen extends StatelessWidget {
     final notifications = [
       _NotificationItem(
         icon: Icons.warning_amber_rounded,
-        title: 'Disease Alert',
-        subtitle: 'Tomato Late Blight detected in your recent scan. Check recommended treatments.',
+        title: S.of(context).diseaseAlert,
+        subtitle: S.of(context).diseaseAlertBody,
         time: '2 hours ago',
         isUnread: true,
       ),
       _NotificationItem(
         icon: Icons.tips_and_updates_rounded,
-        title: 'Plant Care Tip',
-        subtitle: 'Water your crops early morning to reduce fungal disease risk.',
+        title: S.of(context).plantCareTip,
+        subtitle: S.of(context).plantCareTipBody,
         time: '1 day ago',
         isUnread: false,
       ),
       _NotificationItem(
         icon: Icons.update_rounded,
-        title: 'App Update',
-        subtitle: 'AgriScan v1.1 is available with improved disease detection accuracy.',
+        title: S.of(context).appUpdate,
+        subtitle: S.of(context).appUpdateBody,
         time: '3 days ago',
         isUnread: false,
       ),
@@ -32,12 +33,12 @@ class NotificationsScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Notifications'),
+        title: Text(S.of(context).notifications),
       ),
       body: notifications.isEmpty
-          ? const Center(
+          ? Center(
               child: Text(
-                'No notifications yet',
+                S.of(context).noNotificationsYet,
                 style: TextStyle(
                   fontSize: 16,
                   color: AppColors.textSecondary,

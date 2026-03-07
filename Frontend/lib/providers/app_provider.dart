@@ -1,3 +1,4 @@
+import 'dart:ui';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:uuid/uuid.dart';
@@ -12,6 +13,7 @@ class AppProvider extends ChangeNotifier {
   bool _darkMode = false;
   double _confidenceThreshold = AppConfig.defaultConfidence;
   bool _saveHistory = true;
+  bool _voiceReadingEnabled = true;
   bool _isInitialized = false;
 
   // ─── Getters ───────────────────────────────────────────────────────
@@ -21,10 +23,13 @@ class AppProvider extends ChangeNotifier {
   bool get darkMode => _darkMode;
   double get confidenceThreshold => _confidenceThreshold;
   bool get saveHistory => _saveHistory;
+  bool get voiceReadingEnabled => _voiceReadingEnabled;
   bool get isInitialized => _isInitialized;
 
   String get languageName =>
       AppConfig.supportedLanguages[_language] ?? 'English';
+
+  Locale get locale => Locale(_language);
 
   // ─── Init ──────────────────────────────────────────────────────────
   Future<void> initialize() async {
@@ -39,6 +44,7 @@ class AppProvider extends ChangeNotifier {
     _confidenceThreshold =
         prefs.getDouble('confidence_threshold') ?? AppConfig.defaultConfidence;
     _saveHistory = prefs.getBool('save_history') ?? true;
+    _voiceReadingEnabled = prefs.getBool('voice_reading_enabled') ?? true;
 
     // Persist userId if new
     if (!prefs.containsKey('user_id')) {
@@ -82,6 +88,13 @@ class AppProvider extends ChangeNotifier {
     _saveHistory = value;
     final prefs = await SharedPreferences.getInstance();
     await prefs.setBool('save_history', value);
+    notifyListeners();
+  }
+
+  Future<void> setVoiceReadingEnabled(bool value) async {
+    _voiceReadingEnabled = value;
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setBool('voice_reading_enabled', value);
     notifyListeners();
   }
 }

@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
 import '../config/theme.dart';
+import '../l10n/app_localizations.dart';
 import '../models/detection_result.dart';
 import '../models/disease.dart';
 import '../providers/app_provider.dart';
 import '../providers/detection_provider.dart';
+import '../services/tts_service.dart';
 import '../widgets/common_widgets.dart';
 
 /// Screen showing detection results and diagnosis
@@ -18,11 +20,24 @@ class ResultsScreen extends StatefulWidget {
 
 class _ResultsScreenState extends State<ResultsScreen> {
   bool _loadingDiagnosis = false;
+  final TtsService _tts = TtsService.instance;
+  TtsState _ttsState = TtsState.stopped;
+  bool _autoPlayTriggered = false;
 
   @override
   void initState() {
     super.initState();
+    _tts.onStateChanged = (state) {
+      if (mounted) setState(() => _ttsState = state);
+    };
     _loadDiagnosisIfNeeded();
+  }
+
+  @override
+  void dispose() {
+    _tts.stop();
+    _tts.onStateChanged = null;
+    super.dispose();
   }
 
   Future<void> _loadDiagnosisIfNeeded() async {
@@ -35,7 +50,56 @@ class _ResultsScreenState extends State<ResultsScreen> {
         diseaseName: detection.lastResult!.primaryDetection!.className,
         language: app.language,
       );
-      if (mounted) setState(() => _loadingDiagnosis = false);
+      if (mounted) {
+        setState(() => _loadingDiagnosis = false);
+        // Auto-play voice reading after diagnosis loads
+        _tryAutoPlayTts();
+      }
+    } else if (detection.diagnosis != null) {
+      // Diagnosis already available — auto-play
+      WidgetsBinding.instance.addPostFrameCallback((_) => _tryAutoPlayTts());
+    }
+  }
+
+  void _tryAutoPlayTts() {
+    if (_autoPlayTriggered) return;
+    _autoPlayTriggered = true;
+
+    final app = context.read<AppProvider>();
+    final detection = context.read<DetectionProvider>();
+    final disease = detection.diagnosis;
+
+    if (!app.voiceReadingEnabled || disease == null) return;
+
+    final primary = detection.lastResult?.primaryDetection;
+    final isHealthy = primary?.severityHint == 'healthy';
+
+    _tts.speakDiagnosis(
+      disease: disease,
+      langCode: app.language,
+      primaryClassName: primary?.className,
+      isHealthy: isHealthy,
+    );
+  }
+
+  void _toggleTts() {
+    final detection = context.read<DetectionProvider>();
+    final app = context.read<AppProvider>();
+    final disease = detection.diagnosis;
+
+    if (disease == null) return;
+
+    if (_ttsState == TtsState.playing) {
+      _tts.stop();
+    } else {
+      final primary = detection.lastResult?.primaryDetection;
+      final isHealthy = primary?.severityHint == 'healthy';
+      _tts.speakDiagnosis(
+        disease: disease,
+        langCode: app.language,
+        primaryClassName: primary?.className,
+        isHealthy: isHealthy,
+      );
     }
   }
 
@@ -46,24 +110,40 @@ class _ResultsScreenState extends State<ResultsScreen> {
 
     if (result == null) {
       return Scaffold(
-        appBar: AppBar(title: const Text('Results')),
-        body: const EmptyState(
+        appBar: AppBar(title: Text(S.of(context).results)),
+        body: EmptyState(
           icon: Icons.search_off_rounded,
-          title: 'No Results',
-          subtitle: 'Run a detection scan first',
+          title: S.of(context).noResults,
+          subtitle: S.of(context).runDetectionFirst,
         ),
       );
     }
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Results'),
+        title: Text(S.of(context).results),
         actions: [
+          // TTS toggle button in app bar
+          if (detection.diagnosis != null)
+            IconButton(
+              icon: Icon(
+                _ttsState == TtsState.playing
+                    ? Icons.stop_circle_rounded
+                    : Icons.volume_up_rounded,
+                color: _ttsState == TtsState.playing
+                    ? AppColors.error
+                    : null,
+              ),
+              tooltip: _ttsState == TtsState.playing
+                  ? S.of(context).voiceStopped
+                  : S.of(context).tapToListen,
+              onPressed: _toggleTts,
+            ),
           IconButton(
             icon: const Icon(Icons.share_rounded),
             onPressed: () {
               ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('Share coming soon')),
+                SnackBar(content: Text(S.of(context).shareComingSoon)),
               );
             },
           ),
@@ -94,8 +174,12 @@ class _ResultsScreenState extends State<ResultsScreen> {
             // Diagnosis
             if (_loadingDiagnosis)
               _buildDiagnosisLoading()
-            else if (detection.diagnosis != null)
+            else if (detection.diagnosis != null) ...[
+              // Voice reading control bar
+              _buildTtsControlBar(detection.diagnosis!),
+              const SizedBox(height: 12),
               _buildDiagnosisCard(detection.diagnosis!),
+            ],
 
             const SizedBox(height: 32),
           ],
@@ -147,7 +231,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
               const SizedBox(width: 10),
               Expanded(
                 child: Text(
-                  isHealthy ? 'Healthy Plant' : 'Disease Detected',
+                  isHealthy ? S.of(context).healthyPlant : S.of(context).diseaseDetected,
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -170,8 +254,11 @@ class _ResultsScreenState extends State<ResultsScreen> {
           if (primary.trackingStats != null) ...[
             const SizedBox(height: 8),
             Text(
-              'Detected in ${primary.trackingStats!.occurrenceCount} of ${primary.trackingStats!.totalFrames} frames '
-              '(${primary.trackingStats!.occurrencePercentage}%)',
+              S.of(context).detectedInFrames(
+                primary.trackingStats!.occurrenceCount,
+                primary.trackingStats!.totalFrames,
+                primary.trackingStats!.occurrencePercentage.toInt(),
+              ),
               style: const TextStyle(
                 fontSize: 12,
                 color: AppColors.textSecondary,
@@ -187,8 +274,8 @@ class _ResultsScreenState extends State<ResultsScreen> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        const SectionHeader(
-          title: 'All Detections',
+        SectionHeader(
+          title: S.of(context).allDetections,
           icon: Icons.list_rounded,
         ),
         ...detections.asMap().entries.map((entry) {
@@ -251,6 +338,93 @@ class _ResultsScreenState extends State<ResultsScreen> {
     );
   }
 
+  Widget _buildTtsControlBar(Disease disease) {
+    final isPlaying = _ttsState == TtsState.playing;
+
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          colors: isPlaying
+              ? [const Color(0xFF1A3C34), const Color(0xFF2D5A4E)]
+              : [AppColors.surface, AppColors.surface],
+        ),
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(
+          color: isPlaying
+              ? const Color(0xFF4CAF50).withValues(alpha: 0.5)
+              : AppColors.divider,
+        ),
+      ),
+      child: Row(
+        children: [
+          // Animated speaker icon
+          Container(
+            width: 40,
+            height: 40,
+            decoration: BoxDecoration(
+              color: isPlaying
+                  ? Colors.white.withValues(alpha: 0.15)
+                  : AppColors.primary.withValues(alpha: 0.1),
+              borderRadius: BorderRadius.circular(10),
+            ),
+            child: Icon(
+              isPlaying ? Icons.graphic_eq_rounded : Icons.volume_up_rounded,
+              color: isPlaying ? Colors.white : AppColors.primary,
+              size: 22,
+            ),
+          ),
+          const SizedBox(width: 12),
+          // Status text
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  isPlaying
+                      ? S.of(context).readingDiagnosis
+                      : S.of(context).tapToListen,
+                  style: TextStyle(
+                    fontSize: 13,
+                    fontWeight: FontWeight.w600,
+                    color: isPlaying ? Colors.white : AppColors.textPrimary,
+                  ),
+                ),
+                if (isPlaying)
+                  Text(
+                    S.of(context).playing,
+                    style: TextStyle(
+                      fontSize: 11,
+                      color: Colors.white.withValues(alpha: 0.7),
+                    ),
+                  ),
+              ],
+            ),
+          ),
+          // Play / Stop button
+          GestureDetector(
+            onTap: _toggleTts,
+            child: Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                color: isPlaying
+                    ? Colors.white.withValues(alpha: 0.2)
+                    : AppColors.primary,
+                borderRadius: BorderRadius.circular(20),
+              ),
+              child: Icon(
+                isPlaying ? Icons.stop_rounded : Icons.play_arrow_rounded,
+                color: Colors.white,
+                size: 24,
+              ),
+            ),
+          ),
+        ],
+      ),
+    ).animate().fadeIn(duration: 300.ms).slideY(begin: 0.05);
+  }
+
   Widget _buildDiagnosisLoading() {
     return Container(
       padding: const EdgeInsets.all(24),
@@ -259,12 +433,12 @@ class _ResultsScreenState extends State<ResultsScreen> {
         borderRadius: BorderRadius.circular(16),
         border: Border.all(color: AppColors.divider),
       ),
-      child: const Column(
+      child: Column(
         children: [
-          CircularProgressIndicator(color: AppColors.primary),
-          SizedBox(height: 12),
+          const CircularProgressIndicator(color: AppColors.primary),
+          const SizedBox(height: 12),
           Text(
-            'Loading diagnosis...',
+            S.of(context).loadingDiagnosis,
             style: TextStyle(color: AppColors.textSecondary),
           ),
         ],
@@ -297,7 +471,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
         // Severity
         _buildInfoCard(
           icon: Icons.speed_rounded,
-          title: 'Severity',
+          title: S.of(context).severity,
           child: Row(
             children: [
               SeverityBadge(severity: disease.severity),
@@ -320,7 +494,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
         if (disease.symptoms.isNotEmpty) ...[
           _buildInfoCard(
             icon: Icons.sick_rounded,
-            title: 'Symptoms',
+            title: S.of(context).symptoms,
             child: _buildBulletList(disease.symptoms),
           ),
           const SizedBox(height: 12),
@@ -336,7 +510,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
         if (disease.prevention.isNotEmpty) ...[
           _buildInfoCard(
             icon: Icons.shield_rounded,
-            title: 'Prevention',
+            title: S.of(context).prevention,
             child: _buildBulletList(disease.prevention),
           ),
           const SizedBox(height: 12),
@@ -346,7 +520,7 @@ class _ResultsScreenState extends State<ResultsScreen> {
         if (disease.careRecommendations.isNotEmpty) ...[
           _buildInfoCard(
             icon: Icons.eco_rounded,
-            title: 'Care Recommendations',
+            title: S.of(context).careRecommendations,
             child: _buildBulletList(disease.careRecommendations),
           ),
         ],
@@ -402,27 +576,27 @@ class _ResultsScreenState extends State<ResultsScreen> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          const Row(
+          Row(
             children: [
-              Icon(Icons.healing_rounded, size: 18, color: AppColors.primary),
-              SizedBox(width: 8),
+              const Icon(Icons.healing_rounded, size: 18, color: AppColors.primary),
+              const SizedBox(width: 8),
               Text(
-                'Treatment',
-                style: TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
+                S.of(context).treatment,
+                style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 15),
               ),
             ],
           ),
           if (treatment.organic.isNotEmpty) ...[
             const SizedBox(height: 12),
-            _buildTreatmentSection('🌿 Organic', treatment.organic),
+            _buildTreatmentSection(S.of(context).organic, treatment.organic),
           ],
           if (treatment.chemical.isNotEmpty) ...[
             const SizedBox(height: 10),
-            _buildTreatmentSection('🧪 Chemical', treatment.chemical),
+            _buildTreatmentSection(S.of(context).chemical, treatment.chemical),
           ],
           if (treatment.cultural.isNotEmpty) ...[
             const SizedBox(height: 10),
-            _buildTreatmentSection('🌱 Cultural', treatment.cultural),
+            _buildTreatmentSection(S.of(context).cultural, treatment.cultural),
           ],
         ],
       ),

@@ -3,6 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:provider/provider.dart';
 
 import 'config/theme.dart';
+import 'l10n/app_localizations.dart';
 import 'providers/app_provider.dart';
 import 'providers/detection_provider.dart';
 import 'providers/history_provider.dart';
@@ -54,6 +55,9 @@ class AgriScanApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       darkTheme: AppTheme.darkTheme,
       themeMode: app.darkMode ? ThemeMode.dark : ThemeMode.light,
+      localizationsDelegates: S.localizationsDelegates,
+      supportedLocales: S.supportedLocales,
+      locale: app.locale,
       home: const WelcomeScreen(),
       routes: {
         '/login': (_) => const LoginScreen(),

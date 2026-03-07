@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
 import '../config/theme.dart';
+import '../l10n/app_localizations.dart';
 import '../providers/app_provider.dart';
 import '../providers/history_provider.dart';
 import '../widgets/common_widgets.dart';
@@ -32,7 +33,7 @@ class _HistoryScreenState extends State<HistoryScreen> {
 
     return Scaffold(
       appBar: AppBar(
-        title: const Text('History'),
+        title: Text(S.of(context).history),
         actions: [
           if (history.items.isNotEmpty)
             IconButton(
@@ -46,10 +47,10 @@ class _HistoryScreenState extends State<HistoryScreen> {
         child: history.isLoading
             ? const Center(child: CircularProgressIndicator())
             : history.isEmpty
-                ? const EmptyState(
+                ? EmptyState(
                     icon: Icons.history_rounded,
-                    title: 'No History Yet',
-                    subtitle: 'Your plant scan history will appear here',
+                    title: S.of(context).noHistoryYet,
+                    subtitle: S.of(context).historySubtitle,
                   )
                 : ListView.builder(
                     padding: const EdgeInsets.all(16),
@@ -146,19 +147,19 @@ class _HistoryScreenState extends State<HistoryScreen> {
     showDialog(
       context: context,
       builder: (ctx) => AlertDialog(
-        title: const Text('Clear History'),
-        content: const Text('This will remove all scan history. Continue?'),
+        title: Text(S.of(context).clearHistory),
+        content: Text(S.of(context).clearHistoryConfirm),
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(ctx),
-            child: const Text('Cancel'),
+            child: Text(S.of(context).cancel),
           ),
           TextButton(
             onPressed: () {
               context.read<HistoryProvider>().clear();
               Navigator.pop(ctx);
             },
-            child: const Text('Clear', style: TextStyle(color: AppColors.error)),
+            child: Text(S.of(context).clear, style: const TextStyle(color: AppColors.error)),
           ),
         ],
       ),

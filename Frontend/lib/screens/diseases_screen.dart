@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 import 'package:provider/provider.dart';
 import '../config/theme.dart';
+import '../l10n/app_localizations.dart';
 import '../models/disease.dart';
 import '../services/api_service.dart';
 import '../providers/app_provider.dart';
@@ -63,7 +64,7 @@ class _DiseasesScreenState extends State<DiseasesScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Diseases'),
+        title: Text(S.of(context).diseases),
       ),
       body: Column(
         children: [
@@ -74,7 +75,7 @@ class _DiseasesScreenState extends State<DiseasesScreen> {
               controller: _searchController,
               onChanged: _onSearch,
               decoration: InputDecoration(
-                hintText: 'Search diseases...',
+                hintText: S.of(context).searchDiseases,
                 prefixIcon: const Icon(Icons.search_rounded),
                 suffixIcon: _searchController.text.isNotEmpty
                     ? IconButton(
@@ -95,7 +96,7 @@ class _DiseasesScreenState extends State<DiseasesScreen> {
             child: Row(
               children: [
                 Text(
-                  '${_filtered.length} diseases',
+                  S.of(context).diseasesCount(_filtered.length),
                   style: const TextStyle(
                     fontSize: 13,
                     color: AppColors.textSecondary,
@@ -111,10 +112,10 @@ class _DiseasesScreenState extends State<DiseasesScreen> {
             child: _isLoading
                 ? const Center(child: CircularProgressIndicator())
                 : _filtered.isEmpty
-                    ? const EmptyState(
+                    ? EmptyState(
                         icon: Icons.search_off_rounded,
-                        title: 'No Diseases Found',
-                        subtitle: 'Try a different search term',
+                        title: S.of(context).noDiseasesFound,
+                        subtitle: S.of(context).tryDifferentSearch,
                       )
                     : ListView.builder(
                         padding: const EdgeInsets.symmetric(horizontal: 16),

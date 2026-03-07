@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
+import '../l10n/app_localizations.dart';
 
 class LoginSuccessScreen extends StatefulWidget {
   const LoginSuccessScreen({super.key});
@@ -32,7 +33,7 @@ class _LoginSuccessScreenState extends State<LoginSuccessScreen> {
                   color: Colors.white, size: 20),
               const SizedBox(width: 10),
               Text(
-                'Login Successful!',
+                S.of(context).loginSuccessful,
                 style: GoogleFonts.poppins(
                   color: Colors.white,
                   fontWeight: FontWeight.w500,
@@ -85,7 +86,7 @@ class _LoginSuccessScreenState extends State<LoginSuccessScreen> {
             const SizedBox(height: 28),
             // Hello there! Welcome Back!
             Text(
-              'Hello there!\nWelcome\nBack!',
+              S.of(context).helloWelcomeBack,
               textAlign: TextAlign.center,
               style: GoogleFonts.poppins(
                 fontSize: 30,

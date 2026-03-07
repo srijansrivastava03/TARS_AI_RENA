@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
-import '../config/theme.dart';
+import '../l10n/app_localizations.dart';
 import 'home_screen.dart';
 import 'scan_screen.dart';
 import 'results_screen.dart';
@@ -38,7 +38,7 @@ class _AppShellState extends State<AppShell> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       _showSnackBar(
         icon: Icons.check_circle_rounded,
-        message: 'Welcome back! You\'re logged in.',
+        message: S.of(context).welcomeBack,
         color: const Color(0xFF4CAF50),
       );
     });
@@ -64,13 +64,13 @@ class _AppShellState extends State<AppShell> {
     if (isConnected && !_wasConnected) {
       _showSnackBar(
         icon: Icons.wifi_rounded,
-        message: 'You\'re back online!',
+        message: S.of(context).backOnline,
         color: const Color(0xFF4CAF50),
       );
     } else if (!isConnected && _wasConnected) {
       _showSnackBar(
         icon: Icons.wifi_off_rounded,
-        message: 'You\'re offline. Check your connection.',
+        message: S.of(context).youreOffline,
         color: const Color(0xFFF44336),
         duration: const Duration(seconds: 5),
       );
@@ -148,17 +148,15 @@ class _AppShellState extends State<AppShell> {
             index: _currentIndex,
             children: screens,
           ),
-          // Hide nav bar on Scan page (index 2)
-          if (_currentIndex != 2)
-            Positioned(
-              left: 16,
-              right: 16,
-              bottom: MediaQuery.of(context).padding.bottom + 10,
-              child: _FloatingNavBar(
-                currentIndex: _currentIndex,
-                onTap: _onTabTapped,
-              ),
+          Positioned(
+            left: 16,
+            right: 16,
+            bottom: MediaQuery.of(context).padding.bottom + 10,
+            child: _FloatingNavBar(
+              currentIndex: _currentIndex,
+              onTap: _onTabTapped,
             ),
+          ),
         ],
       ),
     );
@@ -192,13 +190,13 @@ class _FloatingNavBar extends StatelessWidget {
               children: [
                 _NavItem(
                   icon: Icons.home_rounded,
-                  label: 'Home',
+                  label: S.of(context).home,
                   isSelected: currentIndex == 0,
                   onTap: () => onTap(0),
                 ),
                 _NavItem(
                   icon: Icons.notifications_rounded,
-                  label: 'Alerts',
+                  label: S.of(context).alerts,
                   isSelected: currentIndex == 1,
                   onTap: () => onTap(1),
                 ),
@@ -206,13 +204,13 @@ class _FloatingNavBar extends StatelessWidget {
                 const SizedBox(width: 56),
                 _NavItem(
                   icon: Icons.pie_chart_rounded,
-                  label: 'Analytics',
+                  label: S.of(context).analytics,
                   isSelected: currentIndex == 3,
                   onTap: () => onTap(3),
                 ),
                 _NavItem(
                   icon: Icons.person_rounded,
-                  label: 'Account',
+                  label: S.of(context).account,
                   isSelected: currentIndex == 4,
                   onTap: () => onTap(4),
                 ),
